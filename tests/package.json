@@ -1,0 +1,17 @@
+{
+  "name": "epam-scraper-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:unit": "node --experimental-vm-modules -e 'import{dotenv}from\"dotenv\";dotenv.config({path:\"../.env.local\"});import\"jest\";' node_modules/jest/bin/jest.js --testPathPattern=unit",
+    "test:integration": "node --experimental-vm-modules -e 'import{dotenv}from\"dotenv\";dotenv.config({path:\"../.env.local\"});import\"jest\";' node_modules/jest/bin/jest.js --testPathPattern=integration",
+    "test:e2e": "node --experimental-vm-modules -e 'import{dotenv}from\"dotenv\";dotenv.config({path:\"../.env.local\"});import\"jest\";' node_modules/jest/bin/jest.js --testPathPattern=e2e",
+    "test:all": "node --experimental-vm-modules -e 'import{dotenv}from\"dotenv\";dotenv.config({path:\"../.env.local\"});import\"jest\";' node_modules/jest/bin/jest.js --reporters=default jest-html-reporter"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.5.0",
+    "dotenv": "^16.4.0"
+  }
+}

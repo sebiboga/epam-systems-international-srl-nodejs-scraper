@@ -1,14 +1,14 @@
 import fetch from "node-fetch";
 import fs from "fs";
 import { querySOLR, deleteJobsByCIF } from "./solr.js";
+import { getCompanyFromANAF, searchCompany } from "./demoanaf.js";
 
 const Peviitor_API_URL = "https://api.peviitor.ro/v1/company/";
-const ANAF_API_URL = "https://demoanaf.ro/api/company/";
 
-const COMPANY_CIF = "33159615";
+const COMPANY_BRAND = "EPAM";
 
-export function getCompanyCIF() {
-  return COMPANY_CIF;
+export function getCompanyBrand() {
+  return COMPANY_BRAND;
 }
 
 const COMPANY_MODEL_FIELDS = [
@@ -23,20 +23,6 @@ const COMPANY_MODEL_FIELDS = [
   { name: "lastScraped", required: false, type: "string" },
   { name: "scraperFile", required: false, type: "string" }
 ];
-
-async function getCompanyFromANAF(cif) {
-  const url = `${ANAF_API_URL}${cif}`;
-  const res = await fetch(url, {
-    headers: { "User-Agent": "Mozilla/5.0" }
-  });
-  
-  if (!res.ok) {
-    throw new Error(`ANAF API error: ${res.status}`);
-  }
-  
-  const json = await res.json();
-  return json.data || null;
-}
 
 async function getCompanyFromPeviitor(companyName) {
   const url = `${Peviitor_API_URL}?name=${encodeURIComponent(companyName)}`;
@@ -98,6 +84,7 @@ function saveCompanyData(anafData, peviitorData) {
   const companyData = {
     validatedAt: new Date().toISOString(),
     source: "ANAF",
+    brand: COMPANY_BRAND,
     anaf: anafData,
     peviitor: peviitorData,
     summary: {
@@ -122,7 +109,34 @@ function saveCompanyData(anafData, peviitorData) {
 }
 
 export async function getCompanyData() {
-  const anafData = await getCompanyFromANAF(COMPANY_CIF);
+  console.log(`Searching for company with brand: ${COMPANY_BRAND}`);
+  const searchResults = await searchCompany(COMPANY_BRAND);
+  
+  if (!searchResults || searchResults.length === 0) {
+    throw new Error(`No companies found for brand: ${COMPANY_BRAND}`);
+  }
+  
+  const exactMatch = searchResults.find(c => 
+    (c.name.toUpperCase().startsWith(COMPANY_BRAND.toUpperCase() + " ") || 
+     c.name.toUpperCase().includes(" " + COMPANY_BRAND.toUpperCase() + " ")) &&
+    c.statusLabel === "Funcțiune"
+  );
+  
+  if (!exactMatch) {
+    console.log("No exact match with 'Funcțiune' status, trying first active company...");
+    const activeMatch = searchResults.find(c => c.statusLabel === "Funcțiune");
+    if (!activeMatch) {
+      throw new Error(`No active company found for brand: ${COMPANY_BRAND}`);
+    }
+    var selectedCIF = activeMatch.cui;
+    console.log(`Selected: ${activeMatch.name} (CIF: ${selectedCIF})`);
+  } else {
+    var selectedCIF = exactMatch.cui;
+    console.log(`Found exact match: ${exactMatch.name} (CIF: ${selectedCIF})`);
+  }
+  
+  console.log(`Fetching company details for CIF: ${selectedCIF}`);
+  const anafData = await getCompanyFromANAF(selectedCIF);
   
   if (!anafData) {
     throw new Error("No data from ANAF - cannot proceed with scraping");
@@ -156,6 +170,17 @@ export async function validateAndGetCompany() {
   const solrResult = await querySOLR(cif);
   console.log(`Jobs found in SOLR for CIF ${cif}: ${solrResult.numFound}`);
   
+  console.log("\n=== Step 3: Validate via Peviitor ===\n");
+  let peviitorData = null;
+  try {
+    peviitorData = await getCompanyFromPeviitor(COMPANY_BRAND);
+    console.log("Peviitor data fetched successfully");
+  } catch (e) {
+    console.log("Peviitor API error:", e.message);
+  }
+  
+  saveCompanyData(anafData, peviitorData);
+  
   if (!active) {
     console.log("\n⚠️ Company is INACTIVE in ANAF - deleting jobs from SOLR and stopping");
     if (solrResult.numFound > 0) {
@@ -173,14 +198,13 @@ export async function validateAndGetCompany() {
 if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith("company.js")) {
   console.log("=== Running company.js independently ===\n");
   
-  const anafData = await getCompanyFromANAF(COMPANY_CIF);
-  console.log("ANAF Data:");
-  console.log(JSON.stringify(anafData, null, 2));
+  const { company, cif, active } = await getCompanyData();
+  console.log(`\nResult: company=${company}, cif=${cif}, active=${active}`);
   
   console.log("\n=== Peviitor Validation Test ===\n");
   
   try {
-    const peviitorData = await getCompanyFromPeviitor("EPAM");
+    const peviitorData = await getCompanyFromPeviitor(company);
     console.log("Peviitor Data:");
     console.log(JSON.stringify(peviitorData, null, 2));
     validateCompanyModel(peviitorData);
@@ -189,7 +213,6 @@ if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith
   }
   
   const result = await validateAndGetCompany();
-  saveCompanyData(anafData, null);
   
   console.log("\nResult:", result);
 }

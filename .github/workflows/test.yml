@@ -1,0 +1,52 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Install test dependencies
+        run: npm install --save-dev jest jest-html-reporter
+        working-directory: ./tests
+        
+      - name: Run unit tests
+        run: npm run test:unit
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+          
+      - name: Generate HTML test report
+        run: |
+          npm install --save-dev jest-html-reporter
+          node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit --json --outputFile=./test-results.json
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+          
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results.json
+          
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-test-report
+          path: test-report.html
