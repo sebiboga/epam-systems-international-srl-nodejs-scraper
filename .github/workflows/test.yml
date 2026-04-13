@@ -23,31 +23,20 @@ jobs:
         run: npm install
         
       - name: Install test dependencies
-        run: npm install --save-dev jest jest-html-reporter
+        run: npm install --save-dev dotenv jest
         working-directory: ./tests
         
-      - name: Run unit tests
-        run: npm run test:unit
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
-          
-      - name: Generate HTML test report
+      - name: Run tests with HTML report
         run: |
-          npm install --save-dev jest-html-reporter
-          node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit --json --outputFile=./test-results.json
+          echo "module.exports = { testEnvironment: 'node', testMatch: ['**/tests/**/*.test.js'], verbose: true, reporters: [[ 'jest-html-reporter', { pageTitle: 'Test Report' } ] ], setupFilesAfterEnv: [] };" > jest.config.js
+          cp jest.config.js tests/
+          cd tests
+          node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit --config jest.config.js
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
-          
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: test-results.json
           
       - name: Upload HTML report
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: html-test-report
-          path: test-report.html
+          name: test-report
+          path: tests/test-results.html
