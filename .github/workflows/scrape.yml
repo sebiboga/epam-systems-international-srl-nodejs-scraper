@@ -1,0 +1,45 @@
+name: Scrape Jobs
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run scraper
+        run: npm run scrape -- --test
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+          
+      - name: Check for new jobs
+        run: |
+          if [ -f jobs.json ]; then
+            echo "New jobs found:"
+            cat jobs.json | jq '.jobs | length'
+          else
+            echo "No new jobs or scrape failed"
+          fi
+          
+      - name: Upload jobs JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraped-jobs
+          path: |
+            jobs.json
+            jobs_existing.json
+          retention-days: 7
