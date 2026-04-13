@@ -1,11 +1,15 @@
 import fetch from "node-fetch";
 import fs from "fs";
+import { querySOLR, deleteJobsByCIF } from "./solr.js";
 
 const Peviitor_API_URL = "https://api.peviitor.ro/v1/company/";
 const ANAF_API_URL = "https://demoanaf.ro/api/company/";
 
 const COMPANY_CIF = "33159615";
-const COMPANY_NAME = "EPAM SYSTEMS INTERNATIONAL SRL";
+
+export function getCompanyCIF() {
+  return COMPANY_CIF;
+}
 
 const COMPANY_MODEL_FIELDS = [
   { name: "id", required: true, type: "string" },
@@ -117,8 +121,57 @@ function saveCompanyData(anafData, peviitorData) {
   return companyData;
 }
 
-async function validateCompany() {
-  console.log("=== ANAF Validation Test ===\n");
+export async function getCompanyData() {
+  const anafData = await getCompanyFromANAF(COMPANY_CIF);
+  
+  if (!anafData) {
+    throw new Error("No data from ANAF - cannot proceed with scraping");
+  }
+  
+  if (!anafData.name) {
+    throw new Error("ANAF returned no company name - cannot proceed with scraping");
+  }
+  
+  if (!anafData.cui) {
+    throw new Error("ANAF returned no CUI - cannot proceed with scraping");
+  }
+  
+  console.log(`ANAF returned name: ${anafData.name}`);
+  console.log(`ANAF returned CUI: ${anafData.cui}`);
+  console.log(`ANAF status: ${anafData.inactive ? "INACTIVE" : "ACTIVE"}`);
+  
+  const company = anafData.name.toUpperCase();
+  const cif = anafData.cui.toString();
+  const active = !anafData.inactive;
+  
+  return { company, cif, active, anafData };
+}
+
+export async function validateAndGetCompany() {
+  console.log("=== Step 1: Validate company via ANAF ===\n");
+  
+  const { company, cif, active, anafData } = await getCompanyData();
+  
+  console.log("\n=== Step 2: Check existing jobs in SOLR ===\n");
+  const solrResult = await querySOLR(cif);
+  console.log(`Jobs found in SOLR for CIF ${cif}: ${solrResult.numFound}`);
+  
+  if (!active) {
+    console.log("\n⚠️ Company is INACTIVE in ANAF - deleting jobs from SOLR and stopping");
+    if (solrResult.numFound > 0) {
+      await deleteJobsByCIF(cif);
+    }
+    return { status: "inactive", company, cif, existingJobsCount: solrResult.numFound };
+  }
+  
+  console.log(`\n✅ Company validated: ${company}, CIF: ${cif}`);
+  console.log("Ready to scrape jobs...\n");
+  
+  return { status: "active", company, cif, existingJobsCount: solrResult.numFound };
+}
+
+if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith("company.js")) {
+  console.log("=== Running company.js independently ===\n");
   
   const anafData = await getCompanyFromANAF(COMPANY_CIF);
   console.log("ANAF Data:");
@@ -126,24 +179,17 @@ async function validateCompany() {
   
   console.log("\n=== Peviitor Validation Test ===\n");
   
-  const peviitorData = await getCompanyFromPeviitor("EPAM");
-  console.log("Peviitor Data:");
-  console.log(JSON.stringify(peviitorData, null, 2));
-  
-  console.log("\n=== ANAF vs Expected Comparison ===\n");
-  console.log(`Expected company name: "${COMPANY_NAME}"`);
-  console.log(`ANAF returned name: "${anafData?.name}"`);
-  console.log(`Match: ${anafData?.name?.toUpperCase() === COMPANY_NAME.toUpperCase()}`);
-  
-  if (anafData?.inactive) {
-    console.log(`WARNING: Company is inactive in ANAF!`);
-  } else {
-    console.log(`Company is ACTIVE in ANAF`);
+  try {
+    const peviitorData = await getCompanyFromPeviitor("EPAM");
+    console.log("Peviitor Data:");
+    console.log(JSON.stringify(peviitorData, null, 2));
+    validateCompanyModel(peviitorData);
+  } catch (e) {
+    console.log("Peviitor API error:", e.message);
   }
   
-  validateCompanyModel(peviitorData);
+  const result = await validateAndGetCompany();
+  saveCompanyData(anafData, null);
   
-  saveCompanyData(anafData, peviitorData);
+  console.log("\nResult:", result);
 }
-
-validateCompany();

@@ -1,3 +1,4 @@
 node_modules/
 jobs.json
 jobs_epam_ro.json
+.env.local

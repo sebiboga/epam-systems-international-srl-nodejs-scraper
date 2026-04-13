@@ -1,67 +1,15 @@
 import fetch from "node-fetch";
+import { validateAndGetCompany } from "./company.js";
 
 const JOB_BASE = "https://careers.epam.com";
-
-const COMPANY_CIF = "33159615";
-const ANAF_API_URL = "https://demoanaf.ro/api/company/";
 
 const ROMANIA_COUNTRY_ID = "8150000000000001155";
 const PAGE_SIZE = 10;
 
 let COMPANY_NAME = null;
-let COMPANY_CIF_FROM_ANAF = null;
+let COMPANY_CIF = null;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-async function getCompanyFromANAF(cif) {
-  const url = `${ANAF_API_URL}${cif}`;
-  const res = await fetch(url, {
-    headers: { "User-Agent": "Mozilla/5.0" }
-  });
-  
-  if (!res.ok) {
-    throw new Error(`ANAF API error: ${res.status}`);
-  }
-  
-  const json = await res.json();
-  return json.data || null;
-}
-
-async function validateAndGetCompanyData() {
-  console.log("=== Step 1: Validate company via ANAF ===\n");
-  
-  const anafData = await getCompanyFromANAF(COMPANY_CIF);
-  
-  if (!anafData) {
-    throw new Error("No data from ANAF - cannot proceed with scraping");
-  }
-  
-  if (!anafData.name) {
-    throw new Error("ANAF returned no company name - cannot proceed with scraping");
-  }
-  
-  if (!anafData.cui) {
-    throw new Error("ANAF returned no CUI - cannot proceed with scraping");
-  }
-  
-  console.log(`ANAF returned name: ${anafData.name}`);
-  console.log(`ANAF returned CUI: ${anafData.cui}`);
-  console.log(`ANAF status: ${anafData.inactive ? "INACTIVE" : "ACTIVE"}`);
-  
-  if (anafData.inactive) {
-    console.log("\n⚠️ Company is INACTIVE in ANAF - will delete existing jobs from SOLR and stop");
-    console.log("(SOLR delete not implemented in index.js - use solr.js for that)");
-    process.exit(0);
-  }
-  
-  COMPANY_NAME = anafData.name.toUpperCase();
-  COMPANY_CIF_FROM_ANAF = anafData.cui.toString();
-  
-  console.log(`\n✅ Company validated: ${COMPANY_NAME}, CIF: ${COMPANY_CIF_FROM_ANAF}`);
-  console.log("Ready to scrape jobs...\n");
-  
-  return { company: COMPANY_NAME, cif: COMPANY_CIF_FROM_ANAF };
-}
 
 async function fetchJobsPage(pageNum) {
   const from = (pageNum - 1) * PAGE_SIZE;
@@ -183,7 +131,7 @@ function mapToJobModel(rawJob) {
     url: rawJob.url,
     title: rawJob.title,
     company: COMPANY_NAME,
-    cif: COMPANY_CIF_FROM_ANAF,
+    cif: COMPANY_CIF,
     location: rawJob.location?.length ? rawJob.location : undefined,
     tags: rawJob.tags?.length ? rawJob.tags : undefined,
     workmode: rawJob.workmode || undefined,
@@ -196,11 +144,49 @@ function mapToJobModel(rawJob) {
   return job;
 }
 
+function transformJobsForSOLR(payload) {
+  const romanianCities = [
+    'Bucharest', 'București', 'Cluj-Napoca', 'Cluj Napoca',
+    'Timișoara', 'Timisoara', 'Iași', 'Iasi', 'Brașov', 'Brasov',
+    'Constanța', 'Constanta', 'Craiova', 'Bacău', 'Sibiu',
+    'Târgu Mureș', 'Targu Mures', 'Oradea', 'Baia Mare', 'Satu Mare',
+    'Ploiești', 'Ploiesti', 'Pitești', 'Pitesti', 'Arad', 'Galați', 'Galati',
+    'Brăila', 'Braila', 'Drobeta-Turnu Severin', 'Râmnicu Vâlcea', 'Ramnicu Valcea',
+    'Buzău', 'Buzau', 'Botoșani', 'Botosani', 'Zalău', 'Zalau', 'Hunedoara', 'Deva',
+    'Suceava', 'Bistrița', 'Bistrita', 'Tulcea', 'Călărași', 'Calarasi',
+    'Giurgiu', 'Alba Iulia', 'Slatina', 'Piatra Neamț', 'Piatra Neamt', 'Roman',
+    'Dumbrăvița', 'Dumbravita', 'Voluntari', 'Popești-Leordeni', 'Popesti-Leordeni',
+    'Chitila', 'Mogoșoaia', 'Mogosoaia', 'Otopeni'
+  ];
+
+  const citySet = new Set(romanianCities.map(c => c.toLowerCase()));
+
+  const transformed = {
+    ...payload,
+    jobs: payload.jobs.map(job => {
+      const validLocations = (job.location || []).filter(loc => {
+        const lower = loc.toLowerCase().trim();
+        if (lower === 'romania' || lower === 'românia') return true;
+        return citySet.has(lower);
+      }).map(loc => loc.toLowerCase() === 'romania' ? 'România' : loc);
+
+      if (validLocations.length > 0) {
+        return { ...job, location: validLocations };
+      }
+      return { ...job, location: ['România'] };
+    })
+  };
+
+  return transformed;
+}
+
 async function main() {
   const testOnlyOnePage = process.argv.includes("--test");
   
   try {
-    await validateAndGetCompanyData();
+    const { company, cif } = await validateAndGetCompany();
+    COMPANY_NAME = company;
+    COMPANY_CIF = cif;
     
     const rawJobs = await scrapeAllListings(testOnlyOnePage);
     console.log(`Found ${rawJobs.length} raw jobs`);
@@ -211,12 +197,16 @@ async function main() {
       source: "epam.com",
       scrapedAt: new Date().toISOString(),
       company: COMPANY_NAME,
-      cif: COMPANY_CIF_FROM_ANAF,
+      cif: COMPANY_CIF,
       jobs
     };
 
+    console.log("Transforming jobs for SOLR...");
+    const transformedPayload = transformJobsForSOLR(payload);
+    console.log(`Jobs with valid Romanian locations: ${transformedPayload.jobs.filter(j => j.location).length}`);
+
     const fs = await import("fs");
-    fs.writeFileSync("jobs.json", JSON.stringify(payload, null, 2), "utf-8");
+    fs.writeFileSync("jobs.json", JSON.stringify(transformedPayload, null, 2), "utf-8");
     console.log("Saved jobs.json");
   } catch (err) {
     console.error("Scraper failed:", err);

@@ -1,5 +1,5 @@
 {
-  "validatedAt": "2026-04-13T07:58:47.027Z",
+  "validatedAt": "2026-04-13T09:38:34.652Z",
   "source": "ANAF",
   "anaf": {
     "cui": 33159615,
@@ -66,23 +66,7 @@
     "onrcStatus": 1048,
     "onrcStatusLabel": "Funcțiune"
   },
-  "peviitor": {
-    "id": "33159615",
-    "company": "EPAM SYSTEMS INTERNATIONAL SRL",
-    "brand": "EPAM",
-    "group": "EPAM Systems",
-    "status": "activ",
-    "website": [
-      "https://www.epam.com"
-    ],
-    "career": [
-      "https://www.epam.com/careers/locations/romania"
-    ],
-    "lastScraped": "2026-04-12",
-    "scraperFile": "epam.md",
-    "_version_": 1862291263324160000,
-    "_root_": "33159615"
-  },
+  "peviitor": null,
   "summary": {
     "company": "EPAM SYSTEMS INTERNATIONAL SRL",
     "cif": "33159615",

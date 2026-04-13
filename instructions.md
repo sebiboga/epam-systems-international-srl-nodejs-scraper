@@ -53,8 +53,50 @@ When working on this scraper:
    - `cif` = ANAF CUI (e.g., "33159615")
    - **REQUIRED**: If company or CIF not available from ANAF → STOP workflow (cannot scrape)
 7. **Scrape new jobs** - Extract jobs from EPAM careers page (Romania)
-8. **Map to job model** - Transform scraped data to match Peviitor schema (using company name + CIF from step 6)
-9. **Upsert to SOLR** - Import/update jobs in SOLR
+8. **Transform for SOLR** - Validate and fix job data:
+   - location: Only Romanian cities allowed (Bucharest, Cluj-Napoca, etc.)
+   - For non-Romanian locations → default to "România"
+   - tags: lowercase, no diacritics
+   - company: uppercase
+9. **Save jobs.json** - Save transformed jobs locally
+10. **Upsert to SOLR** - Import/update jobs in SOLR (future step)
+
+## Running the Scraper
+
+```bash
+# Set environment variables
+export SOLR_AUTH=solr:SolrRocks
+
+# Run the scraper
+node index.js
+
+# Test mode (one page only)
+node index.js --test
+```
+
+## Workflow Flowchart
+
+```
+index.js
+    │
+    ▼
+company.js (validate company)
+    ├── ANAF API ──► get company name + CIF
+    ├── Peviitor API ──► validate company model
+    └── SOLR ──► check existing jobs
+    │
+    ▼ (if active)
+scrape EPAM API (jobs for Romania)
+    │
+    ▼
+transformJobsForSOLR()
+    ├── Filter: keep only Romanian locations
+    ├── Fallback: "România" for unknown locations
+    └── Format: lowercase tags, uppercase company
+    │
+    ▼
+jobs.json (ready for SOLR upsert)
+```
 
 ## File Responsibilities
 
@@ -66,5 +108,33 @@ When working on this scraper:
 
 ## API Endpoints
 
-- **Solr**: `https://solr.peviitor.ro/solr/job` (auth: `solr:SolrRocks`)
+- **Solr**: `https://solr.peviitor.ro/solr/job` (auth: via `SOLR_AUTH` environment variable)
 - **Company API**: `https://api.peviitor.ro/v1/company/`
+- **ANAF API**: `https://demoanaf.ro/api/company/`
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `SOLR_AUTH` | SOLR credentials in format `user:password` |
+
+## Testing
+
+This project requires multiple levels of testing:
+
+1. **Unit Tests** - Test individual modules (solr.js, company.js) in isolation
+2. **Integration Tests** - Test API interactions (ANAF, Peviitor, SOLR) in `/tests/integration` folder
+3. **E2E Tests** - Test full workflow in `/tests/e2e` folder
+
+Run tests:
+```bash
+npm test
+```
+
+## Technical Debt / Future Work
+
+- [ ] Extract demoanaf.js to separate module
+- [ ] Write Unit Tests for all modules
+- [ ] Write Integration Tests in separate folder
+- [ ] Write E2E automated tests in separate folder
+- [ ] Write Unit/Component/E2E tests for index.js
