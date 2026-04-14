@@ -125,6 +125,7 @@ describe('index.js Component Tests', () => {
       expect(result.jobs[0].location).toEqual(['Bucharest']);
       expect(result.jobs[0].workmode).toBe('hybrid');
     });
+  });
 
   describe('URL Generation', () => {
     it('should use seo.url when available', () => {
