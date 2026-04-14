@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import { fileURLToPath } from "url";
 import { validateAndGetCompany } from "./company.js";
-import { querySOLR, deleteJobByUrl, upsertJobs, deleteJobsByCIF } from "./solr.js";
+import { querySOLR, deleteJobByUrl, upsertJobs } from "./solr.js";
 
 const COMPANY_CIF = "33159615";
 const TIMEOUT = 10000;
@@ -200,15 +200,11 @@ async function main() {
   const testOnlyOnePage = process.argv.includes("--test");
   
   try {
-    console.log("=== Step 1: Delete existing jobs from SOLR ===");
+    console.log("=== Step 1: Get existing jobs count ===");
     const existingResult = await querySOLR(COMPANY_CIF);
     const existingCount = existingResult.numFound;
-    console.log(`Found ${existingCount} existing jobs in SOLR - deleting...`);
-    
-    if (existingCount > 0) {
-      await deleteJobsByCIF(COMPANY_CIF);
-      console.log("Deleted all existing jobs for this CIF");
-    }
+    console.log(`Found ${existingCount} existing jobs in SOLR`);
+    console.log("(Keeping existing jobs - will upsert EPAM Careers jobs only)");
 
     console.log("=== Step 2: Validate company via ANAF ===");
     const { company, cif } = await validateAndGetCompany();
