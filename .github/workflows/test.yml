@@ -53,31 +53,20 @@ jobs:
     needs: check-company-core
     
     steps:
-      - name: Display status
+      - name: Add company if needed
+        if: env.NEED_TO_ADD == 'true'
+        run: |
+          echo '[{"id":"33159615","company":"EPAM SYSTEMS INTERNATIONAL SRL","brand":"EPAM","status":"activ","location":["Bucuresti"],"lastScraped":"2026-04-14","scraperFile":"https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"}]' > company_data.json
+          
+          curl -s --user "${{ secrets.SOLR_AUTH }}" \
+            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            --data-binary @company_data.json
+        
+      - name: Show result
         run: |
           if [ "${{ env.NEED_TO_ADD }}" == "true" ]; then
-            echo "Adding EPAM to company core..."
-            
-            # Prepare company data
-            cat > company_data.json << 'EOF'
-            [{
-              "id": "33159615",
-              "company": "EPAM SYSTEMS INTERNATIONAL SRL",
-              "brand": "EPAM",
-              "status": "activ",
-              "location": ["Bucuresti"],
-              "lastScraped": "2026-04-14",
-              "scraperFile": "https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"
-            }]
-            EOF
-            
-            # Add to SOLR
-            curl -s --user "${{ secrets.SOLR_AUTH }}" \
-              "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
-              -X POST \
-              -H "Content-Type: application/json" \
-              --data-binary @company_data.json
-            
             echo "EPAM added to company core"
           else
             echo "No action needed - EPAM already in company core"
