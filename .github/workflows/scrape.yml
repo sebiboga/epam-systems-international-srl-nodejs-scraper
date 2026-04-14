@@ -1,4 +1,4 @@
-name: Automation Scrape Jobs
+name: WebScraper Peviitor
 
 on:
   schedule:
