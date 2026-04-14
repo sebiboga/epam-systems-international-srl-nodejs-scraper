@@ -67,23 +67,24 @@ export SOLR_AUTH=solr:SolrRocks
 # Run the full scraper workflow (single command)
 node index.js
 
-# Test mode (one page only)
+# Test mode (one page only, limit 10 jobs)
 node index.js --test
 ```
+
+> **Important**: Scraper does NOT delete jobs from other sources (ANOFM, etc). It only upserts EPAM Careers jobs. Existing jobs are preserved.
 
 ## Full Workflow (automatic)
 
 When running `node index.js`, the following steps happen automatically:
 
-1. **Extract existing jobs from SOLR** - Backup current jobs to `jobs_existing.json`
+1. **Check existing jobs count** - Query SOLR by CIF (read-only)
 2. **Validate company via ANAF** - Check company exists and is active
-3. **Scrape jobs** - Extract jobs from EPAM careers API
+3. **Scrape jobs** - Extract jobs from EPAM careers API (Romania only)
 4. **Transform for SOLR** - Fix locations (only Romanian cities), normalize fields
-5. **Upsert to SOLR** - Add new jobs to SOLR
-6. **Cleanup** - Delete temporary `jobs.json`
-7. **Verify existing URLs** - Check all old job URLs still work
-8. **Delete invalid jobs** - Remove 404 jobs from SOLR
-9. **Cleanup backup** - Delete `jobs_existing.json` if all URLs valid
+5. **Upsert to SOLR** - Add/update jobs (SOLR handles duplicates by URL)
+6. **Show Summary** - Log job counts
+
+**Important**: We do NOT delete existing jobs! This preserves jobs from other sources (ANOFM, etc).
 
 ## Workflow Flowchart
 
@@ -91,10 +92,13 @@ When running `node index.js`, the following steps happen automatically:
 index.js
     │
     ▼
+querySOLR(CIF) - just count, don't delete
+    │
+    ▼
 company.js (validate company)
     ├── ANAF API ──► get company name + CIF
     ├── Peviitor API ──► validate company model
-    └── SOLR ──► check existing jobs
+    └── SOLR ──► check existing jobs count
     │
     ▼ (if active)
 scrape EPAM API (jobs for Romania)
@@ -102,11 +106,12 @@ scrape EPAM API (jobs for Romania)
     ▼
 transformJobsForSOLR()
     ├── Filter: keep only Romanian locations
-    ├── Fallback: "România" for unknown locations
+    │         (Bucharest, Cluj-Napoca, etc)
+    ├── Fallback: "România" for unknown
     └── Format: lowercase tags, uppercase company
     │
     ▼
-jobs.json (ready for SOLR upsert)
+upsertJobs() - SOLR handles duplicate by URL
 ```
 
 ## File Responsibilities

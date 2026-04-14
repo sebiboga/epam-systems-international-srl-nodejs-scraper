@@ -23,15 +23,27 @@ jobs:
         run: npm install
         
       - name: Install test dependencies
-        run: npm install --save-dev dotenv jest
+        run: npm install --save-dev dotenv jest jest-html-reporter
         working-directory: ./tests
         
-      - name: Run tests with HTML report
+      - name: Create jest config
         run: |
-          echo "module.exports = { testEnvironment: 'node', testMatch: ['**/tests/**/*.test.js'], verbose: true, reporters: [[ 'jest-html-reporter', { pageTitle: 'Test Report' } ] ], setupFilesAfterEnv: [] };" > jest.config.js
-          cp jest.config.js tests/
           cd tests
-          node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit --config jest.config.js
+          node -e "
+            const fs = require('fs');
+            const config = \`
+module.exports = {
+  testEnvironment: 'node',
+  testMatch: ['**/tests/**/*.test.js'],
+  verbose: true,
+  reporters: [['jest-html-reporter', {pageTitle: 'Test Report'}]]
+};
+\`;
+            fs.writeFileSync('jest.config.cjs', config);
+          "
+          
+      - name: Run tests
+        run: cd tests && node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit --config jest.config.cjs
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
