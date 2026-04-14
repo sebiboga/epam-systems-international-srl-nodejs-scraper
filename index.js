@@ -56,7 +56,8 @@ function parseApiJobs(apiData) {
       }
       
       const uid = job.uid || "";
-      const url = `${JOB_BASE}/en/vacancy/${uid}_en`;
+      const seoUrl = job.seo?.url || `/en/vacancy/${uid}_en`;
+      const url = seoUrl.startsWith('http') ? seoUrl : `${JOB_BASE}${seoUrl}`;
       
       const tags = (job.skills || []).map(s => s.toLowerCase());
       
