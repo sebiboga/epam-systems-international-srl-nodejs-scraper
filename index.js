@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import { fileURLToPath } from "url";
 import { validateAndGetCompany } from "./company.js";
-import { querySOLR, deleteJobByUrl, upsertJobs } from "./solr.js";
+import { querySOLR, deleteJobByUrl, upsertJobs, deleteJobsByCIF } from "./solr.js";
 
 const COMPANY_CIF = "33159615";
 const TIMEOUT = 10000;
@@ -200,20 +200,14 @@ async function main() {
   const testOnlyOnePage = process.argv.includes("--test");
   
   try {
-    console.log("=== Step 1: Extract existing jobs from SOLR ===");
+    console.log("=== Step 1: Delete existing jobs from SOLR ===");
     const existingResult = await querySOLR(COMPANY_CIF);
     const existingCount = existingResult.numFound;
-    console.log(`Found ${existingCount} existing jobs in SOLR`);
-
+    console.log(`Found ${existingCount} existing jobs in SOLR - deleting...`);
+    
     if (existingCount > 0) {
-      const backup = {
-        extractedAt: new Date().toISOString(),
-        cif: COMPANY_CIF,
-        count: existingCount,
-        jobs: existingResult.docs
-      };
-      fs.writeFileSync("jobs_existing.json", JSON.stringify(backup, null, 2), "utf-8");
-      console.log("Saved jobs_existing.json\n");
+      await deleteJobsByCIF(COMPANY_CIF);
+      console.log("Deleted all existing jobs for this CIF");
     }
 
     console.log("=== Step 2: Validate company via ANAF ===");
@@ -245,46 +239,6 @@ async function main() {
 
     console.log("\n=== Step 4: Upsert jobs to SOLR ===");
     await upsertJobs(transformedPayload.jobs);
-    console.log(`📊 Total jobs in SOLR after upsert: ${scrapedCount}`);
-
-    console.log("Cleaning up temporary files...");
-    fs.unlinkSync("jobs.json");
-    console.log("Deleted jobs.json");
-
-    console.log("\n=== Step 5: Verify existing jobs URLs ===");
-    if (fs.existsSync("jobs_existing.json")) {
-      const existing = JSON.parse(fs.readFileSync("jobs_existing.json", "utf-8"));
-      const existingJobs = existing.jobs || [];
-      console.log(`Checking ${existingJobs.length} URLs...`);
-
-      const invalidUrls = [];
-      for (let i = 0; i < existingJobs.length; i++) {
-        const job = existingJobs[i];
-        try {
-          const res = await fetch(job.url, { method: "HEAD", timeout: TIMEOUT, headers: { "User-Agent": "Mozilla/5.0" } });
-          console.log(`[${i+1}/${existingJobs.length}] ${res.status} - ${job.url}`);
-          if (!res.ok) invalidUrls.push(job.url);
-        } catch (e) {
-          console.log(`[${i+1}/${existingJobs.length}] ERR - ${job.url}`);
-          invalidUrls.push(job.url);
-        }
-      }
-
-      if (invalidUrls.length > 0) {
-        console.log(`\n⚠️ ${invalidUrls.length} invalid URLs - deleting from SOLR...`);
-        for (const url of invalidUrls) {
-          await deleteJobByUrl(url);
-        }
-        console.log(`Deleted ${invalidUrls.length} invalid jobs`);
-      }
-
-      if (invalidUrls.length === 0) {
-        console.log("\n✅ All existing URLs valid - deleting jobs_existing.json");
-        fs.unlinkSync("jobs_existing.json");
-      } else {
-        console.log("Kept jobs_existing.json for reference");
-      }
-    }
 
     const finalResult = await querySOLR(COMPANY_CIF);
     console.log(`\n📊 === SUMMARY ===`);
