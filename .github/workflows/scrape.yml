@@ -1,4 +1,4 @@
-name: Scrape Jobs
+name: Automation Scrape Jobs
 
 on:
   schedule:
