@@ -9,30 +9,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v4
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          
-      - name: Install dependencies
-        run: npm install
-          
-      - name: Run tests
-        run: npm test
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
-
   ensure-company-core:
     runs-on: ubuntu-latest
-    needs: test
-    
-    if: ${{ always() }}
     
     steps:
       - name: Ensure EPAM exists in company core
@@ -71,3 +49,23 @@ jobs:
             echo "❌ FAILED: EPAM still not in company core"
             exit 1
           fi
+
+  test:
+    runs-on: ubuntu-latest
+    needs: ensure-company-core
+    
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+          
+      - name: Run tests
+        run: npm test
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
