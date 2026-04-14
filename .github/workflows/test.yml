@@ -26,3 +26,58 @@ jobs:
         run: npm test
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+
+  check-company-core:
+    runs-on: ubuntu-latest
+    needs: test
+    
+    steps:
+      - name: Check if EPAM exists in company core
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+        run: |
+          RESULT=$(curl -s --user "${SOLR_AUTH}" \
+            "https://solr.peviitor.ro/solr/company/select?q=id:33159615&rows=1" | jq '.response.numFound')
+          
+          if [ "$RESULT" -eq "0" ]; then
+            echo "EPAM not found in company core - will trigger add workflow"
+            echo "NEED_TO_ADD=true" >> $GITHUB_ENV
+          else
+            echo "EPAM exists in company core"
+            echo "NEED_TO_ADD=false" >> $GITHUB_ENV
+          fi
+
+  add-company-if-needed:
+    runs-on: ubuntu-latest
+    needs: check-company-core
+    
+    steps:
+      - name: Display status
+        run: |
+          if [ "${{ env.NEED_TO_ADD }}" == "true" ]; then
+            echo "Adding EPAM to company core..."
+            
+            # Prepare company data
+            cat > company_data.json << 'EOF'
+            [{
+              "id": "33159615",
+              "company": "EPAM SYSTEMS INTERNATIONAL SRL",
+              "brand": "EPAM",
+              "status": "activ",
+              "location": ["Bucuresti"],
+              "lastScraped": "2026-04-14",
+              "scraperFile": "https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"
+            }]
+            EOF
+            
+            # Add to SOLR
+            curl -s --user "${{ secrets.SOLR_AUTH }}" \
+              "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
+              -X POST \
+              -H "Content-Type: application/json" \
+              --data-binary @company_data.json
+            
+            echo "EPAM added to company core"
+          else
+            echo "No action needed - EPAM already in company core"
+          fi

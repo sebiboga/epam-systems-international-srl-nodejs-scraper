@@ -28,7 +28,7 @@ describe('Integration: API Workflow', () => {
     });
   });
 
-describe('Company data consistency', () => {
+  describe('Company data consistency', () => {
     it('should have matching data across ANAF, Peviitor and SOLR', async () => {
       const company = await import('../../company.js');
       const solr = await import('../../solr.js');
@@ -62,7 +62,5 @@ describe('Company data consistency', () => {
       expect(epam.lastScraped).toBeDefined();
       expect(epam.scraperFile).toBeDefined();
     });
-  });
-});
   });
 });
