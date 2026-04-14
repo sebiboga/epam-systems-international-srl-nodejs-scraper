@@ -6,7 +6,7 @@
 |------|-------------|
 | `index.js` | Main scraper - full workflow: extract existing → validate company → scrape → transform → upsert → verify URLs |
 | `company.js` | Validates company via ANAF + Peviitor APIs, checks if company is active/inactive |
-| `solr.js` | SOLR operations module - exports querySOLR, deleteJobsByCIF, deleteJobByUrl, upsertJobs + standalone verify command |
+| `solr.js` | SOLR operations module - exports querySOLR, deleteJobByUrl, upsertJobs + standalone verify command |
 | `demoanaf.js` | ANAF API module - exports getCompanyFromANAF(cif) and searchCompany(brandName) |
 
 ## Markdown Files
@@ -43,4 +43,4 @@ Installed via npm:
 
 - All `.md` files contain dynamic schemas that may change over time
 - Check peviitor_core README.md for latest model definitions
-- Full workflow: extract existing → validate company (ANAF+Peviitor) → scrape EPAM → transform (fix locations) → upsert → verify URLs → cleanup
+- Full workflow: check count → validate company (ANAF+Peviitor) → scrape EPAM → transform (fix locations) → upsert → log summary
