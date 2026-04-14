@@ -1,0 +1,84 @@
+name: Add Company to Core
+
+on:
+  workflow_dispatch:
+    inputs:
+      company_name:
+        description: 'Company name'
+        required: true
+        type: string
+      cif:
+        description: 'CIF/CUI'
+        required: true
+        type: string
+      brand:
+        description: 'Brand name'
+        required: true
+        type: string
+      status:
+        description: 'Status'
+        required: true
+        type: string
+        default: 'activ'
+      location:
+        description: 'Location (comma separated)'
+        required: false
+        type: string
+        default: 'Bucuresti'
+      scraper_file:
+        description: 'Scraper file URL'
+        required: true
+        type: string
+
+jobs:
+  add-company:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Prepare company JSON
+        env:
+          COMPANY_NAME: ${{ inputs.company_name }}
+          CIF: ${{ inputs.cif }}
+          BRAND: ${{ inputs.brand }}
+          STATUS: ${{ inputs.status }}
+          LOCATION: ${{ inputs.location }}
+          SCRAPER_FILE: ${{ inputs.scraper_file }}
+        run: |
+          TODAY=$(date -I)
+          cat > company_data.json << EOF
+          [{
+            "id": "${CIF}",
+            "company": "${COMPANY_NAME}",
+            "brand": "${BRAND}",
+            "status": "${STATUS}",
+            "location": ["${LOCATION}"],
+            "lastScraped": "${TODAY}",
+            "scraperFile": "${SCRAPER_FILE}"
+          }]
+          EOF
+          cat company_data.json
+
+      - name: Add company to SOLR
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+        run: |
+          curl -s --user "${SOLR_AUTH}" \
+            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            --data-binary @company_data.json
+
+      - name: Verify company was added
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+          CIF: ${{ inputs.cif }}
+        run: |
+          curl -s --user "${SOLR_AUTH}" \
+            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq .
+
+      - name: Display result
+        env:
+          COMPANY_NAME: ${{ inputs.company_name }}
+          CIF: ${{ inputs.cif }}
+        run: |
+          echo "Company ${COMPANY_NAME} (CIF: ${CIF}) added to company core"
