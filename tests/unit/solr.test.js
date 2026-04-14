@@ -85,4 +85,45 @@ describe('solr.js', () => {
       }
     });
   });
+
+  describe('Company Core Validation', () => {
+    it('should have all required fields for EPAM in company core', async () => {
+      const result = await solr.queryCompanySOLR('id:33159615');
+      
+      expect(result.numFound).toBe(1);
+      const epam = result.docs[0];
+      
+      // Required fields
+      expect(epam).toHaveProperty('id', '33159615');
+      expect(epam).toHaveProperty('company');
+      expect(epam.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
+      
+      // Optional fields
+      expect(epam).toHaveProperty('brand', 'EPAM');
+      expect(epam).toHaveProperty('status', 'activ');
+      expect(epam).toHaveProperty('location');
+      expect(Array.isArray(epam.location)).toBe(true);
+      expect(epam.location).toContain('Bucuresti');
+      expect(epam).toHaveProperty('lastScraped');
+      expect(epam.lastScraped).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(epam).toHaveProperty('scraperFile');
+      expect(epam.scraperFile).toMatch(/^https:\/\/raw\.githubusercontent\.com\//);
+    });
+
+    it('should have optional fields for EPAM in company core', async () => {
+      const result = await solr.queryCompanySOLR('id:33159615');
+      const epam = result.docs[0];
+      
+      // These fields are optional but should be present
+      expect(epam).toHaveProperty('group'); // optional
+      
+      // website and career are optional - check if they exist but are valid URLs
+      if (epam.website) {
+        expect(Array.isArray(epam.website)).toBe(true);
+      }
+      if (epam.career) {
+        expect(Array.isArray(epam.career)).toBe(true);
+      }
+    });
+  });
 });

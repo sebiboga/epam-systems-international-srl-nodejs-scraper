@@ -28,9 +28,8 @@ describe('Integration: API Workflow', () => {
     });
   });
 
-  describe('Company data consistency', () => {
+describe('Company data consistency', () => {
     it('should have matching data across ANAF, Peviitor and SOLR', async () => {
-      const demoanaf = await import('../../demoanaf.js');
       const company = await import('../../company.js');
       const solr = await import('../../solr.js');
       
@@ -39,5 +38,31 @@ describe('Integration: API Workflow', () => {
       const solrResult = await solr.queryCompanySOLR(`company:${companyResult.company}*`);
       expect(solrResult.docs[0].brand).toBe('EPAM');
     });
+  });
+
+  describe('Company Core Model Validation', () => {
+    it('should have all required fields per company model', async () => {
+      const solr = await import('../../solr.js');
+      
+      const result = await solr.queryCompanySOLR('id:33159615');
+      expect(result.numFound).toBe(1);
+      
+      const epam = result.docs[0];
+      
+      // Required: id, company
+      expect(epam.id).toBe('33159615');
+      expect(epam.company).toBeDefined();
+      
+      // All other model fields should exist per company-model.md
+      expect(epam.brand).toBe('EPAM');
+      expect(epam.status).toBeDefined();
+      expect(['activ','suspendat','inactiv','radiat']).toContain(epam.status);
+      expect(epam.location).toBeDefined();
+      expect(Array.isArray(epam.location)).toBe(true);
+      expect(epam.lastScraped).toBeDefined();
+      expect(epam.scraperFile).toBeDefined();
+    });
+  });
+});
   });
 });
