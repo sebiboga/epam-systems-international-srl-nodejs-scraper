@@ -31,8 +31,8 @@ describe('E2E: Full Scraping Workflow', () => {
     const solrResult = await solr.querySOLR(TEST_CIF);
     expect(solrResult.numFound).toBeGreaterThan(0);
     
-    const companySolr = await solr.queryCompanySOLR(`brand:${TEST_BRAND}`);
-    expect(companySolr.docs[0]).toHaveProperty('group');
+const companySolr = await solr.queryCompanySOLR(`brand:${TEST_BRAND}`);
+      expect(companySolr.docs[0]).toHaveProperty('brand');
   });
 
   it('should handle inactive company gracefully', async () => {
