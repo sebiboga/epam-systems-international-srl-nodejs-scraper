@@ -55,11 +55,15 @@ jobs:
     needs: check-company-core
     
     steps:
-      - name: Add company if needed
-        env:
-          NEED_TO_ADD: ${{ env.NEED_TO_ADD }}
+      - name: Check and add company
         run: |
-          if [ "$NEED_TO_ADD" == "true" ]; then
+          RESULT=$(curl -s --user "${{ secrets.SOLR_AUTH }}" \
+            "https://solr.peviitor.ro/solr/company/select?q=id:33159615&rows=1" | jq '.response.numFound')
+          
+          echo "Current EPAM count: $RESULT"
+          
+          if [ "$RESULT" -eq "0" ]; then
+            echo "Adding EPAM to company core..."
             echo '[{"id":"33159615","company":"EPAM SYSTEMS INTERNATIONAL SRL","brand":"EPAM","status":"activ","location":["Bucuresti"],"lastScraped":"2026-04-14","scraperFile":"https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"}]' > company_data.json
             
             curl -s --user "${{ secrets.SOLR_AUTH }}" \
