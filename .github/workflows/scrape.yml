@@ -21,7 +21,7 @@ jobs:
         run: npm install
         
       - name: Run scraper
-        run: npm run scrape -- --test
+        run: npm run scrape
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
