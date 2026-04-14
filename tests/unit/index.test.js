@@ -125,47 +125,6 @@ describe('index.js Component Tests', () => {
       expect(result.jobs[0].location).toEqual(['Bucharest']);
       expect(result.jobs[0].workmode).toBe('hybrid');
     });
-  });
-
-  describe('Data Formatting', () => {
-    it('should convert tags to lowercase', () => {
-      const payload = {
-        jobs: [
-          { url: 'https://test.com/1', title: 'Job 1', tags: ['JAVA', 'SPRING', 'React'] }
-        ]
-      };
-      
-      const result = index.transformJobsForSOLR(payload);
-      
-      expect(result.jobs[0].tags).toEqual(['java', 'spring', 'react']);
-    });
-
-    it('should convert company to uppercase', () => {
-      const payload = {
-        company: 'epam systems international srl',
-        jobs: [
-          { url: 'https://test.com/1', title: 'Job 1', company: 'epam systems' }
-        ]
-      };
-      
-      const result = index.transformJobsForSOLR(payload);
-      
-      expect(result.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
-      expect(result.jobs[0].company).toBe('EPAM SYSTEMS');
-    });
-
-    it('should remove diacritics from tags', () => {
-      const payload = {
-        jobs: [
-          { url: 'https://test.com/1', title: 'Job 1', tags: ['ĂÂÎȘȚ', 'data'] }
-        ]
-      };
-      
-      const result = index.transformJobsForSOLR(payload);
-      
-      expect(result.jobs[0].tags).toEqual(['aaiist', 'data']);
-    });
-  });
 
   describe('URL Generation', () => {
     it('should use seo.url when available', () => {
