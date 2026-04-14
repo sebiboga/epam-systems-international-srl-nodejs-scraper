@@ -56,4 +56,32 @@ describe('solr.js', () => {
       expect(typeof auth).toBe('string');
     });
   });
+
+  describe('Data Integrity', () => {
+    it('should not have duplicate URLs for same CIF', async () => {
+      const result = await solr.querySOLR('33159615');
+      
+      const urls = result.docs.map(j => j.url);
+      const uniqueUrls = new Set(urls);
+      
+      expect(uniqueUrls.size).toBe(result.numFound);
+    });
+
+    it('should have valid CIF format for all jobs', async () => {
+      const result = await solr.querySOLR('33159615');
+      
+      for (const job of result.docs) {
+        expect(job.cif).toMatch(/^\d{8}$/);
+      }
+    });
+
+    it('should have valid status values', async () => {
+      const result = await solr.querySOLR('33159615');
+      const validStatuses = ['scraped', 'tested', 'verified', 'published'];
+      
+      for (const job of result.docs) {
+        expect(validStatuses).toContain(job.status);
+      }
+    });
+  });
 });
