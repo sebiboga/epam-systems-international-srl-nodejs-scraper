@@ -202,13 +202,14 @@ async function main() {
   try {
     console.log("=== Step 1: Extract existing jobs from SOLR ===");
     const existingResult = await querySOLR(COMPANY_CIF);
-    console.log(`Found ${existingResult.numFound} existing jobs in SOLR`);
+    const existingCount = existingResult.numFound;
+    console.log(`Found ${existingCount} existing jobs in SOLR`);
 
-    if (existingResult.numFound > 0) {
+    if (existingCount > 0) {
       const backup = {
         extractedAt: new Date().toISOString(),
         cif: COMPANY_CIF,
-        count: existingResult.numFound,
+        count: existingCount,
         jobs: existingResult.docs
       };
       fs.writeFileSync("jobs_existing.json", JSON.stringify(backup, null, 2), "utf-8");
@@ -221,7 +222,8 @@ async function main() {
     const localCif = cif;
     
     const rawJobs = await scrapeAllListings(testOnlyOnePage);
-    console.log(`Found ${rawJobs.length} raw jobs`);
+    const scrapedCount = rawJobs.length;
+    console.log(`📊 Jobs scraped from EPAM Careers website: ${scrapedCount}`);
 
     const jobs = rawJobs.map(job => mapToJobModel(job, localCif));
 
@@ -235,13 +237,15 @@ async function main() {
 
     console.log("Transforming jobs for SOLR...");
     const transformedPayload = transformJobsForSOLR(payload);
-    console.log(`Jobs with valid Romanian locations: ${transformedPayload.jobs.filter(j => j.location).length}`);
+    const validCount = transformedPayload.jobs.filter(j => j.location).length;
+    console.log(`📊 Jobs with valid Romanian locations: ${validCount}`);
 
     fs.writeFileSync("jobs.json", JSON.stringify(transformedPayload, null, 2), "utf-8");
     console.log("Saved jobs.json");
 
     console.log("\n=== Step 4: Upsert jobs to SOLR ===");
     await upsertJobs(transformedPayload.jobs);
+    console.log(`📊 Total jobs in SOLR after upsert: ${scrapedCount}`);
 
     console.log("Cleaning up temporary files...");
     fs.unlinkSync("jobs.json");
@@ -281,6 +285,13 @@ async function main() {
         console.log("Kept jobs_existing.json for reference");
       }
     }
+
+    const finalResult = await querySOLR(COMPANY_CIF);
+    console.log(`\n📊 === SUMMARY ===`);
+    console.log(`📊 Jobs existing in SOLR before scrape: ${existingCount}`);
+    console.log(`📊 Jobs scraped from EPAM website: ${scrapedCount}`);
+    console.log(`📊 Jobs in SOLR after scrape: ${finalResult.numFound}`);
+    console.log(`====================`);
 
     console.log("\n=== DONE ===");
     console.log("Scraper completed successfully!");
