@@ -114,16 +114,11 @@ describe('solr.js', () => {
       const result = await solr.queryCompanySOLR('id:33159615');
       const epam = result.docs[0];
       
-      // These fields are optional but should be present
-      expect(epam).toHaveProperty('group'); // optional
-      
-      // website and career are optional - check if they exist but are valid URLs
-      if (epam.website) {
-        expect(Array.isArray(epam.website)).toBe(true);
-      }
-      if (epam.career) {
-        expect(Array.isArray(epam.career)).toBe(true);
-      }
+      // Optional fields - just check they exist or are not required
+      // group, website, career are optional in company model
+      if (epam.group) expect(typeof epam.group).toBe('string');
+      if (epam.website) expect(Array.isArray(epam.website)).toBe(true);
+      if (epam.career) expect(Array.isArray(epam.career)).toBe(true);
     });
   });
 });
