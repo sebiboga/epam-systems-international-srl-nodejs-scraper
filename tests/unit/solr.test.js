@@ -35,7 +35,8 @@ describe('solr.js', () => {
   });
 
   describe('upsertJobs', () => {
-    it('should accept array of jobs', async () => {
+    // SKIP - upsertJobs writes to PROD SOLR, only run manually when needed
+    it.skip('should accept array of jobs', async () => {
       const testJob = {
         url: 'https://test.com/job1',
         title: 'Test Job',
