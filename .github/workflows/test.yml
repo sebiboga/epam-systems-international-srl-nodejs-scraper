@@ -13,7 +13,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
-      
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -21,34 +21,8 @@ jobs:
           
       - name: Install dependencies
         run: npm install
-        
-      - name: Install test dependencies
-        run: npm install --save-dev dotenv jest jest-html-reporter
-        working-directory: ./tests
-        
-      - name: Create jest config
-        run: |
-          cd tests
-          node -e "
-            const fs = require('fs');
-            const config = \`
-module.exports = {
-  testEnvironment: 'node',
-  testMatch: ['**/tests/**/*.test.js'],
-  verbose: true,
-  reporters: [['jest-html-reporter', {pageTitle: 'Test Report'}]]
-};
-\`;
-            fs.writeFileSync('jest.config.cjs', config);
-          "
           
       - name: Run tests
-        run: cd tests && node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit --config jest.config.cjs
+        run: npm test
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
-          
-      - name: Upload HTML report
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-report
-          path: tests/test-results.html
