@@ -1,4 +1,4 @@
-name: WebScraper Peviitor
+name: WebScraper EPAM to Peviitor
 
 on:
   schedule:
