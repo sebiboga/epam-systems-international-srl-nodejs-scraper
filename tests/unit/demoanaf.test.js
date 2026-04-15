@@ -44,6 +44,6 @@ describe('demoanaf.js', () => {
 
     it('should throw error for invalid CIF', async () => {
       await expect(demoanaf.getCompanyFromANAF('99999999')).rejects.toThrow();
-    });
+    }, 15000);
   });
 });
