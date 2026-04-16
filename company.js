@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
 import { querySOLR, deleteJobsByCIF } from "./solr.js";
-import { getCompanyFromANAF, searchCompany } from "./demoanaf.js";
+import { getCompanyFromANAF, searchCompany, getCompanyFromANAFWithFallback } from "./demoanaf.js";
 
 const Peviitor_API_URL = "https://api.peviitor.ro/v1/company/";
 
@@ -108,57 +108,89 @@ function saveCompanyData(anafData, peviitorData) {
   return companyData;
 }
 
-export async function getCompanyData() {
-  console.log(`Searching for company with brand: ${COMPANY_BRAND}`);
-  const searchResults = await searchCompany(COMPANY_BRAND);
-  
-  if (!searchResults || searchResults.length === 0) {
-    throw new Error(`No companies found for brand: ${COMPANY_BRAND}`);
-  }
-  
-  const exactMatch = searchResults.find(c => 
-    (c.name.toUpperCase().startsWith(COMPANY_BRAND.toUpperCase() + " ") || 
-     c.name.toUpperCase().includes(" " + COMPANY_BRAND.toUpperCase() + " ")) &&
-    c.statusLabel === "Funcțiune"
-  );
-  
-  if (!exactMatch) {
-    console.log("No exact match with 'Funcțiune' status, trying first active company...");
-    const activeMatch = searchResults.find(c => c.statusLabel === "Funcțiune");
-    if (!activeMatch) {
-      throw new Error(`No active company found for brand: ${COMPANY_BRAND}`);
+function loadCachedCompanyData() {
+  if (fs.existsSync("company.json")) {
+    try {
+      const data = JSON.parse(fs.readFileSync("company.json", "utf-8"));
+      if (data?.anaf?.cui && data?.anaf?.name) {
+        console.log("Found cached company data in company.json");
+        return data;
+      }
+    } catch (e) {
+      console.log("Warning: Could not load cached company data");
     }
-    var selectedCIF = activeMatch.cui;
-    console.log(`Selected: ${activeMatch.name} (CIF: ${selectedCIF})`);
+  }
+  return null;
+}
+
+export async function getCompanyData() {
+  const cachedData = loadCachedCompanyData();
+  
+  if (!cachedData?.summary?.cif) {
+    console.log(`Searching for company with brand: ${COMPANY_BRAND}`);
+    const searchResults = await searchCompany(COMPANY_BRAND);
+    
+    if (!searchResults || searchResults.length === 0) {
+      throw new Error(`No companies found for brand: ${COMPANY_BRAND}`);
+    }
+    
+    const exactMatch = searchResults.find(c => 
+      (c.name.toUpperCase().startsWith(COMPANY_BRAND.toUpperCase() + " ") || 
+       c.name.toUpperCase().includes(" " + COMPANY_BRAND.toUpperCase() + " ")) &&
+      c.statusLabel === "Funcțiune"
+    );
+    
+    if (!exactMatch) {
+      console.log("No exact match with 'Funcțiune' status, trying first active company...");
+      const activeMatch = searchResults.find(c => c.statusLabel === "Funcțiune");
+      if (!activeMatch) {
+        throw new Error(`No active company found for brand: ${COMPANY_BRAND}`);
+      }
+      var selectedCIF = activeMatch.cui;
+      console.log(`Selected: ${activeMatch.name} (CIF: ${selectedCIF})`);
+    } else {
+      var selectedCIF = exactMatch.cui;
+      console.log(`Found exact match: ${exactMatch.name} (CIF: ${selectedCIF})`);
+    }
+    
+    console.log(`Fetching company details for CIF: ${selectedCIF}`);
+    const anafData = await getCompanyFromANAFWithFallback(selectedCIF, cachedData?.anaf);
+    
+    if (!anafData) {
+      throw new Error("No data from ANAF and no cache - cannot proceed with scraping");
+    }
+    
+    if (!anafData.name) {
+      throw new Error("ANAF returned no company name - cannot proceed with scraping");
+    }
+    
+    if (!anafData.cui) {
+      throw new Error("ANAF returned no CUI - cannot proceed with scraping");
+    }
+    
+    console.log(`ANAF returned name: ${anafData.name}`);
+    console.log(`ANAF returned CUI: ${anafData.cui}`);
+    console.log(`ANAF status: ${anafData.inactive ? "INACTIVE" : "ACTIVE"}`);
+    
+    const company = anafData.name.toUpperCase();
+    const cif = anafData.cui.toString();
+    const active = !anafData.inactive;
+    
+    return { company, cif, active, anafData };
   } else {
-    var selectedCIF = exactMatch.cui;
-    console.log(`Found exact match: ${exactMatch.name} (CIF: ${selectedCIF})`);
+    console.log(`Using cached company data for CIF: ${cachedData.summary.cif}`);
+    const anafData = cachedData.anaf;
+    
+    console.log(`Cached name: ${anafData.name}`);
+    console.log(`Cached CUI: ${anafData.cui}`);
+    console.log(`Cached status: ${anafData.inactive ? "INACTIVE" : "ACTIVE"}`);
+    
+    const company = anafData.name.toUpperCase();
+    const cif = anafData.cui.toString();
+    const active = !anafData.inactive;
+    
+    return { company, cif, active, anafData };
   }
-  
-  console.log(`Fetching company details for CIF: ${selectedCIF}`);
-  const anafData = await getCompanyFromANAF(selectedCIF);
-  
-  if (!anafData) {
-    throw new Error("No data from ANAF - cannot proceed with scraping");
-  }
-  
-  if (!anafData.name) {
-    throw new Error("ANAF returned no company name - cannot proceed with scraping");
-  }
-  
-  if (!anafData.cui) {
-    throw new Error("ANAF returned no CUI - cannot proceed with scraping");
-  }
-  
-  console.log(`ANAF returned name: ${anafData.name}`);
-  console.log(`ANAF returned CUI: ${anafData.cui}`);
-  console.log(`ANAF status: ${anafData.inactive ? "INACTIVE" : "ACTIVE"}`);
-  
-  const company = anafData.name.toUpperCase();
-  const cif = anafData.cui.toString();
-  const active = !anafData.inactive;
-  
-  return { company, cif, active, anafData };
 }
 
 export async function validateAndGetCompany() {
