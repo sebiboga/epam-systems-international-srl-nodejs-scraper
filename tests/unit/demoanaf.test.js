@@ -92,10 +92,10 @@ describe('demoanaf.js', () => {
       expect(data.name).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
       expect(data).toHaveProperty('address');
       expect(data).toHaveProperty('registrationNumber');
-    });
+    }, 30000);
 
     it('should throw error for invalid CIF', async () => {
       await expect(demoanaf.getCompanyFromANAF('99999999')).rejects.toThrow();
-    }, 15000);
+    }, 30000);
   });
 });
