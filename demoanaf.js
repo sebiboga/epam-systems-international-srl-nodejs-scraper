@@ -47,6 +47,21 @@ export async function getCompanyFromANAF(cif) {
   throw lastError || new Error("ANAF API failed after retries");
 }
 
+export async function getCompanyFromANAFWithFallback(cif, cachedData = null) {
+  try {
+    return await getCompanyFromANAF(cif);
+  } catch (err) {
+    console.log(`\n⚠️ ANAF API unavailable: ${err.message}`);
+    
+    if (cachedData) {
+      console.log("✅ Using cached company data as fallback");
+      return cachedData;
+    }
+    
+    throw err;
+  }
+}
+
 export async function searchCompany(brandName) {
   const url = `${ANAF_SEARCH_URL}?q=${encodeURIComponent(brandName)}`;
   const res = await fetch(url, {
