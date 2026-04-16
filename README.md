@@ -111,7 +111,7 @@ Licensed under the [MIT License](LICENSE).
 
 ## Managed By
 
-This project is managed by [ASOCIATIA OPORTUNITATI SI CARIERE](https://peviitor.ro) and used as a web scraper for the [peviitor.ro](https://peviitor.ro) job board project.
+This project is managed by [ASOCIATIA OPORTUNITATI SI CARIERE](https://oportunitatisicariere.ro) and used as a web scraper for the [peviitor.ro](https://peviitor.ro) job board project.
 
 ## Disclaimer
 
