@@ -26,7 +26,7 @@ jobs:
           # Add only if not exists
           if [ "$EXISTING" -eq "0" ]; then
             echo "EPAM not found - adding to company core..."
-            echo '[{"id":"33159615","company":"EPAM SYSTEMS INTERNATIONAL SRL","brand":"EPAM","status":"activ","location":["Bucuresti"],"website":"https://www.epam.com","career_website":"https://careers.epam.com","lastScraped":"2026-04-14","scraperFile":"https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"}]' > company_data.json
+            echo '[{"id":"33159615","company":"EPAM SYSTEMS INTERNATIONAL SRL","brand":"EPAM","status":"activ","location":["Bucuresti"],"website":["https://www.epam.com"],"career":["https://careers.epam.com"],"lastScraped":"2026-04-14","scraperFile":"https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"}]' > company_data.json
             
             curl -s --user "${SOLR_AUTH}" \
               "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
