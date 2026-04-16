@@ -95,6 +95,14 @@ The `test.yml` workflow runs on every push and pull request. It:
 2. Runs unit, integration, and E2E tests
 3. Validates data integrity in Solr
 
+## Acknowledgments
+
+This project was developed with assistance from:
+- **[OpenCode](https://opencode.ai)** - AI-powered CLI tool for software engineering
+- **Big Pickle LLM** - Large language model powering OpenCode
+
+Special thanks to the open source community and the peviitor.ro team for their support.
+
 ## License
 
 Copyright (c) 2024-2026 BOGA SEBASTIAN-NICOLAE
