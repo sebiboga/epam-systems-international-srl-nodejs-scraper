@@ -1,22 +1,61 @@
+/**
+ * Solr Database Module
+ * 
+ * PURPOSE: Provides interface to Solr database for storing and retrieving
+ * job listings and company data. Solr is used as the primary data store
+ * for the peviitor.ro job aggregation system.
+ * 
+ * This module handles:
+ * - Querying jobs by company CIF
+ * - Querying company data
+ * - Adding/updating (upserting) jobs
+ * - Deleting jobs by CIF or URL
+ * - URL validation and cleanup
+ * 
+ * Solr Cores:
+ * - job: Stores individual job listings
+ * - company: Stores company metadata
+ */
+
 import fetch from "node-fetch";
 import fs from "fs";
 
-const SOLR_URL = "https://solr.peviitor.ro/solr/job";
-const SOLR_COMPANY_URL = "https://solr.peviitor.ro/solr/company";
+// ============================================================================
+// CONFIGURATION
+// ============================================================================
+
+// Solr core URLs
+const SOLR_URL = "https://solr.peviitor.ro/solr/job";        // Job listings core
+const SOLR_COMPANY_URL = "https://solr.peviitor.ro/solr/company"; // Company core
+
+// HTTP request timeout in milliseconds
 const TIMEOUT = 10000;
 
+/**
+ * Gets SOLR_AUTH from environment
+ * @returns {string} - Base64 encoded auth credentials
+ */
 export function getSolrAuth() {
   return process.env.SOLR_AUTH;
 }
 
+// ============================================================================
+// JOB OPERATIONS - Query, Add, Update, Delete
+// ============================================================================
+
+/**
+ * Queries jobs from Solr by company CIF
+ * @param {string} cif - Company CIF/CUI to search for
+ * @returns {Promise<Object>} - Solr response with numFound and docs array
+ */
 export async function querySOLR(cif) {
   const AUTH = process.env.SOLR_AUTH;
   if (!AUTH) throw new Error("SOLR_AUTH not set in environment");
 
   const params = new URLSearchParams({
-    q: `cif:${cif}`,
-    rows: 100,
-    wt: "json"
+    q: `cif:${cif}`,  // Query by CIF field
+    rows: 100,        // Limit results
+    wt: "json"        // Return JSON format
   });
 
   const res = await fetch(`${SOLR_URL}/select?${params}`, {
@@ -35,6 +74,15 @@ export async function querySOLR(cif) {
   return data.response;
 }
 
+// ============================================================================
+// COMPANY OPERATIONS - Query company data from Solr
+// ============================================================================
+
+/**
+ * Queries company data from Solr company core
+ * @param {string} companyQuery - Solr query string (e.g., "company:EPAM*" or "id:33159615")
+ * @returns {Promise<Object>} - Solr response with company docs
+ */
 export async function queryCompanySOLR(companyQuery) {
   const AUTH = process.env.SOLR_AUTH;
   if (!AUTH) throw new Error("SOLR_AUTH not set in environment");
@@ -61,12 +109,22 @@ export async function queryCompanySOLR(companyQuery) {
   return data.response;
 }
 
+// ============================================================================
+// DELETE OPERATIONS - Remove jobs from Solr
+// ============================================================================
+
+/**
+ * Deletes all jobs for a company by CIF
+ * Used when a company becomes inactive in ANAF
+ * @param {string} cif - Company CIF to delete jobs for
+ */
 export async function deleteJobsByCIF(cif) {
   const AUTH = process.env.SOLR_AUTH;
   if (!AUTH) throw new Error("SOLR_AUTH not set in environment");
 
   const params = new URLSearchParams({ commit: "true" });
 
+  // Use Solr delete by query
   const deleteQuery = JSON.stringify({
     delete: { query: `cif:${cif}` }
   });
@@ -89,6 +147,11 @@ export async function deleteJobsByCIF(cif) {
   console.log("✅ Jobs deleted from SOLR.");
 }
 
+/**
+ * Deletes a single job by its URL
+ * Used when a job posting is no longer available
+ * @param {string} url - Job URL to delete
+ */
 export async function deleteJobByUrl(url) {
   const AUTH = process.env.SOLR_AUTH;
   if (!AUTH) throw new Error("SOLR_AUTH not set in environment");
@@ -115,6 +178,15 @@ export async function deleteJobByUrl(url) {
   }
 }
 
+// ============================================================================
+// UPSERT OPERATIONS - Add or update jobs
+// ============================================================================
+
+/**
+ * Upserts (adds or updates) jobs to Solr
+ * Jobs are matched by URL - if URL exists, job is updated; otherwise, new job is added
+ * @param {Array} jobs - Array of job objects to upsert
+ */
 export async function upsertJobs(jobs) {
   const AUTH = process.env.SOLR_AUTH;
   if (!AUTH) throw new Error("SOLR_AUTH not set in environment");
@@ -141,6 +213,15 @@ export async function upsertJobs(jobs) {
   console.log(`✅ Upserted ${jobs.length} jobs to SOLR.`);
 }
 
+// ============================================================================
+// URL VALIDATION - Verify job URLs are still active
+// ============================================================================
+
+/**
+ * Checks if a job URL is still valid (returns 200 OK)
+ * @param {string} url - URL to check
+ * @returns {Promise<Object>} - Status info {url, status, valid, error}
+ */
 async function checkUrl(url) {
   try {
     const res = await fetch(url, {
@@ -154,9 +235,18 @@ async function checkUrl(url) {
   }
 }
 
+// ============================================================================
+// VERIFICATION WORKFLOW - Check and clean up invalid URLs
+// ============================================================================
+
+/**
+ * Verifies job URLs in jobs_existing.json and removes invalid ones
+ * This is used for post-scrape cleanup of expired job postings
+ */
 async function runVerification(cif) {
   console.log("=== Verify SOLR Jobs ===\n");
 
+  // Get current jobs from Solr
   const result = await querySOLR(cif);
   console.log(`Total jobs in SOLR for CIF ${cif}: ${result.numFound}`);
 
@@ -165,12 +255,14 @@ async function runVerification(cif) {
     console.log(`${i+1}. ${job.title} (${job.location?.join(', ')}) - ${job.workmode}`);
   });
 
+  // Check jobs from backup file
   if (fs.existsSync("jobs_existing.json")) {
     console.log("\n=== Verify existing URLs ===\n");
     const existing = JSON.parse(fs.readFileSync("jobs_existing.json", "utf-8"));
     const existingJobs = existing.jobs || [];
     console.log(`Checking ${existingJobs.length} URLs...`);
 
+    // Check each URL
     const invalidUrls = [];
     for (let i = 0; i < existingJobs.length; i++) {
       const job = existingJobs[i];
@@ -179,6 +271,7 @@ async function runVerification(cif) {
       if (!res.valid) invalidUrls.push(job.url);
     }
 
+    // Delete invalid URLs from Solr
     if (invalidUrls.length > 0) {
       console.log(`\n⚠️ ${invalidUrls.length} invalid URLs found - deleting from SOLR...`);
       for (const url of invalidUrls) {
@@ -187,6 +280,7 @@ async function runVerification(cif) {
       console.log(`✅ Deleted ${invalidUrls.length} invalid jobs from SOLR`);
     }
 
+    // Clean up backup file
     if (invalidUrls.length === 0) {
       console.log("\n✅ All URLs valid - deleting jobs_existing.json");
       fs.unlinkSync("jobs_existing.json");
@@ -196,6 +290,15 @@ async function runVerification(cif) {
   }
 }
 
+// ============================================================================
+// EXTRACT WORKFLOW - Backup jobs before scraping
+// ============================================================================
+
+/**
+ * Extracts current jobs from Solr and saves to backup file
+ * Used before scraping to preserve existing job data
+ * @param {string} cif - Company CIF
+ */
 async function runExtract(cif) {
   console.log("=== Extract existing jobs from SOLR ===\n");
 
@@ -208,6 +311,7 @@ async function runExtract(cif) {
       return;
     }
 
+    // Save backup
     const backup = {
       extractedAt: new Date().toISOString(),
       cif: cif,
@@ -223,6 +327,15 @@ async function runExtract(cif) {
   }
 }
 
+// ============================================================================
+// COMPANY QUERY WORKFLOW - Query company core
+// ============================================================================
+
+/**
+ * Queries companies from Solr company core
+ * Useful for debugging and verification
+ * @param {Array} args - Command line arguments
+ */
 async function runCompanyQuery(args) {
   console.log("=== Query Company in SOLR ===\n");
   
@@ -238,10 +351,21 @@ async function runCompanyQuery(args) {
   }
 }
 
+// ============================================================================
+// STANDALONE MODE - Run solr.js directly for maintenance tasks
+// ============================================================================
+
+/**
+ * Usage:
+ *   node solr.js <CIF>              - Verify jobs for a company
+ *   node solr.js extract <CIF>      - Extract jobs to backup file
+ *   node solr.js company            - Query companies
+ */
 if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith("solr.js")) {
   const args = process.argv.slice(2);
   
   if (args.includes("extract")) {
+    // Extract mode: backup jobs to file
     const cif = args[1] || null;
     if (!cif) {
       console.error("Error: CIF required. Usage: node solr.js extract <CIF>");
@@ -249,8 +373,10 @@ if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith
     }
     await runExtract(cif);
   } else if (args.includes("company")) {
+    // Company query mode
     await runCompanyQuery(args);
   } else {
+    // Verification mode
     const cif = args[0] || null;
     if (!cif) {
       console.error("Error: CIF required. Usage: node solr.js <CIF>");
