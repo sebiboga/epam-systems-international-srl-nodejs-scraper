@@ -115,10 +115,28 @@ describe('solr.js', () => {
       const epam = result.docs[0];
       
       // Optional fields - just check they exist or are not required
-      // group, website, career are optional in company model
+      // group is optional
       if (epam.group) expect(typeof epam.group).toBe('string');
-      if (epam.website) expect(Array.isArray(epam.website)).toBe(true);
-      if (epam.career) expect(Array.isArray(epam.career)).toBe(true);
+    });
+
+    it('should have website field with valid URL for EPAM', async () => {
+      const result = await solr.queryCompanySOLR('id:33159615');
+      const epam = result.docs[0];
+      
+      expect(epam).toHaveProperty('website');
+      expect(Array.isArray(epam.website)).toBe(true);
+      expect(epam.website.length).toBeGreaterThan(0);
+      expect(epam.website[0]).toMatch(/^https?:\/\/.+/);
+    });
+
+    it('should have career field with valid URL for EPAM', async () => {
+      const result = await solr.queryCompanySOLR('id:33159615');
+      const epam = result.docs[0];
+      
+      expect(epam).toHaveProperty('career');
+      expect(Array.isArray(epam.career)).toBe(true);
+      expect(epam.career.length).toBeGreaterThan(0);
+      expect(epam.career[0]).toMatch(/^https?:\/\/.+/);
     });
   });
 });
