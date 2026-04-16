@@ -1,5 +1,6 @@
 # EPAM Systems International SRL - Job Scraper
 
+[![WebScraper EPAM to Peviitor](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/scrape.yml/badge.svg)](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/scrape.yml)
 [![Automation Tests](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/test.yml/badge.svg)](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/test.yml)
 
 A Node.js scraper for extracting job listings from EPAM Careers Romania and storing them in Solr for [peviitor.ro](https://peviitor.ro).
