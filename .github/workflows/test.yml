@@ -73,7 +73,7 @@ jobs:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Upload Unit Test Results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: unit-test-results
           path: test-results-unit.html
@@ -87,7 +87,7 @@ jobs:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Upload Integration Test Results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: integration-test-results
           path: test-results-integration.html
@@ -101,7 +101,7 @@ jobs:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Upload E2E Test Results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: e2e-test-results
           path: test-results-e2e.html
