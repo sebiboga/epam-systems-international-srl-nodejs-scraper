@@ -7,6 +7,39 @@ on:
     branches: [master]
     types: [opened, synchronize, reopened]
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run mode (no deletions)'
+        required: true
+        default: 'true'
+
+jobs:
+  validate-jobs:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    
+    steps:
+      - uses: actions/checkout@v5
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Validate and remove expired jobs
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            echo "Running in DRY RUN mode..."
+            node tests/validate-epam-jobs.js --dry-run
+          else
+            echo "Running in LIVE mode (will delete expired jobs)..."
+            node tests/validate-epam-jobs.js --delete
+          fi
+        env:
+          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
 jobs:
   ensure-company-core:
