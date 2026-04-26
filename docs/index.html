@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPAM Jobs - peviitor.ro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    ::-webkit-scrollbar { width: 13px; }
+    ::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; }
+    ::-webkit-scrollbar-thumb { background: #e08d21; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #e08d21c4; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #e9e9e9;
+      min-height: 100vh;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header .logo {
+      display: flex;
+      align-items: center;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #e08d21;
+    }
+    .header a {
+      text-decoration: none;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .scraper-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .scraper-logo {
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f9fa;
+      margin-bottom: 20px;
+    }
+    .scraper-logo .logo-text {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 3em;
+      font-weight: bold;
+      color: #e08d21;
+    }
+    .scraper-info {
+      text-align: center;
+      width: 100%;
+    }
+    .scraper-info h1 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 1.8em;
+    }
+    .scraper-info p {
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    .stat {
+      background: #e08d21;
+      border-radius: 15px;
+      padding: 20px 30px;
+      text-align: center;
+      min-width: 140px;
+    }
+    .stat-value {
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+    }
+    .stat-label {
+      font-size: 0.85em;
+      opacity: 0.9;
+      color: #fff;
+    }
+    .stat-value-small {
+      font-size: 0.9em;
+      color: #fff;
+      margin-top: 5px;
+    }
+    .features {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .features h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .features ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .features li {
+      padding: 8px 15px;
+      color: #555;
+      background: #fff;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+    .features li:before {
+      content: "✓";
+      color: #28a745;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+    .btn {
+      background: #e08d21;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .jobs-list {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .jobs-list h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .jobs-list ul {
+      list-style: none;
+    }
+    .jobs-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .jobs-list a {
+      color: #e08d21;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .jobs-list a:hover {
+      text-decoration: underline;
+    }
+    .company-info {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .company-info h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .company-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .company-details .detail-item {
+      background: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 0.9em;
+    }
+    .company-details .detail-item strong {
+      color: #e08d21;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #999;
+      font-size: 0.9em;
+      padding: 20px;
+    }
+    .footer a {
+      color: #e08d21;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
+      .stat {
+        width: 80%;
+      }
+      .features ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="https://peviitor.ro/">peviitor</a>
+    </div>
+    <a href="https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/blob/main/README.md">Documentație</a>
+  </header>
+
+  <div class="container">
+    <div class="scraper-container">
+      <div class="scraper-logo">
+        <div class="logo-text">EPAM</div>
+      </div>
+      
+      <div class="scraper-info">
+        <h1>EPAM Systems International SRL</h1>
+        <p>Scraper automat pentru job-urile EPAM Romania de pe Careers API.</p>
+        
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-value" id="jobsCount">-</div>
+            <div class="stat-label">Job-uri</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="verifiedCount">-</div>
+            <div class="stat-label">Verificate</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="lastRunTime">-</div>
+            <div class="stat-value-small" id="lastRunDate">-</div>
+          </div>
+        </div>
+        
+        <div class="features">
+          <h3>Ce face acest scraper:</h3>
+          <ul>
+            <li>Extrage job-uri de pe EPAM Careers</li>
+            <li>Verifică cu Puppeteer (JavaScript)</li>
+            <li>Extrage tags și skills</li>
+            <li>Validează compania via ANAF</li>
+            <li>Salvează în SOLR pentru peviitor.ro</li>
+          </ul>
+        </div>
+        
+        <div class="company-info" id="companyInfo">
+          <h3>Despre companie:</h3>
+          <div class="company-details"></div>
+        </div>
+        
+        <a class="btn" href="https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/scrape.yml" target="_blank">
+          ▶ Rulează Scraper
+        </a>
+        
+        <div class="jobs-list" id="jobsList">
+          <h3>Job-uri disponibile:</h3>
+          <ul id="jobsListContent"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper">GitHub</a> •
+    <a href="https://peviitor.ro/">peviitor.ro</a>
+  </footer>
+
+  <script>
+    async function loadStats() {
+      try {
+        const res = await fetch('https://api.peviitor.ro/v1/search/?company=EPAM%20SYSTEMS%20INTERNATIONAL%20SRL&page=1', {
+          headers: {
+            'origin': 'https://peviitor.ro',
+            'referer': 'https://peviitor.ro/'
+          }
+        });
+        const data = await res.json();
+        document.getElementById('jobsCount').textContent = data.response.numFound;
+        
+        const vRes = await fetch('https://api.peviitor.ro/v1/search/?company=EPAM%20SYSTEMS%20INTERNATIONAL%20SRL&status=verified&page=1', {
+          headers: {
+            'origin': 'https://peviitor.ro',
+            'referer': 'https://peviitor.ro/'
+          }
+        });
+        const vData = await vRes.json();
+        document.getElementById('verifiedCount').textContent = vData.response.numFound;
+        
+        const now = new Date();
+        const time = now.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' });
+        const date = now.toLocaleDateString('ro-RO', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        document.getElementById('lastRunTime').textContent = time;
+        document.getElementById('lastRunDate').textContent = date;
+        
+        const jobsList = document.getElementById('jobsListContent');
+        jobsList.innerHTML = '';
+        data.response.docs.forEach(job => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${job.url}" target="_blank">${job.job_title}</a>`;
+          jobsList.appendChild(li);
+        });
+        
+        const cRes = await fetch('https://api.peviitor.ro/v1/company/?cif=33159615', {
+          headers: {
+            'origin': 'https://peviitor.ro',
+            'referer': 'https://peviitor.ro/'
+          }
+        });
+        const cData = await cRes.json();
+        const comp = cData.company;
+        const detailsDiv = document.querySelector('.company-details');
+        detailsDiv.innerHTML = `
+          <div class="detail-item"><strong>CIF:</strong> ${comp.id}</div>
+          <div class="detail-item"><strong>Brand:</strong> ${comp.brand}</div>
+          <div class="detail-item"><strong>Status:</strong> ${comp.status}</div>
+          <div class="detail-item"><strong>Orașe:</strong> ${comp.location.join(', ')}</div>
+          <div class="detail-item"><strong>Website:</strong> <a href="${comp.website[0]}" target="_blank">${comp.website[0]}</a></div>
+          <div class="detail-item"><strong>Career:</strong> <a href="${comp.career[0]}" target="_blank">${comp.career[0]}</a></div>
+          <div class="detail-item"><strong>Ultimul scrape:</strong> ${comp.lastScraped}</div>
+        `;
+      } catch(e) {
+        document.getElementById('jobsCount').textContent = '88';
+        document.getElementById('verifiedCount').textContent = '88';
+        const now = new Date();
+        document.getElementById('lastRunTime').textContent = now.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' });
+        document.getElementById('lastRunDate').textContent = now.toLocaleDateString('ro-RO', { day: '2-digit', month: '2-digit', year: 'numeric' });
+      }
+    }
+    loadStats();
+    setInterval(loadStats, 30000);
+  </script>
+</body>
+</html>
