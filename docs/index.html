@@ -335,11 +335,28 @@
         
         const jobsList = document.getElementById('jobsListContent');
         jobsList.innerHTML = '';
-        data.response.docs.forEach(job => {
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="${job.url}" target="_blank">${job.job_title}</a>`;
-          jobsList.appendChild(li);
-        });
+        
+        let page = 1;
+        let moreJobs = true;
+        while (moreJobs) {
+          const jobsRes = await fetch(`https://api.peviitor.ro/v1/search/?company=EPAM%20SYSTEMS%20INTERNATIONAL%20SRL&page=${page}`, {
+            headers: {
+              'origin': 'https://peviitor.ro',
+              'referer': 'https://peviitor.ro/'
+            }
+          });
+          const jobsData = await jobsRes.json();
+          if (jobsData.response.docs.length === 0) {
+            moreJobs = false;
+          } else {
+            jobsData.response.docs.forEach(job => {
+              const li = document.createElement('li');
+              li.innerHTML = `<a href="${job.url}" target="_blank">${job.job_title}</a>`;
+              jobsList.appendChild(li);
+            });
+            page++;
+          }
+        }
         
         const cRes = await fetch('https://api.peviitor.ro/v1/company/?cif=33159615', {
           headers: {
