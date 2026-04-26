@@ -41,7 +41,6 @@ jobs:
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
-jobs:
   ensure-company-core:
     runs-on: ubuntu-latest
     

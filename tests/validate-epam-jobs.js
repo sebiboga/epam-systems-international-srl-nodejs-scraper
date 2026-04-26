@@ -12,9 +12,6 @@ const SOLR_URL = "https://solr.peviitor.ro/solr/job/update";
 const SOLR_AUTH = process.env.SOLR_AUTH || "solr:SolrRocks";
 const COMPANY_NAME = "EPAM SYSTEMS INTERNATIONAL SRL";
 
-const browsers = [];
-const checkedIds = new Set();
-
 /**
  * Get all jobs for EPAM from peviitor API
  */
