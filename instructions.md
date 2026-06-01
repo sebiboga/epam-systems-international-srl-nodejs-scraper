@@ -169,10 +169,14 @@ Run tests:
 npm test
 ```
 
-## Technical Debt / Future Work
+## Temporary Files
 
-- [ ] Extract demoanaf.js to separate module
-- [ ] Write Unit Tests for all modules
-- [ ] Write Integration Tests in separate folder
-- [ ] Write E2E automated tests in separate folder
+All temporary/scratch files must be placed in `tmp/` inside the project root (never outside the project). The `tmp/` directory is in `.gitignore` and will not be committed.
+
+## Technical Debt / Completed
+
+- [x] Extract demoanaf.js to separate module (#2)
+- [x] Write Unit Tests for all modules (#3)
+- [x] Write Integration Tests in separate folder (#4)
+- [x] Write E2E automated tests in separate folder (#5)
 - [ ] Write Unit/Component/E2E tests for index.js

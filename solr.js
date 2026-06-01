@@ -75,7 +75,37 @@ export async function querySOLR(cif) {
 }
 
 // ============================================================================
-// COMPANY OPERATIONS - Query company data from Solr
+// COMPANY OPERATIONS - Query and Upsert company data in Solr
+// ============================================================================
+
+/**
+ * Upserts (adds or updates) a company document to the SOLR company core
+ * @param {Object} companyDoc - Company document with id, company, brand, status, location, etc.
+ */
+export async function upsertCompany(companyDoc) {
+  const AUTH = process.env.SOLR_AUTH;
+  if (!AUTH) throw new Error("SOLR_AUTH not set in environment");
+
+  const params = new URLSearchParams({ commit: "true" });
+
+  const res = await fetch(`${SOLR_COMPANY_URL}/update?${params}`, {
+    method: "POST",
+    headers: {
+      "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0"
+    },
+    body: JSON.stringify([companyDoc])
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`SOLR company upsert error: ${res.status} - ${text}`);
+  }
+
+  console.log(`✅ Company "${companyDoc.company}" upserted to SOLR company core.`);
+}
+
 // ============================================================================
 
 /**

@@ -10,7 +10,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import { fileURLToPath } from "url";
 import { validateAndGetCompany } from "./company.js";
-import { querySOLR, deleteJobByUrl, upsertJobs } from "./solr.js";
+import { querySOLR, deleteJobByUrl, upsertJobs, upsertCompany } from "./solr.js";
 
 // ============================================================================
 // CONFIGURATION CONSTANTS
@@ -326,9 +326,26 @@ async function main() {
 
     // Step 2: Validate company data via ANAF (ensures we have correct company info)
     console.log("=== Step 2: Validate company via ANAF ===");
-    const { company, cif } = await validateAndGetCompany();
+    const { company, cif, address } = await validateAndGetCompany();
     COMPANY_NAME = company;
     const localCif = cif;
+
+    // Upsert company to SOLR company core with full address from ANAF
+    try {
+      await upsertCompany({
+        id: cif,
+        company,
+        brand: "EPAM",
+        status: "activ",
+        location: address ? [address] : ["București"],
+        website: ["https://www.epam.com"],
+        career: ["https://careers.epam.com"],
+        lastScraped: new Date().toISOString().split('T')[0],
+        scraperFile: "https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/master/.github/workflows/scrape.yml"
+      });
+    } catch (err) {
+      console.log(`Note: Could not upsert company to SOLR core: ${err.message}`);
+    }
     
     // Step 3: Scrape all jobs from EPAM Careers API
     const rawJobs = await scrapeAllListings(testOnlyOnePage);
