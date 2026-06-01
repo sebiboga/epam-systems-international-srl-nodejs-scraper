@@ -24,6 +24,6 @@
     "testMatch": ["**/tests/**/*.test.js"],
     "verbose": true,
     "reporters": ["default", "jest-html-reporter"],
-    "defaultTimeout": 30000
+    "testTimeout": 30000
   }
 }

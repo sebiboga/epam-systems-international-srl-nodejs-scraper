@@ -67,7 +67,7 @@ describe('Integration: API Workflow', () => {
 
     it('should throw for invalid CIF', async () => {
       await expect(anaf.getCompanyFromANAF('00000000')).rejects.toThrow();
-    }, 30000);
+    }, 60000);
 
     it('should use cached data when API fails (getCompanyFromANAFWithFallback)', async () => {
       const cached = { cui: 33159615, name: 'EPAM SYSTEMS INTERNATIONAL SRL' };
