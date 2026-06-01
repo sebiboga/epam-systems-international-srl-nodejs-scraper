@@ -33,10 +33,10 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
             echo "Running in DRY RUN mode..."
-            node tests/validate-epam-jobs.js --dry-run
+            node --no-deprecation tests/validate-epam-jobs.js --dry-run
           else
             echo "Running in LIVE mode (will delete expired jobs)..."
-            node tests/validate-epam-jobs.js --delete
+            node --no-deprecation tests/validate-epam-jobs.js --delete
           fi
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}

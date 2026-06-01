@@ -4,11 +4,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "scrape": "node index.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit",
-    "test:integration": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=integration",
-    "test:e2e": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=e2e"
+    "scrape": "node --no-deprecation index.js",
+    "test": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:unit": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit",
+    "test:integration": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=integration",
+    "test:e2e": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=e2e"
   },
   "dependencies": {
     "node-fetch": "^3.3.2",
