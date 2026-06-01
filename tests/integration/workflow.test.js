@@ -88,7 +88,7 @@ describe('Integration: API Workflow', () => {
 
     it.skip('should respond successfully and contain companies array (Peviitor API may block non-browser requests)', async () => {
       const res = await fetch('https://api.peviitor.ro/v1/company/', {
-        headers: { 'User-Agent': 'Mozilla/5.0' }
+        headers: { 'User-Agent': 'job_seeker_ro_spider' }
       });
 
       expect(res.ok).toBe(true);

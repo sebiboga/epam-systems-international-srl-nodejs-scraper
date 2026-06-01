@@ -69,7 +69,7 @@ async function deleteJobFromSolr(url) {
     headers: {
       Authorization: "Basic " + Buffer.from(AUTH).toString("base64"),
       "Content-Type": "application/json",
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     },
     body: deleteQuery
   });

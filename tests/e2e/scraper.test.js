@@ -35,7 +35,7 @@ describe('E2E: Full Scraping Pipeline', () => {
     beforeAll(async () => {
       const res = await fetch(EPAM_API_URL, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
+          'User-Agent': 'job_seeker_ro_spider',
           'Accept': 'application/json'
         }
       });
@@ -85,7 +85,7 @@ describe('E2E: Full Scraping Pipeline', () => {
       index = await import('../../index.js');
       const res = await fetch(EPAM_API_URL, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
+          'User-Agent': 'job_seeker_ro_spider',
           'Accept': 'application/json'
         }
       });
@@ -154,7 +154,7 @@ describe('E2E: Full Scraping Pipeline', () => {
       for (const job of parsed.jobs.slice(0, 2)) {
         const res = await fetch(job.url, {
           method: 'HEAD',
-          headers: { 'User-Agent': 'Mozilla/5.0' }
+          headers: { 'User-Agent': 'job_seeker_ro_spider' }
         });
         expect(res.ok).toBe(true);
       }

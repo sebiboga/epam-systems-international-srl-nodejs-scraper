@@ -62,7 +62,7 @@ async function fetchJobsPage(pageNum) {
   
   const res = await fetch(url, {
     headers: {
-      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+      "User-Agent": "job_seeker_ro_spider",
       "Accept": "application/json"
     }
   });

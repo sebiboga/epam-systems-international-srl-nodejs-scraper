@@ -61,7 +61,7 @@ export async function querySOLR(cif) {
   const res = await fetch(`${SOLR_URL}/select?${params}`, {
     headers: {
       "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     }
   });
 
@@ -93,7 +93,7 @@ export async function upsertCompany(companyDoc) {
     headers: {
       "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
       "Content-Type": "application/json",
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     },
     body: JSON.stringify([companyDoc])
   });
@@ -126,7 +126,7 @@ export async function queryCompanySOLR(companyQuery) {
   const res = await fetch(`${SOLR_COMPANY_URL}/select?${params}`, {
     headers: {
       "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     }
   });
 
@@ -164,7 +164,7 @@ export async function deleteJobsByCIF(cif) {
     headers: {
       "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
       "Content-Type": "application/json",
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     },
     body: deleteQuery
   });
@@ -197,7 +197,7 @@ export async function deleteJobByUrl(url) {
     headers: {
       "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
       "Content-Type": "application/json",
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     },
     body: deleteQuery
   });
@@ -230,7 +230,7 @@ export async function upsertJobs(jobs) {
     headers: {
       "Authorization": "Basic " + Buffer.from(AUTH).toString("base64"),
       "Content-Type": "application/json",
-      "User-Agent": "Mozilla/5.0"
+      "User-Agent": "job_seeker_ro_spider"
     },
     body
   });
@@ -257,7 +257,7 @@ async function checkUrl(url) {
     const res = await fetch(url, {
       method: "HEAD",
       timeout: TIMEOUT,
-      headers: { "User-Agent": "Mozilla/5.0" }
+      headers: { "User-Agent": "job_seeker_ro_spider" }
     });
     return { url, status: res.status, valid: res.ok };
   } catch (err) {
