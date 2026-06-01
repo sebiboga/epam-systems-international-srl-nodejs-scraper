@@ -5,12 +5,12 @@ describe('E2E: Full Scraping Workflow', () => {
   const TEST_BRAND = 'EPAM';
 
   it.skip('should complete full workflow (ANAF API can be flaky)', async () => {
-    const demoanaf = await import('../../demoanaf.js');
+    const anaf = await import('../../src/anaf.js');
     const company = await import('../../company.js');
     const solr = await import('../../solr.js');
     const index = await import('../../index.js');
     
-    const searchResults = await demoanaf.searchCompany(TEST_BRAND);
+    const searchResults = await anaf.searchCompany(TEST_BRAND);
     expect(searchResults.length).toBeGreaterThan(0);
     
     const exactMatch = searchResults.find(c => 
@@ -20,7 +20,7 @@ describe('E2E: Full Scraping Workflow', () => {
     expect(exactMatch).toBeDefined();
     expect(exactMatch.cui.toString()).toBe(TEST_CIF);
     
-    const anafData = await demoanaf.getCompanyFromANAF(TEST_CIF);
+    const anafData = await anaf.getCompanyFromANAF(TEST_CIF);
     expect(anafData).toBeDefined();
     expect(anafData.inactive).toBe(false);
     
@@ -36,13 +36,13 @@ const companySolr = await solr.queryCompanySOLR(`brand:${TEST_BRAND}`);
   });
 
   it('should handle inactive company gracefully', async () => {
-    const demoanaf = await import('../../demoanaf.js');
+    const anaf = await import('../../src/anaf.js');
     
-    const searchResults = await demoanaf.searchCompany('InactiveCompany');
+    const searchResults = await anaf.searchCompany('InactiveCompany');
     const inactiveCompany = searchResults.find(c => c.statusLabel !== 'Funcțiune');
     
     if (inactiveCompany) {
-      const anafData = await demoanaf.getCompanyFromANAF(inactiveCompany.cui.toString());
+      const anafData = await anaf.getCompanyFromANAF(inactiveCompany.cui.toString());
       expect(anafData.inactive).toBe(true);
     }
   });

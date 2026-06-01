@@ -4,11 +4,11 @@ describe('Integration: API Workflow', () => {
   
   describe('Full company validation workflow', () => {
     it.skip('should go from brand to validated company (ANAF API can return 500)', async () => {
-      const demoanaf = await import('../../demoanaf.js');
+      const anaf = await import('../../src/anaf.js');
       const company = await import('../../company.js');
       const solr = await import('../../solr.js');
       
-      const searchResults = await demoanaf.searchCompany('EPAM');
+      const searchResults = await anaf.searchCompany('EPAM');
       expect(searchResults.length).toBeGreaterThan(0);
       
       const epamCompany = searchResults.find(c => 
@@ -16,7 +16,7 @@ describe('Integration: API Workflow', () => {
       );
       expect(epamCompany).toBeDefined();
       
-      const anafData = await demoanaf.getCompanyFromANAF(epamCompany.cui.toString());
+      const anafData = await anaf.getCompanyFromANAF(epamCompany.cui.toString());
       expect(anafData.name).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
       
       const companyResult = await company.validateAndGetCompany();

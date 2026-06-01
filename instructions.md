@@ -121,7 +121,8 @@ upsertJobs() - SOLR handles duplicate by URL
 | `index.js` | Main entry point - full workflow: extract existing → validate company → scrape → transform → upsert → verify |
 | `company.js` | Validates company via ANAF + Peviitor, checks if company is active/inactive, saves company.json |
 | `solr.js` | SOLR operations module - query, delete, upsert jobs + standalone commands |
-| `demoanaf.js` | ANAF API module - searchCompany(brand) and getCompanyFromANAF(cif) |
+| `src/anaf.js` | ANAF API core module - searchCompany(brand) and getCompanyFromANAF(cif) |
+| `demoanaf.js` | CLI entry point for ANAF module (thin wrapper around src/anaf.js) |
 
 ## API Endpoints
 

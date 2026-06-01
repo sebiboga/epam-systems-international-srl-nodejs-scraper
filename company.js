@@ -9,7 +9,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
 import { querySOLR, deleteJobsByCIF } from "./solr.js";
-import { getCompanyFromANAF, searchCompany, getCompanyFromANAFWithFallback } from "./demoanaf.js";
+import { getCompanyFromANAF, searchCompany, getCompanyFromANAFWithFallback } from "./src/anaf.js";
 
 // ============================================================================
 // CONFIGURATION

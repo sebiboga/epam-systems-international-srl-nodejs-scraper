@@ -52,16 +52,16 @@ const CACHED_ANAF_DATA = {
   onrcStatusLabel: "Funcțiune"
 };
 
-describe('demoanaf.js', () => {
-  let demoanaf;
+describe('src/anaf.js', () => {
+  let anaf;
   
   beforeAll(async () => {
-    demoanaf = await import('../../demoanaf.js');
+    anaf = await import('../../src/anaf.js');
   });
 
   describe('searchCompany', () => {
     it('should return array of companies for valid brand', async () => {
-      const results = await demoanaf.searchCompany('EPAM');
+      const results = await anaf.searchCompany('EPAM');
       
       expect(Array.isArray(results)).toBe(true);
       expect(results.length).toBeGreaterThan(0);
@@ -70,14 +70,14 @@ describe('demoanaf.js', () => {
     });
 
     it('should return empty array for non-existent brand', async () => {
-      const results = await demoanaf.searchCompany('NonExistentBrandXYZ123');
+      const results = await anaf.searchCompany('NonExistentBrandXYZ123');
       
       expect(Array.isArray(results)).toBe(true);
       expect(results.length).toBe(0);
     });
 
     it('should include statusLabel in results', async () => {
-      const results = await demoanaf.searchCompany('EPAM');
+      const results = await anaf.searchCompany('EPAM');
       
       expect(results[0]).toHaveProperty('statusLabel');
     });
@@ -85,7 +85,7 @@ describe('demoanaf.js', () => {
 
   describe('getCompanyFromANAF', () => {
     it('should return company data for valid CIF with fallback', async () => {
-      const data = await demoanaf.getCompanyFromANAFWithFallback('33159615', CACHED_ANAF_DATA);
+      const data = await anaf.getCompanyFromANAFWithFallback('33159615', CACHED_ANAF_DATA);
       
       expect(data).toBeDefined();
       expect(data.cui).toBe(33159615);
@@ -95,7 +95,7 @@ describe('demoanaf.js', () => {
     }, 120000);
 
     it.skip('should throw error for invalid CIF (requires live ANAF API)', async () => {
-      await expect(demoanaf.getCompanyFromANAF('99999999')).rejects.toThrow();
+      await expect(anaf.getCompanyFromANAF('99999999')).rejects.toThrow();
     }, 120000);
   });
 });

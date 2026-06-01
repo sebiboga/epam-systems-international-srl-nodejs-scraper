@@ -7,7 +7,8 @@
 | `index.js` | Main scraper - full workflow: extract existing → validate company → scrape → transform → upsert → verify URLs |
 | `company.js` | Validates company via ANAF + Peviitor APIs, checks if company is active/inactive |
 | `solr.js` | SOLR operations module - exports querySOLR, deleteJobByUrl, upsertJobs + standalone verify command |
-| `demoanaf.js` | ANAF API module - exports getCompanyFromANAF(cif) and searchCompany(brandName) |
+| `src/anaf.js` | ANAF API core module - exports getCompanyFromANAF(cif), getCompanyFromANAFWithFallback(cif, cached), searchCompany(brandName) |
+| `demoanaf.js` | CLI entry point for ANAF module (thin wrapper around src/anaf.js) |
 
 ## Markdown Files
 
