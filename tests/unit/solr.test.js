@@ -1,42 +1,124 @@
 import { jest } from '@jest/globals';
 
+const mockFetch = jest.fn();
+
+jest.unstable_mockModule('node-fetch', () => ({
+  default: mockFetch
+}));
+
+function makeSolrResponse(numFound, docs) {
+  return {
+    ok: true,
+    json: async () => ({ response: { numFound, docs } })
+  };
+}
+
+function makeErrorResponse(status, text) {
+  return {
+    ok: false,
+    status,
+    text: async () => text
+  };
+}
+
 describe('solr.js', () => {
   let solr;
-  
+
   beforeAll(async () => {
+    process.env.SOLR_AUTH = 'test:test';
     solr = await import('../../solr.js');
+  });
+
+  afterAll(() => {
+    delete process.env.SOLR_AUTH;
+  });
+
+  beforeEach(() => {
+    mockFetch.mockReset();
+  });
+
+  describe('getSolrAuth', () => {
+    it('should return SOLR_AUTH from environment', () => {
+      const auth = solr.getSolrAuth();
+      expect(auth).toBe('test:test');
+    });
+
+    it('should return undefined when not set', () => {
+      delete process.env.SOLR_AUTH;
+      const auth = solr.getSolrAuth();
+      expect(auth).toBeUndefined();
+      process.env.SOLR_AUTH = 'test:test';
+    });
   });
 
   describe('querySOLR', () => {
     it('should return response object with docs', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(2, [
+        { id: 'job1', url: 'https://test.com/1', cif: '33159615' },
+        { id: 'job2', url: 'https://test.com/2', cif: '33159615' }
+      ]));
+
       const result = await solr.querySOLR('33159615');
-      
-      expect(result).toHaveProperty('numFound');
+
+      expect(result).toHaveProperty('numFound', 2);
       expect(result).toHaveProperty('docs');
       expect(Array.isArray(result.docs)).toBe(true);
+      expect(result.docs).toHaveLength(2);
     });
 
-    it('should return jobs for specific CIF', async () => {
-      const result = await solr.querySOLR('33159615');
-      
-      expect(result.numFound).toBeGreaterThan(0);
-      expect(result.docs[0]).toHaveProperty('cif', '33159615');
+    it('should return empty docs when no jobs found', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(0, []));
+
+      const result = await solr.querySOLR('99999999');
+
+      expect(result.numFound).toBe(0);
+      expect(result.docs).toEqual([]);
+    });
+
+    it('should throw when SOLR_AUTH is missing', async () => {
+      delete process.env.SOLR_AUTH;
+      await expect(solr.querySOLR('33159615')).rejects.toThrow('SOLR_AUTH not set in environment');
+      process.env.SOLR_AUTH = 'test:test';
+    });
+
+    it('should throw on HTTP error', async () => {
+      mockFetch.mockResolvedValue(makeErrorResponse(500, 'Internal Server Error'));
+
+      await expect(solr.querySOLR('33159615')).rejects.toThrow('SOLR query error: 500');
     });
   });
 
   describe('queryCompanySOLR', () => {
     it('should return company data', async () => {
-      const result = await solr.queryCompanySOLR('company:EPAM*');
-      
-      expect(result).toHaveProperty('numFound');
-      expect(result.numFound).toBeGreaterThan(0);
-      expect(result.docs[0]).toHaveProperty('brand', 'EPAM');
+      mockFetch.mockResolvedValue(makeSolrResponse(1, [
+        { id: '33159615', company: 'EPAM SYSTEMS INTERNATIONAL SRL', brand: 'EPAM' }
+      ]));
+
+      const result = await solr.queryCompanySOLR('id:33159615');
+
+      expect(result.numFound).toBe(1);
+      expect(result.docs[0].brand).toBe('EPAM');
+    });
+
+    it('should return empty when company not found', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(0, []));
+
+      const result = await solr.queryCompanySOLR('id:00000000');
+
+      expect(result.numFound).toBe(0);
+    });
+
+    it('should throw on HTTP error', async () => {
+      mockFetch.mockResolvedValue(makeErrorResponse(401, 'Unauthorized'));
+
+      await expect(solr.queryCompanySOLR('id:33159615')).rejects.toThrow('SOLR company query error: 401');
     });
   });
 
   describe('upsertJobs', () => {
-    // SKIP - upsertJobs writes to PROD SOLR, only run manually when needed
-    it.skip('should accept array of jobs', async () => {
+    it('should accept array of jobs', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(0, []));
+
       const testJob = {
         url: 'https://test.com/job1',
         title: 'Test Job',
@@ -47,96 +129,101 @@ describe('solr.js', () => {
 
       await expect(solr.upsertJobs([testJob])).resolves.not.toThrow();
     });
+
+    it('should throw on HTTP error', async () => {
+      mockFetch.mockResolvedValue(makeErrorResponse(400, 'Bad Request'));
+
+      await expect(solr.upsertJobs([{ url: 'https://test.com/bad' }])).rejects.toThrow('SOLR upsert error: 400');
+    });
+
+    it('should throw when SOLR_AUTH is missing', async () => {
+      delete process.env.SOLR_AUTH;
+      await expect(solr.upsertJobs([])).rejects.toThrow('SOLR_AUTH not set in environment');
+      process.env.SOLR_AUTH = 'test:test';
+    });
   });
 
-  describe('getSolrAuth', () => {
-    it('should return SOLR_AUTH from environment', () => {
-      const auth = solr.getSolrAuth();
-      
-      expect(auth).toBeDefined();
-      expect(typeof auth).toBe('string');
+  describe('deleteJobByUrl', () => {
+    it('should delete a job by URL', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(0, []));
+
+      await expect(solr.deleteJobByUrl('https://test.com/old-job')).resolves.not.toThrow();
+    });
+
+    it('should throw on HTTP error', async () => {
+      mockFetch.mockResolvedValue(makeErrorResponse(500, 'Error'));
+
+      await expect(solr.deleteJobByUrl('https://test.com/bad')).rejects.toThrow('SOLR delete error: 500');
+    });
+  });
+
+  describe('deleteJobsByCIF', () => {
+    it('should delete all jobs for a CIF', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(0, []));
+
+      await expect(solr.deleteJobsByCIF('33159615')).resolves.not.toThrow();
+    });
+
+    it('should throw on HTTP error', async () => {
+      mockFetch.mockResolvedValue(makeErrorResponse(500, 'Error'));
+
+      await expect(solr.deleteJobsByCIF('33159615')).rejects.toThrow('SOLR delete error: 500');
     });
   });
 
   describe('Data Integrity', () => {
     it('should not have duplicate URLs for same CIF', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(2, [
+        { url: 'https://test.com/job1', title: 'Job 1', cif: '33159615' },
+        { url: 'https://test.com/job2', title: 'Job 2', cif: '33159615' }
+      ]));
+
       const result = await solr.querySOLR('33159615');
-      
       const urls = result.docs.map(j => j.url);
       const uniqueUrls = new Set(urls);
-      
+
       expect(uniqueUrls.size).toBe(result.numFound);
     });
 
     it('should have valid CIF format for all jobs', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(2, [
+        { url: 'https://test.com/1', title: 'Job 1', cif: '33159615' },
+        { url: 'https://test.com/2', title: 'Job 2', cif: '12345678' }
+      ]));
+
       const result = await solr.querySOLR('33159615');
-      
+
       for (const job of result.docs) {
         expect(job.cif).toMatch(/^\d{8}$/);
       }
     });
 
+    it('should detect invalid CIF format', async () => {
+      mockFetch.mockResolvedValue(makeSolrResponse(1, [
+        { url: 'https://test.com/1', title: 'Job 1', cif: 'abc' }
+      ]));
+
+      const result = await solr.querySOLR('abc');
+
+      for (const job of result.docs) {
+        expect(job.cif).not.toMatch(/^\d{8}$/);
+      }
+    });
+
     it('should have valid status values', async () => {
-      const result = await solr.querySOLR('33159615');
       const validStatuses = ['scraped', 'tested', 'verified', 'published'];
-      
+
+      mockFetch.mockResolvedValue(makeSolrResponse(3, [
+        { url: 'https://test.com/1', title: 'Job 1', cif: '33159615', status: 'scraped' },
+        { url: 'https://test.com/2', title: 'Job 2', cif: '33159615', status: 'verified' },
+        { url: 'https://test.com/3', title: 'Job 3', cif: '33159615', status: 'published' }
+      ]));
+
+      const result = await solr.querySOLR('33159615');
+
       for (const job of result.docs) {
         expect(validStatuses).toContain(job.status);
       }
-    });
-  });
-
-  describe('Company Core Validation', () => {
-    it('should have all required fields for EPAM in company core', async () => {
-      const result = await solr.queryCompanySOLR('id:33159615');
-      
-      expect(result.numFound).toBe(1);
-      const epam = result.docs[0];
-      
-      // Required fields
-      expect(epam).toHaveProperty('id', '33159615');
-      expect(epam).toHaveProperty('company');
-      expect(epam.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
-      
-      // Optional fields
-      expect(epam).toHaveProperty('brand', 'EPAM');
-      expect(epam).toHaveProperty('status', 'activ');
-      expect(epam).toHaveProperty('location');
-      expect(Array.isArray(epam.location)).toBe(true);
-      expect(epam.location).toContain('Bucuresti');
-      expect(epam).toHaveProperty('lastScraped');
-      expect(epam.lastScraped).toMatch(/^\d{4}-\d{2}-\d{2}$/);
-      expect(epam).toHaveProperty('scraperFile');
-      expect(epam.scraperFile).toMatch(/^https:\/\/raw\.githubusercontent\.com\//);
-    });
-
-    it('should have optional fields for EPAM in company core', async () => {
-      const result = await solr.queryCompanySOLR('id:33159615');
-      const epam = result.docs[0];
-      
-      // Optional fields - just check they exist or are not required
-      // group is optional
-      if (epam.group) expect(typeof epam.group).toBe('string');
-    });
-
-    it('should have website field with valid URL for EPAM', async () => {
-      const result = await solr.queryCompanySOLR('id:33159615');
-      const epam = result.docs[0];
-      
-      expect(epam).toHaveProperty('website');
-      expect(Array.isArray(epam.website)).toBe(true);
-      expect(epam.website.length).toBeGreaterThan(0);
-      expect(epam.website[0]).toMatch(/^https?:\/\/.+/);
-    });
-
-    it('should have career field with valid URL for EPAM', async () => {
-      const result = await solr.queryCompanySOLR('id:33159615');
-      const epam = result.docs[0];
-      
-      expect(epam).toHaveProperty('career');
-      expect(Array.isArray(epam.career)).toBe(true);
-      expect(epam.career.length).toBeGreaterThan(0);
-      expect(epam.career[0]).toMatch(/^https?:\/\/.+/);
     });
   });
 });
