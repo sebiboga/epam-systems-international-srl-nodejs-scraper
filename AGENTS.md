@@ -9,7 +9,9 @@ EPAM scraper for peviitor.ro (Node.js, ESM, Jest)
 All temporary/scratch files MUST go in `tmp/` inside the project root.
 NEVER use paths outside the project (e.g. `C:\Users\...\AppData\Local\Temp\opencode`).
 
-### 2. Commits & GitHub
+### 2. Issues & GitHub
+- **Orice modificare de cod trebuie să aibă un issue în GitHub Issues** (vezi [ISSUES.md](ISSUES.md))
+- Excepții: typo-uri, whitespace, documentație minoră
 - Create a GitHub issue before implementing any change
 - Commit messages must reference the issue they close
 - Never commit credentials (`.env.local`, `*.pem`, etc.)
