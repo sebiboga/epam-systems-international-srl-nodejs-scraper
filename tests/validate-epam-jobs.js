@@ -9,7 +9,7 @@ import fetch from "node-fetch";
 
 // SOLR configuration
 const SOLR_URL = "https://solr.peviitor.ro/solr/job/update";
-const SOLR_AUTH = process.env.SOLR_AUTH || "solr:your-solr-credentials";
+const SOLR_AUTH = process.env.SOLR_AUTH;
 const COMPANY_NAME = "EPAM SYSTEMS INTERNATIONAL SRL";
 
 /**
@@ -57,7 +57,7 @@ async function checkUrl(url) {
  * Delete a job from SOLR by URL
  */
 async function deleteJobFromSolr(url) {
-  const AUTH = process.env.SOLR_AUTH || "solr:your-solr-credentials";
+  const AUTH = process.env.SOLR_AUTH;
   const params = new URLSearchParams({ commit: "true" });
 
   const deleteQuery = JSON.stringify({

@@ -62,7 +62,7 @@ When working on this scraper:
 
 ```bash
 # Set environment variables
-export SOLR_AUTH=solr:your-solr-credentials
+export SOLR_AUTH=your-solr-credentials
 
 # Run the full scraper workflow (single command)
 node index.js

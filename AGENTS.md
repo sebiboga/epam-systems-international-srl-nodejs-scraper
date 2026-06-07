@@ -18,7 +18,7 @@ NEVER use paths outside the project (e.g. `C:\Users\...\AppData\Local\Temp\openc
 - Push after commit
 
 ### 3. Environment Variables
-- `SOLR_AUTH=solr:your-solr-credentials` must be set in `.env.local` for SOLR tests
+- `SOLR_AUTH` must be set in `.env.local` for SOLR tests
 - `.env.local` is in `.gitignore` — never commit it
 
 ### 4. Testing
