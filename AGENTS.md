@@ -38,7 +38,12 @@ node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=e
 - Run with `--experimental-vm-modules` flag
 - SOLR tests use conditional `itIfSolr` helper — auto-skip when `SOLR_AUTH` not set
 
-### 6. Module Structure
+### 6. Verification
+- După orice modificare, urmează [VERIFY.md](VERIFY.md) pas cu pas
+- Ultimul pas = rulează scraperul prin GitHub Actions și verifică job-urile în SOLR
+- Toate workflow-urile din `.github/workflows/` trebuie să treacă înainte de merge
+
+### 7. Module Structure
 - `src/anaf.js` — core ANAF library (imported by company.js)
 - `demoanaf.js` — CLI wrapper around src/anaf.js
 - `company.js` — company validation (ANAF + Peviitor + SOLR)
