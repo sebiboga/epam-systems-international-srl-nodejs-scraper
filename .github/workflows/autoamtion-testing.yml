@@ -172,7 +172,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase -X theirs
           git add docs/test-results/
           git commit -m "[skip ci] Update test results" || echo "No changes to commit"
-          git pull --rebase || true
           git push

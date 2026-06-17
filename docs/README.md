@@ -39,7 +39,7 @@ job_seeker_ro_spider
 │   └── e2e/           # 13 teste end-to-end (pipelin complet)
 └── .github/workflows/
     ├── job-seeker-ro-spider.yml     # Rulează zilnic la 6 AM UTC
-    └── test.yml       # Teste automate la fiecare push/PR
+    └── autoamtion-testing.yml       # Teste automate la fiecare push/PR
 ```
 
 ## API-uri folosite
