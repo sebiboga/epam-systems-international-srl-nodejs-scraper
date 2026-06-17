@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `src/markdown-generator.js`: Added JSDoc for `generateJobsMarkdown()`
 
 ### Changed
-- Documentation pass — `AGENTS.md`, `README.md`, `docs/README.md`, `instructions.md` now reflect the post-refactor state (config/, caching, job-validator)
+- Documentation pass — `AGENTS.md`, `README.md`, `docs/README.md`, `INSTRUCTIONS.md` now reflect the post-refactor state (config/, caching, job-validator)
 
 ## [1.4.0] - 2026-06-17
 

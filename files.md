@@ -47,7 +47,7 @@
 
 | File | Description |
 |------|-------------|
-| `instructions.md` | Project documentation - workflow, technologies, API endpoints, how to update models |
+| `INSTRUCTIONS.md` | Project documentation - workflow, technologies, API endpoints, how to update models |
 | `job-model.md` | Job schema definition (Peviitor Core) - fields, types, validation rules |
 | `company-model.md` | Company schema definition (Peviitor Core) - fields, types, validation rules |
 | `files.md` | This file - documents role of each project file |
