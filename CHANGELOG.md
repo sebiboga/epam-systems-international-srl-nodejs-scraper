@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-06-17
+
+### Added
+- `src/job-validator.js` — shared validation primitives (`validateByHead`, `validateByContent`)
+- Unit tests for the new module (9 tests)
+
+### Changed
+- `validate-jobs.js` and `tests/validate-epam-jobs.js` are now thin CLIs that delegate to `src/job-validator.js` and `solr.js` (closes #35)
+- `tests/validate-epam-jobs.js` no longer reimplements SOLR auth, query, or delete — uses `querySOLR` + `deleteJobByUrl` from `solr.js`
+
 ## [1.3.0] - 2026-06-17
 
 ### Added

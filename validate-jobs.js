@@ -19,61 +19,8 @@
  *   node validate-jobs.js --file <file.json>     - Check URLs from JSON file (array or {jobs:[...]})
  */
 
-import fetch from "node-fetch";
 import fs from "fs";
-
-const TIMEOUT = 15000;
-
-const EXPIRED_KEYWORDS = [
-  "sorry, this position is no longer available",
-  "position is no longer available",
-  "job is no longer available",
-  "this vacancy is no longer available",
-  "no longer accepting applications",
-  "this position has been filled",
-  "job expired"
-];
-
-async function checkJobUrl(url) {
-  try {
-    const res = await fetch(url, {
-      timeout: TIMEOUT,
-      headers: { 
-        "User-Agent": "job_seeker_ro_spider",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/json,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Connection": "keep-alive",
-        "Upgrade-Insecure-Requests": "1"
-      },
-      redirect: "follow"
-    });
-    
-    const text = await res.text().catch(() => "");
-    const content = text.toLowerCase();
-    const expired = EXPIRED_KEYWORDS.some(kw => content.includes(kw));
-    const status = expired ? "expired" : "active";
-    
-    const jobTitleMatch = text.match(/<title>([^<]+)<\/title>/i);
-    const title = jobTitleMatch ? jobTitleMatch[1].trim() : null;
-    
-    return { 
-      url, 
-      status, 
-      httpStatus: res.status, 
-      title,
-      error: null 
-    };
-  } catch (err) {
-    return { 
-      url, 
-      status: "error", 
-      httpStatus: 0, 
-      title: null,
-      error: err.message 
-    };
-  }
-}
+import { validateByContent } from "./src/job-validator.js";
 
 async function checkUrls(urls) {
   console.log(`=== Validating ${urls.length} URLs ===\n`);
@@ -82,7 +29,7 @@ async function checkUrls(urls) {
   
   for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
-    const result = await checkJobUrl(url);
+    const result = await validateByContent(url);
     
     if (result.status === "active") {
       results.active.push(result);
@@ -253,4 +200,4 @@ if (process.argv[1]?.includes('validate-jobs')) {
   });
 }
 
-export { checkJobUrl, checkUrls, validateJobs, loadUrlsFromFile };
+export { checkUrls, validateJobs, loadUrlsFromFile };
