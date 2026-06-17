@@ -1,7 +1,7 @@
 # job_seeker_ro_spider — EPAM Careers Romania Scraper
 
 [![Oportunitati SI Cariere](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml/badge.svg)](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml)
-[![Automation Tests](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/autoamtion-testing.yml/badge.svg)](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/autoamtion-testing.yml)
+[![Automation Tests](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/automation-testing.yml/badge.svg)](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/automation-testing.yml)
 
 [![Test Results](https://img.shields.io/badge/test--results-HTML-9b59b6)](https://sebiboga.github.io/epam-systems-international-srl-nodejs-scraper/test-results/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -53,7 +53,7 @@ Proiectul automatizează colectarea zilnică a job-urilor EPAM din România, men
 │       └── post-scrape-consistency.html
 ├── .github/workflows/
 │   ├── job-seeker-ro-spider.yml     # Daily scraping at 6 AM UTC
-│   └── autoamtion-testing.yml       # Automation Tests on push/PR
+│   └── automation-testing.yml       # Automation Tests on push/PR
 └── package.json
 ```
 
@@ -117,7 +117,7 @@ The `job-seeker-ro-spider.yml` workflow runs daily at 6 AM UTC via GitHub Action
 
 ### Test Automation
 
-The `autoamtion-testing.yml` workflow runs on every push and pull request. It:
+The `automation-testing.yml` workflow runs on every push and pull request. It:
 1. Ensures EPAM exists in the company core
 2. Runs unit, integration, e2e, and consistency tests
 3. Validates data integrity in Solr

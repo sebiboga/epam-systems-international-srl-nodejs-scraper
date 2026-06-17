@@ -20,7 +20,7 @@ Pentru fiecare workflow din `.github/workflows/`:
 | Workflow | Trigger | Ce verifici |
 |----------|---------|-------------|
 | `job-seeker-ro-spider.yml` | `workflow_dispatch` | Rulează scraperul → jobs in SOLR |
-| `autoamtion-testing.yml` | `workflow_dispatch` | Toate testele + validare job-uri + company core |
+| `automation-testing.yml` | `workflow_dispatch` | Toate testele + validare job-uri + company core |
 | `deploy.yml` | Push pe `main` | GitHub Pages se updat ează |
 
 ### Cum verifici:

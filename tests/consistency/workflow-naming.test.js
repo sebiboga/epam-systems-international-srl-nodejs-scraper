@@ -15,12 +15,12 @@ describe("Consistency: Workflow File Naming", () => {
   it("should have descriptive workflow names", () => {
     for (const f of files) {
       expect(f).toMatch(/^[a-z0-9-]+\.yml$/);
-      expect(f.startsWith("job-") || f.includes("autoamtion") ||
+      expect(f.startsWith("job-") || f.includes("automation") ||
              f.includes("deploy") || f.includes("test")).toBe(true);
     }
   });
 
   it("should have correct workflow naming for automation testing", () => {
-    expect(files).toContain("autoamtion-testing.yml");
+    expect(files).toContain("automation-testing.yml");
   });
 });
