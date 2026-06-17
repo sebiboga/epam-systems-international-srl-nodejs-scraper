@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO = process.env.GITHUB_REPOSITORY;
 const TOKEN = process.env.GITHUB_TOKEN;
 const SCRAPER_YML = ".github/workflows/job-seeker-ro-spider.yml";
-const DEPLOY_YML = ".github/workflows/deploy.yml";
+
 
 function repoUrl(apiPath) {
   return `https://api.github.com/repos/${REPO}${apiPath}`;
@@ -51,15 +51,7 @@ describe("Repository Configuration", () => {
       console.log(`✅ GitHub Pages URL: ${data.homepage}`);
     });
 
-    it("must have deploy.yml workflow", () => {
-      const deployPath = path.resolve(__dirname, "../..", DEPLOY_YML);
-      expect(fs.existsSync(deployPath)).toBe(true);
-      const content = fs.readFileSync(deployPath, "utf-8");
-      expect(content).toContain("name: Deploy to GitHub Pages");
-      expect(content).toContain("actions/upload-pages-artifact");
-      expect(content).toContain("actions/deploy-pages");
-      console.log(`✅ ${DEPLOY_YML} exists and is configured`);
-    });
+    // deploy.yml removed — legacy GitHub Pages auto-deploys from docs/
   });
 
   describe("hosted HTML page", () => {
