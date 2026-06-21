@@ -188,6 +188,7 @@ Acest template a fost folosit cu succes pentru a deriva scraper-e pentru alte co
 | [utilben-srl-nodejs-scraper](https://github.com/sebiboga/utilben-srl-nodejs-scraper) | UTILBEN SRL | 18643343 | eJobs.ro HTML (cheerio) + ANOFM API | ✅ Live |
 | [connatix-native-exchange-romania-srl-nodejs-scraper](https://github.com/sebiboga/connatix-native-exchange-romania-srl-nodejs-scraper) | CONNATIX NATIVE EXCHANGE ROMANIA SRL | 35861771 | Greenhouse API (JSON fetch) | ✅ Live |
 | [farmec-sa-nodejs-scraper](https://github.com/sebiboga/farmec-sa-nodejs-scraper) | FARMEC SA | 199150 | HTML scraping (cheerio) + eJobs | ✅ Live |
+| [yardi-call-center-srl-nodejs-scraper](https://github.com/sebiboga/yardi-call-center-srl-nodejs-scraper) | YARDI CALL CENTER SRL | 32509291 | Breezy JSON API (JSON fetch) | ✅ Live |
 
 **Învățăminte din derivări:**
 - Doar un singur fișier de editat pentru identitate: `config/company.json` ✅
