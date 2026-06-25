@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-06-23 |
+| Last Scraped | 2026-06-25 |
 
-## Current Job Listings (79)
+## Current Job Listings (77)
 
-_Generated: 2026-06-23T09:30:32.418Z_
+_Generated: 2026-06-25T08:53:52.481Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -312,14 +312,6 @@ _Generated: 2026-06-23T09:30:32.418Z_
 - **Tags:** microsoft power apps, data governance, microsoft dataverse, microsoft entra id, microsoft fabric
 - **Status:** scraped
 
-### Senior SAP FICO Consultant with DRC expertise
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-fico-consultant-with-drc-expertise-bltcljn468t0chpx7c0_en](https://careers.epam.com/en/vacancy/senior-sap-fico-consultant-with-drc-expertise-bltcljn468t0chpx7c0_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap fico, sap financial accounting, gaap accounting, sap business technology platform, sap controlling
-- **Status:** scraped
-
 ### Senior SAP FICA Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-fica-consultant-bltd2m3up6s7e073kg5_en](https://careers.epam.com/en/vacancy/senior-sap-fica-consultant-bltd2m3up6s7e073kg5_en)
@@ -488,6 +480,14 @@ _Generated: 2026-06-23T09:30:32.418Z_
 - **Tags:** sap fico, sap, e-commerce
 - **Status:** scraped
 
+### Senior Cloudflare Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-cloudflare-developer-bltpzhdluj7p6zuz6rv_en](https://careers.epam.com/en/vacancy/senior-cloudflare-developer-bltpzhdluj7p6zuz6rv_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** cloud native development, cloudflare, gen ai assisted development, python, javascript, multi-access edge computing, serverless
+- **Status:** scraped
+
 ### Technical Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/technical-architect-bltqadf3wk8kwg7pnrf_en](https://careers.epam.com/en/vacancy/technical-architect-bltqadf3wk8kwg7pnrf_en)
@@ -592,14 +592,6 @@ _Generated: 2026-06-23T09:30:32.418Z_
 - **Tags:** python.core, docker, fastapi, microsoft azure, python, reactjs, sql, kubernetes, playwright, terraform
 - **Status:** scraped
 
-### Data Engineer (Cosmos DB)
-
-- **URL:** [https://careers.epam.com/en/vacancy/data-engineer-cosmos-db-bltuyptdla45khu5jud_en](https://careers.epam.com/en/vacancy/data-engineer-cosmos-db-bltuyptdla45khu5jud_en)
-- **Work Mode:** remote
-- **Location:** Bucharest
-- **Tags:** data integration, azure cosmos db, azure sql, microsoft azure, microsoft fabric
-- **Status:** scraped
-
 ### Lead DevOps Engineer (EUC)
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-devops-engineer-euc-bltvb3n9udmb3svgpte_en](https://careers.epam.com/en/vacancy/lead-devops-engineer-euc-bltvb3n9udmb3svgpte_en)
@@ -638,10 +630,4 @@ _Generated: 2026-06-23T09:30:32.418Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap sapui5, data science
-- **Status:** scraped
-
-### INGINER DE SISTEM SOFTWARE
-
-- **URL:** [https://mediere.anofm.ro/app/module/mediere/job/3276193](https://mediere.anofm.ro/app/module/mediere/job/3276193)
-- **Location:** România
 - **Status:** scraped
