@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-06-28 |
+| Last Scraped | 2026-06-29 |
 
-## Current Job Listings (79)
+## Current Job Listings (81)
 
-_Generated: 2026-06-28T08:46:09.780Z_
+_Generated: 2026-06-29T10:47:35.057Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -102,6 +102,14 @@ _Generated: 2026-06-28T08:46:09.780Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** delivery management.ai, generative ai fundamentals, amazon web services, google cloud platform, databricks
+- **Status:** scraped
+
+### Manager, Data Analytics Consulting
+
+- **URL:** [https://careers.epam.com/en/vacancy/manager-data-analytics-consulting-blt2846417b5486aabb_en](https://careers.epam.com/en/vacancy/manager-data-analytics-consulting-blt2846417b5486aabb_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
 - **Status:** scraped
 
 ### Lead Data Engineer
@@ -270,6 +278,14 @@ _Generated: 2026-06-28T08:46:09.780Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap logistics (scm), opentext extended ecm for sap solutions, sap hana platform
+- **Status:** scraped
+
+### Senior Data Analytics Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-analytics-consultant-blt9fdf7a4e1aeb5b66_en](https://careers.epam.com/en/vacancy/senior-data-analytics-consultant-blt9fdf7a4e1aeb5b66_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting, data & analytics, data products sdlc
 - **Status:** scraped
 
 ### Engineering Manager, SAP CAP Java
