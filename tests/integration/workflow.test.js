@@ -1,5 +1,6 @@
 import { jest } from '@jest/globals';
 import dotenv from 'dotenv';
+import fetch from 'node-fetch';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -15,7 +16,29 @@ function itIfSolr(name, fn, timeout) {
   return it.skip(`${name} (skipped: SOLR_AUTH not set)`, fn, timeout);
 }
 
-beforeAll(() => {
+let HAS_ANAF = false;
+
+async function checkAnafAvailability() {
+  try {
+    const res = await fetch('https://demoanaf.ro/api/search?q=test', {
+      method: 'HEAD',
+      signal: AbortSignal.timeout(5000)
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+function itIfAnaf(name, fn, timeout) {
+  if (HAS_ANAF) {
+    return it(name, fn, timeout);
+  }
+  return it.skip(`${name} (skipped: ANAF API unavailable)`, fn, timeout);
+}
+
+beforeAll(async () => {
+  HAS_ANAF = await checkAnafAvailability();
   if (HAS_SOLR) {
     process.env.SOLR_AUTH = process.env.SOLR_AUTH;
   }
@@ -32,7 +55,7 @@ describe('Integration: API Workflow', () => {
       anaf = await import('../../src/anaf.js');
     });
 
-    it('should search for EPAM brand and find the company', async () => {
+    itIfAnaf('should search for EPAM brand and find the company', async () => {
       const results = await anaf.searchCompany('EPAM');
 
       expect(Array.isArray(results)).toBe(true);
@@ -45,14 +68,14 @@ describe('Integration: API Workflow', () => {
       expect(epam.cui.toString()).toBe(EPAM_CIF);
     }, 15000);
 
-    it('should return empty array for non-existent brand', async () => {
+    itIfAnaf('should return empty array for non-existent brand', async () => {
       const results = await anaf.searchCompany('ThisBrandDoesNotExistXYZ123');
 
       expect(Array.isArray(results)).toBe(true);
       expect(results.length).toBe(0);
     }, 15000);
 
-    it('should fetch company details by valid CIF', async () => {
+    itIfAnaf('should fetch company details by valid CIF', async () => {
       const data = await anaf.getCompanyFromANAF(EPAM_CIF);
 
       expect(data).toBeDefined();
@@ -65,11 +88,11 @@ describe('Integration: API Workflow', () => {
       expect(data).toHaveProperty('onrcStatusLabel', 'Funcțiune');
     }, 15000);
 
-    it('should throw for invalid CIF', async () => {
+    itIfAnaf('should throw for invalid CIF', async () => {
       await expect(anaf.getCompanyFromANAF('00000000')).rejects.toThrow();
     }, 60000);
 
-    it('should use cached data when API fails (getCompanyFromANAFWithFallback)', async () => {
+    itIfAnaf('should use cached data when API fails (getCompanyFromANAFWithFallback)', async () => {
       const cached = { cui: 33159615, name: 'EPAM SYSTEMS INTERNATIONAL SRL' };
 
       const data = await anaf.getCompanyFromANAFWithFallback(EPAM_CIF, cached);
@@ -205,7 +228,7 @@ describe('Integration: API Workflow', () => {
       companyModule = await import('../../company.js');
     });
 
-    it('should complete the ANAF → Peviitor validation path', async () => {
+    itIfAnaf('should complete the ANAF → Peviitor validation path', async () => {
       const searchResults = await anaf.searchCompany('EPAM');
       expect(searchResults.length).toBeGreaterThan(0);
 

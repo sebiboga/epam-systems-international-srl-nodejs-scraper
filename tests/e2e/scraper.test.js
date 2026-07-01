@@ -16,7 +16,29 @@ function itIfSolr(name, fn, timeout) {
   return it.skip(`${name} (skipped: SOLR_AUTH not set)`, fn, timeout);
 }
 
-beforeAll(() => {
+let HAS_ANAF = false;
+
+async function checkAnafAvailability() {
+  try {
+    const res = await fetch('https://demoanaf.ro/api/search?q=test', {
+      method: 'HEAD',
+      signal: AbortSignal.timeout(5000)
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+function itIfAnaf(name, fn, timeout) {
+  if (HAS_ANAF) {
+    return it(name, fn, timeout);
+  }
+  return it.skip(`${name} (skipped: ANAF API unavailable)`, fn, timeout);
+}
+
+beforeAll(async () => {
+  HAS_ANAF = await checkAnafAvailability();
   if (HAS_SOLR) {
     process.env.SOLR_AUTH = process.env.SOLR_AUTH;
   }
@@ -170,7 +192,7 @@ describe('E2E: Full Scraping Pipeline', () => {
       company = await import('../../company.js');
     });
 
-    it('should find EPAM in ANAF and validate active status', async () => {
+    itIfAnaf('should find EPAM in ANAF and validate active status', async () => {
       const results = await anaf.searchCompany(TEST_BRAND);
 
       const epam = results.find(c =>
@@ -207,7 +229,7 @@ describe('E2E: Full Scraping Pipeline', () => {
       anaf = await import('../../src/anaf.js');
     });
 
-    it('should detect inactive/radiated companies via ANAF', async () => {
+    itIfAnaf('should detect inactive/radiated companies via ANAF', async () => {
       const results = await anaf.searchCompany('EPAM');
 
       const nonActive = results.find(c => c.statusLabel !== 'Funcțiune');
