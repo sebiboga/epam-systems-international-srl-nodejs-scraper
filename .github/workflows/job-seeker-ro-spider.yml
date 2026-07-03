@@ -39,38 +39,29 @@ jobs:
           SCRAPER_FILE=$(jq -r '.scraperFile' config/company.json)
           TODAY=$(date -u +%Y-%m-%d)
 
-          EXISTING=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
+          echo "Upserting ${BRAND} (CIF: ${CIF}) into Solr company core..."
+          jq -n \
+            --arg id "$CIF" \
+            --arg company "$LEGAL_NAME" \
+            --arg brand "$BRAND" \
+            --arg website "$WEBSITE" \
+            --arg career "$CAREER" \
+            --arg loc "$DEFAULT_LOC" \
+            --arg today "$TODAY" \
+            --arg scraperFile "$SCRAPER_FILE" \
+            '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
+            > company_data.json
 
-          echo "${BRAND} count in company core: $EXISTING"
-
-          if [ "$EXISTING" -eq "0" ]; then
-            echo "${BRAND} not found — adding to company core..."
-            jq -n \
-              --arg id "$CIF" \
-              --arg company "$LEGAL_NAME" \
-              --arg brand "$BRAND" \
-              --arg website "$WEBSITE" \
-              --arg career "$CAREER" \
-              --arg loc "$DEFAULT_LOC" \
-              --arg today "$TODAY" \
-              --arg scraperFile "$SCRAPER_FILE" \
-              '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
-              > company_data.json
-
-            curl -s --user "${SOLR_AUTH}" \
-              "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
-              -X POST \
-              -H "Content-Type: application/json" \
-              --data-binary @company_data.json
-          else
-            echo "${BRAND} already exists in company core — no action needed"
-          fi
+          curl -s --user "${SOLR_AUTH}" \
+            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            --data-binary @company_data.json
 
           FINAL=$(curl -s --user "${SOLR_AUTH}" \
             "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
 
-          echo "${BRAND} count after check: $FINAL"
+          echo "${BRAND} count after upsert: $FINAL"
 
           if [ "$FINAL" -ge "1" ]; then
             echo "✅ SUCCESS: ${BRAND} is in company core"
