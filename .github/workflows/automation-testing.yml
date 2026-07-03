@@ -16,6 +16,40 @@ on:
         default: 'true'
 
 jobs:
+  create-autoheal-issue:
+    runs-on: ubuntu-latest
+    if: failure()
+    needs: [ensure-company-core, Automation-Tests, validate-jobs]
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Create auto-heal issue
+        run: |
+          gh label create "auto-heal" --color "d73a4a" --description "Auto-heal issue for opencode" 2>/dev/null || true
+          BODY="Workflow [**${{ github.workflow }}**](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) failed.
+
+          ## Context
+          - **Repository:** ${{ github.repository }}
+          - **Run URL:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - **Branch:** ${{ github.ref }}
+          - **Commit:** ${{ github.sha }}
+          - **Trigger:** ${{ github.event_name }}
+
+          ## Instructions for opencode
+          1. Clone the repo and check out this branch.
+          2. Investigate the run logs (linked above).
+          3. Fix whatever caused the failure.
+          4. Commit and push the fix.
+          5. Close this issue — the next push will re-trigger the workflow."
+
+          gh issue create \
+            --title "🤖 Auto-heal: ${{ github.repository }} workflow failed $(date -u +%Y-%m-%d)" \
+            --label "auto-heal" \
+            --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   validate-jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
@@ -67,39 +101,29 @@ jobs:
           SCRAPER_FILE=$(jq -r '.scraperFile' config/company.json)
           TODAY=$(date -u +%Y-%m-%d)
 
-          # Check if company exists
-          EXISTING=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
+          echo "Upserting ${BRAND} (CIF: ${CIF}) into Solr company core..."
+          jq -n \
+            --arg id "$CIF" \
+            --arg company "$LEGAL_NAME" \
+            --arg brand "$BRAND" \
+            --arg website "$WEBSITE" \
+            --arg career "$CAREER" \
+            --arg loc "$DEFAULT_LOC" \
+            --arg today "$TODAY" \
+            --arg scraperFile "$SCRAPER_FILE" \
+            '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
+            > company_data.json
 
-          echo "${BRAND} count in company core: $EXISTING"
-
-          if [ "$EXISTING" -eq "0" ]; then
-            echo "${BRAND} not found - adding to company core..."
-            jq -n \
-              --arg id "$CIF" \
-              --arg company "$LEGAL_NAME" \
-              --arg brand "$BRAND" \
-              --arg website "$WEBSITE" \
-              --arg career "$CAREER" \
-              --arg loc "$DEFAULT_LOC" \
-              --arg today "$TODAY" \
-              --arg scraperFile "$SCRAPER_FILE" \
-              '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
-              > company_data.json
-
-            curl -s --user "${SOLR_AUTH}" \
-              "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
-              -X POST \
-              -H "Content-Type: application/json" \
-              --data-binary @company_data.json
-          else
-            echo "${BRAND} already exists in company core - no action needed"
-          fi
+          curl -s --user "${SOLR_AUTH}" \
+            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            --data-binary @company_data.json
 
           FINAL=$(curl -s --user "${SOLR_AUTH}" \
             "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
 
-          echo "${BRAND} count after check: $FINAL"
+          echo "${BRAND} count after upsert: $FINAL"
 
           if [ "$FINAL" -ge "1" ]; then
             echo "✅ SUCCESS: ${BRAND} is in company core"

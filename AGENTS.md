@@ -92,3 +92,15 @@ npm run test:consistency
 - `company.json` (root) — committed cache, refreshed every 7 days (configurable via `CACHE_MAX_AGE_DAYS` in company.js)
 - If ANAF is unreachable AND cache is stale, the code falls back to the stale cache rather than failing the scrape
 - `docs/company.json` is regenerated on every scrape so GitHub Pages can read company identity
+
+### 9. Auto-Heal Issues
+When the `Automation Tests` workflow fails, a **GitHub Issue** is auto-created with label `auto-heal`. The issue contains:
+- Run URL, branch, commit, and trigger event
+- Instructions for opencode to investigate, fix, commit, push, and close
+
+**When you see an `auto-heal` labeled issue:**
+1. Read the issue body for the run URL and branch
+2. Checkout that branch
+3. Review the workflow logs to diagnose the failure
+4. Apply the fix
+5. Commit, push, and close the issue
