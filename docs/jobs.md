@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-05 |
+| Last Scraped | 2026-07-06 |
 
 ## Current Job Listings (82)
 
-_Generated: 2026-07-05T08:46:42.336Z_
+_Generated: 2026-07-06T10:07:30.248Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
