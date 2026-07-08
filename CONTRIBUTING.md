@@ -10,6 +10,7 @@ This is the **reference implementation** for Node.js job scrapers in the peviito
 > - [mejix-srl-nodejs-scraper](https://github.com/sebiboga/mejix-srl-nodejs-scraper) — MEJIX S.R.L. (HTML/cheerio, single-page)
 > - [talent-matchmakers-srl-nodejs-scraper](https://github.com/sebiboga/talent-matchmakers-srl-nodejs-scraper) — TALENT MATCHMAKERS S.R.L. (Teamtailor HTML/cheerio)
 > - [principal33-srl-nodejs-scraper](https://github.com/sebiboga/principal33-srl-nodejs-scraper) — PRINCIPAL33 S.R.L. (Personio JSON API)
+> - [gusturi-divine-srl-nodejs-scraper](https://github.com/sebiboga/gusturi-divine-srl-nodejs-scraper) — GUSTURI DIVINE S.R.L. (ANOFM API)
 > Use them as references if anything below is unclear.
 
 ## Deriving a New Scraper for Another Company
