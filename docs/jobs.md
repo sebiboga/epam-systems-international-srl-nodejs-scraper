@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-07 |
+| Last Scraped | 2026-07-08 |
 
-## Current Job Listings (82)
+## Current Job Listings (81)
 
-_Generated: 2026-07-07T09:32:56.223Z_
+_Generated: 2026-07-08T08:17:41.006Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -646,14 +646,6 @@ _Generated: 2026-07-07T09:32:56.223Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** automated testing in python, microsoft azure, pytest, python, robot framework, selenium, amazon web services, web services
-- **Status:** scraped
-
-### Senior Talent Acquisition Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltz1xs0e4g8kt9pbkp_en](https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltz1xs0e4g8kt9pbkp_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** talent acquisition
 - **Status:** scraped
 
 ### Senior Data Engineer
