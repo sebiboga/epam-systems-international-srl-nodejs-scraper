@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-08 |
+| Last Scraped | 2026-07-09 |
 
-## Current Job Listings (81)
+## Current Job Listings (77)
 
-_Generated: 2026-07-08T08:17:41.006Z_
+_Generated: 2026-07-09T09:29:34.225Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -120,28 +120,12 @@ _Generated: 2026-07-08T08:17:41.006Z_
 - **Tags:** data integration, aws aurora, aws database migration service, ms sql.sql, postgresql, t-sql
 - **Status:** scraped
 
-### SAP Logistics Consultant SD, S/4HANA
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-consultant-sd-s-4hana-blt2shjafry3eqdztm4_en](https://careers.epam.com/en/vacancy/sap-logistics-consultant-sd-s-4hana-blt2shjafry3eqdztm4_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), sap sales and distribution
-- **Status:** scraped
-
 ### Data Governance Consultant - Informatica Cloud
 
 - **URL:** [https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en](https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
-- **Status:** scraped
-
-### SAP Logistics Consultant SD, S/4HANA
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-consultant-sd-s-4hana-blt3ru6uypbdwg3szz4_en](https://careers.epam.com/en/vacancy/sap-logistics-consultant-sd-s-4hana-blt3ru6uypbdwg3szz4_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), sap sales and distribution
 - **Status:** scraped
 
 ### SAP Logistics Architect
@@ -504,14 +488,6 @@ _Generated: 2026-07-08T08:17:41.006Z_
 - **Tags:** automated testing in java, git, java, postman, sdlc methodologies, sql, test design techniques, amazon web services, cucumber, reactjs, zephyr enterprise
 - **Status:** scraped
 
-### SAP FI-CA Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-fi-ca-consultant-bltotryu8p9ok42z18e_en](https://careers.epam.com/en/vacancy/sap-fi-ca-consultant-bltotryu8p9ok42z18e_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap fico, sap, e-commerce
-- **Status:** scraped
-
 ### Senior Cloudflare Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-cloudflare-developer-bltpzhdluj7p6zuz6rv_en](https://careers.epam.com/en/vacancy/senior-cloudflare-developer-bltpzhdluj7p6zuz6rv_en)
@@ -598,14 +574,6 @@ _Generated: 2026-07-08T08:17:41.006Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico
-- **Status:** scraped
-
-### SAP Logistics Consultant SD, S/4HANA
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-consultant-sd-s-4hana-blttkxrsqhevcm26ybv_en](https://careers.epam.com/en/vacancy/sap-logistics-consultant-sd-s-4hana-blttkxrsqhevcm26ybv_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), sap sales and distribution
 - **Status:** scraped
 
 ### Senior Full-stack Developer (Python + React)
