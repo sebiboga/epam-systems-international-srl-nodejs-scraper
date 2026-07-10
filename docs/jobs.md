@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-09 |
+| Last Scraped | 2026-07-10 |
 
-## Current Job Listings (77)
+## Current Job Listings (59)
 
-_Generated: 2026-07-09T09:29:34.225Z_
+_Generated: 2026-07-10T09:25:43.323Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -104,14 +104,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** business analytics consulting
 - **Status:** scraped
 
-### Lead Data Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-data-engineer-blt2e7ymvcqn4xcnpag_en](https://careers.epam.com/en/vacancy/lead-data-engineer-blt2e7ymvcqn4xcnpag_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** data integration, amazon web services, apache airflow, apache kafka, ci/cd, python for data integration, sql, snowflake
-- **Status:** scraped
-
 ### Senior Database Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-database-developer-blt2f09hchsnbytcent_en](https://careers.epam.com/en/vacancy/senior-database-developer-blt2f09hchsnbytcent_en)
@@ -142,14 +134,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico, ifrs, sap-fi: basic fi, sap-refx: measurements, atlassian jira, servicenow
-- **Status:** scraped
-
-### Senior Product Security Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-product-security-specialist-blt4tpyh8rayvcpeake_en](https://careers.epam.com/en/vacancy/senior-product-security-specialist-blt4tpyh8rayvcpeake_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** security.engineering, devsecops, security compliances, security governance, security architecture
 - **Status:** scraped
 
 ### Senior SAP MDG Consultant
@@ -216,14 +200,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** google cloud platform, continuous integration, github actions, google kubernetes engine, infrastructure, terraform
 - **Status:** scraped
 
-### Azure Systems Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/azure-systems-architect-blt7s4hxa97d9ozi6gc_en](https://careers.epam.com/en/vacancy/azure-systems-architect-blt7s4hxa97d9ozi6gc_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** systems architecture
-- **Status:** scraped
-
 ### AI/GenAI Solution Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/ai-genai-solution-architect-blt86nnh5bbu7lgge97_en](https://careers.epam.com/en/vacancy/ai-genai-solution-architect-blt86nnh5bbu7lgge97_en)
@@ -288,14 +264,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** systems architecture
 - **Status:** scraped
 
-### Senior Data Engineer (Azure Fabric, PySpark with AI Skills)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-azure-fabric-pyspark-with-ai-skills-bltbdzny1o3891u6pex_en](https://careers.epam.com/en/vacancy/senior-data-engineer-azure-fabric-pyspark-with-ai-skills-bltbdzny1o3891u6pex_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** data integration, azure data factory, azure functions, azure synapse analytics, devops, microsoft fabric, pyspark, apache kafka, azure blob storage, ci/cd, data lakehouse, etl/elt solutions, ms sql db development, sql
-- **Status:** scraped
-
 ### Salesforce Delivery Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/salesforce-delivery-manager-bltbmk7i58ip5ohrb0v_en](https://careers.epam.com/en/vacancy/salesforce-delivery-manager-bltbmk7i58ip5ohrb0v_en)
@@ -318,14 +286,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico, sap, e-commerce
-- **Status:** scraped
-
-### Lead Data Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-data-engineer-bltd76d7f15df8b5c11_en](https://careers.epam.com/en/vacancy/lead-data-engineer-bltd76d7f15df8b5c11_en)
-- **Work Mode:** on-site
-- **Location:** Bucharest
-- **Tags:** data software engineering, azure data factory, azure data lake analytics, databricks, engineering, microsoft azure, pyspark, python
 - **Status:** scraped
 
 ### Forward Deployed Engineer (Chief Role)
@@ -352,14 +312,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** sap logistics (scm)
 - **Status:** scraped
 
-### Lead DevOps Engineer (EUC)
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-devops-engineer-euc-blteenmvj9mduvzpq3s_en](https://careers.epam.com/en/vacancy/lead-devops-engineer-euc-blteenmvj9mduvzpq3s_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** microsoft 365 engineering, active directory, azure virtual desktop, devsecops, microsoft 365, microsoft intune, agile
-- **Status:** scraped
-
 ### Senior/Lead SAP CAP Node.JS Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-lead-sap-cap-node-js-developer-bltf15487baa78c9a4f_en](https://careers.epam.com/en/vacancy/senior-lead-sap-cap-node-js-developer-bltf15487baa78c9a4f_en)
@@ -382,22 +334,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** data science consulting, scrum, kanban, mlops, docker, kubernetes, github, numpy, pandas, tensorflow
-- **Status:** scraped
-
-### SAP CPQ Consultant (Market2Cash)
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-cpq-consultant-market2cash-bltgjfmzuevhkn7emxm_en](https://careers.epam.com/en/vacancy/sap-cpq-consultant-market2cash-bltgjfmzuevhkn7emxm_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap crm, sap cpq, sap customer experience, mendix, sap hana cloud, sap ibp
-- **Status:** scraped
-
-### Senior Automation Engineer in Python
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-automation-engineer-in-python-bltixhumsloi2y0cdzg_en](https://careers.epam.com/en/vacancy/senior-automation-engineer-in-python-bltixhumsloi2y0cdzg_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** automated testing in python, continuous integration development & maintenance, pytest, python, robot framework, web services
 - **Status:** scraped
 
 ### Lead CyberArk Engineer
@@ -424,28 +360,12 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** business analytics consulting
 - **Status:** scraped
 
-### Technology Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/technology-consultant-bltkraql7oy9yy8y8i7_en](https://careers.epam.com/en/vacancy/technology-consultant-bltkraql7oy9yy8y8i7_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** advanced software engineering
-- **Status:** scraped
-
 ### Senior Python Full Stack Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-python-full-stack-developer-bltkt3v4p12tlm1calb_en](https://careers.epam.com/en/vacancy/senior-python-full-stack-developer-bltkt3v4p12tlm1calb_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** python.core, angular, css, flask, html, python, typescript, ngrx
-- **Status:** scraped
-
-### Unified Endpoint Management (UEM) Tech Lead
-
-- **URL:** [https://careers.epam.com/en/vacancy/unified-endpoint-management-uem-tech-lead-bltlhsawuviqc7nox6a_en](https://careers.epam.com/en/vacancy/unified-endpoint-management-uem-tech-lead-bltlhsawuviqc7nox6a_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** endpoint solutions, microsoft endpoint manager, microsoft intune, microsoft windows, powershell
 - **Status:** scraped
 
 ### Senior SAP Retail Master Data Consultant
@@ -504,36 +424,12 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** sap java
 - **Status:** scraped
 
-### Senior Software Engineer (Azure Identity)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-software-engineer-azure-identity-bltrbwtmg8heu955cvm_en](https://careers.epam.com/en/vacancy/senior-software-engineer-azure-identity-bltrbwtmg8heu955cvm_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** identity and access management, azure identity
-- **Status:** scraped
-
-### Senior Data Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltrc36tfn1jd84pjft_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltrc36tfn1jd84pjft_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** data integration, azure data factory, data modeling, databricks, etl/elt solutions, monitoring tools, sql
-- **Status:** scraped
-
 ### Senior Supply Chain Architect (Supply Chain IT Product)
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-supply-chain-architect-supply-chain-it-product-bltrizzf9u0hziot1y1_en](https://careers.epam.com/en/vacancy/senior-supply-chain-architect-supply-chain-it-product-bltrizzf9u0hziot1y1_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** enterprise architecture, apache kafka, mulesoft, sap commerce fulfilment, supply chain operations
-- **Status:** scraped
-
-### ServiceNow Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/servicenow-architect-bltrqxs1i0zvjwlkb0a_en](https://careers.epam.com/en/vacancy/servicenow-architect-bltrqxs1i0zvjwlkb0a_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** servicenow, analysis, communication
 - **Status:** scraped
 
 ### Senior Data Software Engineer
@@ -552,44 +448,12 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Tags:** product management, sap logistics (scm)
 - **Status:** scraped
 
-### Lead Backend Developer (C Language)
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-backend-developer-c-language-bltslcfiko61a64q370_en](https://careers.epam.com/en/vacancy/lead-backend-developer-c-language-bltslcfiko61a64q370_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** c programming, c language, linux, sql, unix shell scripting
-- **Status:** scraped
-
-### Senior Power Apps Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-power-apps-developer-bltt9b066eib7ul5mxi_en](https://careers.epam.com/en/vacancy/senior-power-apps-developer-bltt9b066eib7ul5mxi_en)
-- **Work Mode:** on-site
-- **Location:** Bucharest
-- **Tags:** microsoft power apps, microsoft canvas apps, microsoft dataverse, microsoft entra id, power automate, microsoft fabric
-- **Status:** scraped
-
 ### SAP R2R Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en](https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico
-- **Status:** scraped
-
-### Senior Full-stack Developer (Python + React)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-full-stack-developer-python-react-bltty4bayhomh4bcdsc_en](https://careers.epam.com/en/vacancy/senior-full-stack-developer-python-react-bltty4bayhomh4bcdsc_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** python.core, docker, fastapi, microsoft azure, python, reactjs, sql, kubernetes, playwright, terraform
-- **Status:** scraped
-
-### Lead DevOps Engineer (EUC)
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-devops-engineer-euc-bltvb3n9udmb3svgpte_en](https://careers.epam.com/en/vacancy/lead-devops-engineer-euc-bltvb3n9udmb3svgpte_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** microsoft 365 engineering, active directory, azure virtual desktop, devsecops, microsoft 365, microsoft intune, agile
 - **Status:** scraped
 
 ### Senior Disaster Recovery Specialist
@@ -614,14 +478,6 @@ _Generated: 2026-07-09T09:29:34.225Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** automated testing in python, microsoft azure, pytest, python, robot framework, selenium, amazon web services, web services
-- **Status:** scraped
-
-### Senior Data Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltzqz4qdnmvodrfax8_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltzqz4qdnmvodrfax8_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** data software engineering, etl/elt solutions, microsoft azure, pyspark, python, sql, terraform, ci/cd, databricks
 - **Status:** scraped
 
 ### Senior SAPUI5/BTP Developer (relocation to Cyprus)
