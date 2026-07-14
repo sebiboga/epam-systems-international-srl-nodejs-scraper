@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-13 |
+| Last Scraped | 2026-07-14 |
 
-## Current Job Listings (67)
+## Current Job Listings (65)
 
-_Generated: 2026-07-13T08:58:41.111Z_
+_Generated: 2026-07-14T07:53:49.298Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -296,14 +296,6 @@ _Generated: 2026-07-13T08:58:41.111Z_
 - **Tags:** microsoft power apps, data governance, microsoft dataverse, microsoft entra id, microsoft fabric
 - **Status:** scraped
 
-### Senior SAP FICA Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-fica-consultant-bltd2m3up6s7e073kg5_en](https://careers.epam.com/en/vacancy/senior-sap-fica-consultant-bltd2m3up6s7e073kg5_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap fico, sap, e-commerce
-- **Status:** scraped
-
 ### Forward Deployed Engineer (Chief Role)
 
 - **URL:** [https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en](https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en)
@@ -406,14 +398,6 @@ _Generated: 2026-07-13T08:58:41.111Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** salesforce
-- **Status:** scraped
-
-### Senior SAP Retail Master Data Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-retail-master-data-consultant-bltmkr4n8dz3xksa3i9_en](https://careers.epam.com/en/vacancy/senior-sap-retail-master-data-consultant-bltmkr4n8dz3xksa3i9_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap mdm/mdg, sap retail master data, sap-is: retail solutions
 - **Status:** scraped
 
 ### Senior C++ Developer
