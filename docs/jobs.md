@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-14 |
+| Last Scraped | 2026-07-15 |
 
-## Current Job Listings (65)
+## Current Job Listings (64)
 
-_Generated: 2026-07-14T07:53:49.298Z_
+_Generated: 2026-07-15T07:58:19.803Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -200,14 +200,6 @@ _Generated: 2026-07-14T07:53:49.298Z_
 - **Tags:** ai solution engineering, agentic workflows, google agent development kit, google cloud bigquery, google cloud run, large language models (llm), python
 - **Status:** scraped
 
-### AI/GenAI Solution Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/ai-genai-solution-architect-blt86nnh5bbu7lgge97_en](https://careers.epam.com/en/vacancy/ai-genai-solution-architect-blt86nnh5bbu7lgge97_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** solution architecture, genai tech stack, genai toolset for sdlc, microsoft azure
-- **Status:** scraped
-
 ### Senior/Lead SAP Logistics VIM Consultant with Coupa expertise
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-lead-sap-logistics-vim-consultant-with-coupa-expertise-blt90cf14088bf36d91_en](https://careers.epam.com/en/vacancy/senior-lead-sap-logistics-vim-consultant-with-coupa-expertise-blt90cf14088bf36d91_en)
@@ -358,14 +350,6 @@ _Generated: 2026-07-14T07:53:49.298Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap cap based node.js
-- **Status:** scraped
-
-### Senior Consultant - Data Management & Governance
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-consultant-data-management-governance-bltjgeey7htze9shvh2_en](https://careers.epam.com/en/vacancy/senior-consultant-data-management-governance-bltjgeey7htze9shvh2_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** business analytics consulting
 - **Status:** scraped
 
 ### Senior Business Analyst
@@ -526,6 +510,14 @@ _Generated: 2026-07-14T07:53:49.298Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kubernetes, security hardening, security testing tools, security assessment, vulnerability management, google cloud platform, open source software development
+- **Status:** scraped
+
+### Senior Reporting & Data Analytics Specialist
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-reporting-data-analytics-specialist-bltzkfj5lrddkt4is6n_en](https://careers.epam.com/en/vacancy/senior-reporting-data-analytics-specialist-bltzkfj5lrddkt4is6n_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap (others), databricks, python, sap analytics cloud, rest api, sap hana data warehousing
 - **Status:** scraped
 
 ### Senior SAPUI5/BTP Developer (relocation to Cyprus)
