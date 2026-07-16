@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-15 |
+| Last Scraped | 2026-07-16 |
 
-## Current Job Listings (64)
+## Current Job Listings (66)
 
-_Generated: 2026-07-15T07:58:19.803Z_
+_Generated: 2026-07-16T08:03:40.721Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -115,6 +115,14 @@ _Generated: 2026-07-15T07:58:19.803Z_
 ### Data Governance Consultant - Informatica Cloud
 
 - **URL:** [https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en](https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Data & AI Governance Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/data-ai-governance-consultant-blt3jc2ckvunnmhkhg2_en](https://careers.epam.com/en/vacancy/data-ai-governance-consultant-blt3jc2ckvunnmhkhg2_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
@@ -334,6 +342,14 @@ _Generated: 2026-07-15T07:58:19.803Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** data science consulting, scrum, kanban, mlops, docker, kubernetes, github, numpy, pandas, tensorflow
+- **Status:** scraped
+
+### Senior Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data integration, amazon web services, ci/cd, python for data integration, sql, snowflake, apache airflow, apache kafka, data transformation concepts, databricks, microsoft azure, oracle rdbms, terraform
 - **Status:** scraped
 
 ### Lead CyberArk Engineer
