@@ -194,6 +194,7 @@ Acest template a fost folosit cu succes pentru a deriva scraper-e pentru alte co
 | [lseg-nodejs-scraper](https://github.com/sebiboga/lseg-nodejs-scraper) | LSEG BUSINESS SERVICES RM S.R.L. | 39176747 | Workday JSON API | ✅ Live |
 | [gusturi-divine-srl-nodejs-scraper](https://github.com/sebiboga/gusturi-divine-srl-nodejs-scraper) | GUSTURI DIVINE S.R.L. | 47473595 | ANOFM API (JSON fetch) | ✅ Live |
 | [metro-digital-romania-srl-nodejs-scraper](https://github.com/sebiboga/metro-digital-romania-srl-nodejs-scraper) | METRO DIGITAL ROMANIA S.R.L. | 43319098 | HTML/cheerio (Attrax) | ✅ Live |
+| [yougov-cp-romania-srl-nodejs-scraper](https://github.com/sebiboga/yougov-cp-romania-srl-nodejs-scraper) | YOUGOV CP ROMANIA S.R.L. | 48869513 | Workday JSON API | ✅ Live |
 
 **Învățăminte din derivări:**
 - Doar un singur fișier de editat pentru identitate: `config/company.json` ✅
