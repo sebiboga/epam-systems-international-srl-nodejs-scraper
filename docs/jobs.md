@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-16 |
+| Last Scraped | 2026-07-17 |
 
-## Current Job Listings (66)
+## Current Job Listings (65)
 
-_Generated: 2026-07-16T08:03:40.721Z_
+_Generated: 2026-07-17T08:00:42.105Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -526,14 +526,6 @@ _Generated: 2026-07-16T08:03:40.721Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kubernetes, security hardening, security testing tools, security assessment, vulnerability management, google cloud platform, open source software development
-- **Status:** scraped
-
-### Senior Reporting & Data Analytics Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-reporting-data-analytics-specialist-bltzkfj5lrddkt4is6n_en](https://careers.epam.com/en/vacancy/senior-reporting-data-analytics-specialist-bltzkfj5lrddkt4is6n_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap (others), databricks, python, sap analytics cloud, rest api, sap hana data warehousing
 - **Status:** scraped
 
 ### Senior SAPUI5/BTP Developer (relocation to Cyprus)
