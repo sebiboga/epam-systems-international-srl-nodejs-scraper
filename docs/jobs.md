@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-17 |
+| Last Scraped | 2026-07-18 |
 
-## Current Job Listings (65)
+## Current Job Listings (68)
 
-_Generated: 2026-07-17T08:00:42.105Z_
+_Generated: 2026-07-18T07:40:52.129Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -280,6 +280,14 @@ _Generated: 2026-07-17T08:00:42.105Z_
 - **Tags:** delivery management, salesforce
 - **Status:** scraped
 
+### Lead SAP Developer (with Java)
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-developer-with-java-bltbw5car7c5um3zfoa_en](https://careers.epam.com/en/vacancy/lead-sap-developer-with-java-bltbw5car7c5um3zfoa_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap cap based java, sap fiori elements, spring boot, team management
+- **Status:** scraped
+
 ### Salesforce Product Owner / Product Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/salesforce-product-owner-product-manager-bltcdsbryojszp422o6_en](https://careers.epam.com/en/vacancy/salesforce-product-owner-product-manager-bltcdsbryojszp422o6_en)
@@ -294,6 +302,14 @@ _Generated: 2026-07-17T08:00:42.105Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** microsoft power apps, data governance, microsoft dataverse, microsoft entra id, microsoft fabric
+- **Status:** scraped
+
+### Senior Site Reliability Engineer (SRE)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-site-reliability-engineer-sre-bltcn0yi6hh9ev7oeb9_en](https://careers.epam.com/en/vacancy/senior-site-reliability-engineer-sre-bltcn0yi6hh9ev7oeb9_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust, datadog, gitops, java, javascript, kubernetes, monitoring and observability, python
 - **Status:** scraped
 
 ### Forward Deployed Engineer (Chief Role)
@@ -470,6 +486,14 @@ _Generated: 2026-07-17T08:00:42.105Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** product management, sap logistics (scm)
+- **Status:** scraped
+
+### Scrum Master
+
+- **URL:** [https://careers.epam.com/en/vacancy/scrum-master-bltsrlgz79f1soijjjf_en](https://careers.epam.com/en/vacancy/scrum-master-bltsrlgz79f1soijjjf_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** scrum master, business process management (bpm), financial planning, microsoft powerpoint, stakeholder management, microsoft power bi
 - **Status:** scraped
 
 ### SAP R2R Architect
