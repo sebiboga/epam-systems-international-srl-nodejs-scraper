@@ -225,10 +225,12 @@ describe('Integration: API Workflow', () => {
   describe('Full Validation Workflow', () => {
     let anaf;
     let companyModule;
+    let solr;
 
     beforeAll(async () => {
       anaf = await import('../../src/anaf.js');
       companyModule = await import('../../company.js');
+      solr = await import('../../solr.js');
     });
 
     itIfAnaf('should complete the ANAF → Peviitor validation path', async () => {
@@ -247,9 +249,8 @@ describe('Integration: API Workflow', () => {
 
     itIfSolr('should have matching CIF in company core', async () => {
       const companyResult = await companyModule.validateAndGetCompany();
-      const solrObj = await import('../../solr.js');
 
-      const solrResult = await solrObj.queryCompanySOLR(`id:${EPAM_CIF}`);
+      const solrResult = await solr.queryCompanySOLR(`id:${EPAM_CIF}`);
       expect(solrResult.numFound).toBe(1);
       expect(solrResult.docs[0].id).toBe(EPAM_CIF);
       expect(solrResult.docs[0].company).toBe(COMPANY_CONFIG.legalName);
