@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-20 |
+| Last Scraped | 2026-07-21 |
 
-## Current Job Listings (68)
+## Current Job Listings (72)
 
-_Generated: 2026-07-20T08:49:07.274Z_
+_Generated: 2026-07-21T08:17:08.668Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -104,6 +104,14 @@ _Generated: 2026-07-20T08:49:07.274Z_
 - **Tags:** business analytics consulting
 - **Status:** scraped
 
+### Security Software Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/security-software-architect-blt2b17mnnueglrpg05_en](https://careers.epam.com/en/vacancy/security-software-architect-blt2b17mnnueglrpg05_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** security.cloud, gcp security, security architecture, security programs
+- **Status:** scraped
+
 ### Senior Database Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-database-developer-blt2f09hchsnbytcent_en](https://careers.epam.com/en/vacancy/senior-database-developer-blt2f09hchsnbytcent_en)
@@ -166,6 +174,14 @@ _Generated: 2026-07-20T08:49:07.274Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap hana platform, sap web ide, atlassian confluence, atlassian jira
+- **Status:** scraped
+
+### Lead SAP CAP Developer with Java
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-cap-developer-with-java-blt6cfvsbe5l2jv6chj_en](https://careers.epam.com/en/vacancy/lead-sap-cap-developer-with-java-blt6cfvsbe5l2jv6chj_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap cap based java, sap fiori elements, spring boot, team management
 - **Status:** scraped
 
 ### SAP MM/SD Consulting Team Lead
@@ -368,12 +384,12 @@ _Generated: 2026-07-20T08:49:07.274Z_
 - **Tags:** data integration, amazon web services, ci/cd, python for data integration, sql, snowflake, apache airflow, apache kafka, data transformation concepts, databricks, microsoft azure, oracle rdbms, terraform
 - **Status:** scraped
 
-### Lead CyberArk Engineer
+### Senior SAP CAP Java Developer
 
-- **URL:** [https://careers.epam.com/en/vacancy/lead-cyberark-engineer-bltj5lzputfikio7tpb_en](https://careers.epam.com/en/vacancy/lead-cyberark-engineer-bltj5lzputfikio7tpb_en)
-- **Work Mode:** hybrid
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-java-developer-blth0d4ahlpixji079a_en](https://careers.epam.com/en/vacancy/senior-sap-cap-java-developer-blth0d4ahlpixji079a_en)
+- **Work Mode:** remote
 - **Location:** România
-- **Tags:** security.engineering, cyberark customer identity, powershell, privileged access management (pam)
+- **Tags:** sap cap based java, sap fiori elements, spring boot
 - **Status:** scraped
 
 ### Engineering Manager, SAP CAP Node.js
@@ -432,6 +448,14 @@ _Generated: 2026-07-20T08:49:07.274Z_
 - **Tags:** solution architecture, amazon web services
 - **Status:** scraped
 
+### Senior UX Designer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-ux-designer-blto27crpm9c5icsqg0_en](https://careers.epam.com/en/vacancy/senior-ux-designer-blto27crpm9c5icsqg0_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** ux design, sap fiori ux, user research, visual design
+- **Status:** scraped
+
 ### Senior Automation Tester in Java
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-java-bltopaeb6k18qe4fztm_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-java-bltopaeb6k18qe4fztm_en)
@@ -446,6 +470,14 @@ _Generated: 2026-07-20T08:49:07.274Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** cloud native development, cloudflare, gen ai assisted development, python, javascript, multi-access edge computing, serverless
+- **Status:** scraped
+
+### Senior SAP IS Retail Master Data Functional Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-is-retail-master-data-functional-consultant-bltq0b2akeqm0saekkm_en](https://careers.epam.com/en/vacancy/senior-sap-is-retail-master-data-functional-consultant-bltq0b2akeqm0saekkm_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap functional consulting, sap-is: retail solutions
 - **Status:** scraped
 
 ### Senior Site Reliability Engineer
