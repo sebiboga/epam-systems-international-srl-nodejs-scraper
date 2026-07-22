@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-21 |
+| Last Scraped | 2026-07-22 |
 
-## Current Job Listings (72)
+## Current Job Listings (76)
 
-_Generated: 2026-07-21T08:17:08.668Z_
+_Generated: 2026-07-22T08:17:55.981Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -304,6 +304,14 @@ _Generated: 2026-07-21T08:17:08.668Z_
 - **Tags:** sap cap based java, sap fiori elements, spring boot, team management
 - **Status:** scraped
 
+### Senior SAP ABAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-abap-developer-bltc2ble4t34rrituoy_en](https://careers.epam.com/en/vacancy/senior-sap-abap-developer-bltc2ble4t34rrituoy_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap abap
+- **Status:** scraped
+
 ### Salesforce Product Owner / Product Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/salesforce-product-owner-product-manager-bltcdsbryojszp422o6_en](https://careers.epam.com/en/vacancy/salesforce-product-owner-product-manager-bltcdsbryojszp422o6_en)
@@ -432,6 +440,22 @@ _Generated: 2026-07-21T08:17:08.668Z_
 - **Tags:** salesforce
 - **Status:** scraped
 
+### Lead UiPath Agentic Automation Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en](https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** uipath
+- **Status:** scraped
+
+### Senior SAP Retail Master Data Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-retail-master-data-consultant-bltmkr4n8dz3xksa3i9_en](https://careers.epam.com/en/vacancy/senior-sap-retail-master-data-consultant-bltmkr4n8dz3xksa3i9_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap mdm/mdg, sap retail master data, sap-is: retail solutions
+- **Status:** scraped
+
 ### Senior C++ Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-c-developer-bltmo7f2n57dc2wxou0_en](https://careers.epam.com/en/vacancy/senior-c-developer-bltmo7f2n57dc2wxou0_en)
@@ -494,6 +518,14 @@ _Generated: 2026-07-21T08:17:08.668Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap java
+- **Status:** scraped
+
+### Lead SAP Retail Master Data Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-retail-master-data-consultant-bltr7f2wulqnmfu50kk_en](https://careers.epam.com/en/vacancy/lead-sap-retail-master-data-consultant-bltr7f2wulqnmfu50kk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap mdm/mdg, sap retail master data, sap-is: retail solutions
 - **Status:** scraped
 
 ### Senior Supply Chain Architect (Supply Chain IT Product)
