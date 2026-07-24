@@ -10,11 +10,11 @@
 | Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-23 |
+| Last Scraped | 2026-07-24 |
 
-## Current Job Listings (76)
+## Current Job Listings (78)
 
-_Generated: 2026-07-23T08:22:18.292Z_
+_Generated: 2026-07-24T08:16:33.273Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -400,6 +400,14 @@ _Generated: 2026-07-23T08:22:18.292Z_
 - **Tags:** sap cap based java, sap fiori elements, spring boot
 - **Status:** scraped
 
+### SAP ABAP Engineering Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltj4vrkf0a4l571pct_en](https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltj4vrkf0a4l571pct_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
+- **Status:** scraped
+
 ### Engineering Manager, SAP CAP Node.js
 
 - **URL:** [https://careers.epam.com/en/vacancy/engineering-manager-sap-cap-node-js-bltjct6zgzxvv4ma6zs_en](https://careers.epam.com/en/vacancy/engineering-manager-sap-cap-node-js-bltjct6zgzxvv4ma6zs_en)
@@ -446,6 +454,14 @@ _Generated: 2026-07-23T08:22:18.292Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** uipath
+- **Status:** scraped
+
+### SAP ABAP Engineering Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltmjg76o2x3d98ym8g_en](https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltmjg76o2x3d98ym8g_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
 - **Status:** scraped
 
 ### Senior SAP Retail Master Data Consultant
