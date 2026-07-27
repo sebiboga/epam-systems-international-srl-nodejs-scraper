@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | IANCU DE HUNEDOARA, 48, Bucureşti Sectorul 1, Bucureşti |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-26 |
+| Last Scraped | 2026-07-27 |
 
 ## Current Job Listings (78)
 
-_Generated: 2026-07-26T08:17:31.120Z_
+_Generated: 2026-07-27T09:40:20.844Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
