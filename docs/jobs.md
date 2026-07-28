@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-27 |
+| Last Scraped | 2026-07-28 |
 
-## Current Job Listings (78)
+## Current Job Listings (81)
 
-_Generated: 2026-07-27T09:40:20.844Z_
+_Generated: 2026-07-28T08:24:51.585Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -208,20 +208,20 @@ _Generated: 2026-07-27T09:40:20.844Z_
 - **Tags:** presales consulting
 - **Status:** scraped
 
-### Senior DevOps Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-blt7c7wi7y8n3zu6dwa_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-blt7c7wi7y8n3zu6dwa_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** google cloud platform, continuous integration, github actions, google kubernetes engine, infrastructure, terraform
-- **Status:** scraped
-
 ### Lead Python Engineer - Agentic AI
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-python-engineer-agentic-ai-blt7fq34ppxq9duji7g_en](https://careers.epam.com/en/vacancy/lead-python-engineer-agentic-ai-blt7fq34ppxq9duji7g_en)
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** ai solution engineering, agentic workflows, google agent development kit, google cloud bigquery, google cloud run, large language models (llm), python
+- **Status:** scraped
+
+### Data Technology Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/data-technology-consultant-blt87s0n0a5rjwi6462_en](https://careers.epam.com/en/vacancy/data-technology-consultant-blt87s0n0a5rjwi6462_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data technology consulting, python, snowflake, ci/cd, sql, dbt
 - **Status:** scraped
 
 ### Senior/Lead SAP Logistics VIM Consultant with Coupa expertise
@@ -280,6 +280,14 @@ _Generated: 2026-07-27T09:40:20.844Z_
 - **Tags:** data quality engineering, data & analytics program, data analysis, data quality, databricks, microsoft azure
 - **Status:** scraped
 
+### Senior SAP CAP Node.js Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-node-js-developer-bltap325oimhtzqb6u5_en](https://careers.epam.com/en/vacancy/senior-sap-cap-node-js-developer-bltap325oimhtzqb6u5_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap cap based node.js
+- **Status:** scraped
+
 ### GCP Cloud Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/gcp-cloud-architect-bltaumkxatm87xucjso_en](https://careers.epam.com/en/vacancy/gcp-cloud-architect-bltaumkxatm87xucjso_en)
@@ -310,6 +318,14 @@ _Generated: 2026-07-27T09:40:20.844Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap
+- **Status:** scraped
+
+### SAP FICO (CO) Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-fico-co-consultant-bltc38fg6pxc4mttcvp_en](https://careers.epam.com/en/vacancy/sap-fico-co-consultant-bltc38fg6pxc4mttcvp_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap fico
 - **Status:** scraped
 
 ### Salesforce Product Owner / Product Manager
@@ -422,6 +438,14 @@ _Generated: 2026-07-27T09:40:20.844Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** bi analysis, business requirements definition and documentation, data general, data types, gap analysis, requirements lifecycle management, sql, agile, agile lifecycle management, atlassian confluence, atlassian jira, mifid ii, regulatory requirements, standards and procedures, requirements and change management
+- **Status:** scraped
+
+### SAP MDG Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-consultant-bltkaxd4ksj2mz621nu_en](https://careers.epam.com/en/vacancy/sap-mdg-consultant-bltkaxd4ksj2mz621nu_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap mdm/mdg
 - **Status:** scraped
 
 ### Senior Python Full Stack Developer
