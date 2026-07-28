@@ -78,8 +78,6 @@ jobs:
             echo "Running in LIVE mode (will delete expired jobs)..."
             node --no-deprecation tests/validate-epam-jobs.js --delete
           fi
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
   ensure-company-core:
     runs-on: ubuntu-latest
@@ -88,10 +86,8 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Ensure company exists in company core
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
         run: |
-          # Load company identity from single source of truth
+          TODAY=$(date -u +%Y-%m-%d)
           CIF=$(jq -r '.cif' scraper/config/company.json)
           LEGAL_NAME=$(jq -r '.legalName' scraper/config/company.json)
           BRAND=$(jq -r '.brand' scraper/config/company.json)
@@ -99,9 +95,7 @@ jobs:
           CAREER=$(jq -r '.careerUrl' scraper/config/company.json)
           DEFAULT_LOC=$(jq -r '.defaultLocation' scraper/config/company.json)
           SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
-          TODAY=$(date -u +%Y-%m-%d)
 
-          echo "Upserting ${BRAND} (CIF: ${CIF}) into Solr company core..."
           jq -n \
             --arg id "$CIF" \
             --arg company "$LEGAL_NAME" \
@@ -111,24 +105,24 @@ jobs:
             --arg loc "$DEFAULT_LOC" \
             --arg today "$TODAY" \
             --arg scraperFile "$SCRAPER_FILE" \
-            '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
             > company_data.json
 
-          curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
-            -X POST \
+          echo "Upserting ${BRAND} (CIF: ${CIF}) via peviitor API..."
+          curl -s -X PUT \
+            "https://api.peviitor.ro/v1/firme/company/add/" \
             -H "Content-Type: application/json" \
             --data-binary @company_data.json
 
-          FINAL=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
+          FINAL=$(curl -s \
+            "https://api.peviitor.ro/v1/firme/company/?cif=${CIF}" | jq '.total')
 
           echo "${BRAND} count after upsert: $FINAL"
 
           if [ "$FINAL" -ge "1" ]; then
-            echo "✅ SUCCESS: ${BRAND} is in company core"
+            echo "SUCCESS: ${BRAND} is in company core"
           else
-            echo "❌ FAILED: ${BRAND} still not in company core"
+            echo "FAILED: ${BRAND} still not in company core"
             exit 1
           fi
 
@@ -158,8 +152,6 @@ jobs:
           npm run test:unit
           sed -i 's|<title>Test Report</title>|<title>Pre-scrape: Unit Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Pre-scrape: Unit Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/pre-scrape-unit.html || true
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Upload Unit Test Results
         uses: actions/upload-artifact@v7
@@ -173,8 +165,6 @@ jobs:
           npm run test:integration
           sed -i 's|<title>Test Report</title>|<title>Pre-scrape: Integration Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Pre-scrape: Integration Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/pre-scrape-integration.html || true
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Upload Integration Test Results
         uses: actions/upload-artifact@v7
@@ -188,8 +178,6 @@ jobs:
           npm run test:e2e
           sed -i 's|<title>Test Report</title>|<title>Post-scrape: E2E Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Post-scrape: E2E Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/post-scrape.html || true
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Upload E2E Test Results
         uses: actions/upload-artifact@v7
@@ -206,7 +194,6 @@ jobs:
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
       - name: Upload Consistency Test Results
         uses: actions/upload-artifact@v7

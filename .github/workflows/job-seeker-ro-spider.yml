@@ -26,9 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Ensure company exists in Solr company core
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+      - name: Ensure company exists in company core
         run: |
           CIF=$(jq -r '.cif' scraper/config/company.json)
           LEGAL_NAME=$(jq -r '.legalName' scraper/config/company.json)
@@ -39,7 +37,7 @@ jobs:
           SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
           TODAY=$(date -u +%Y-%m-%d)
 
-          echo "Upserting ${BRAND} (CIF: ${CIF}) into Solr company core..."
+          echo "Upserting ${BRAND} (CIF: ${CIF}) via peviitor API..."
           jq -n \
             --arg id "$CIF" \
             --arg company "$LEGAL_NAME" \
@@ -49,17 +47,16 @@ jobs:
             --arg loc "$DEFAULT_LOC" \
             --arg today "$TODAY" \
             --arg scraperFile "$SCRAPER_FILE" \
-            '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
             > company_data.json
 
-          curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
-            -X POST \
+          curl -s -X PUT \
+            "https://api.peviitor.ro/v1/firme/company/add/" \
             -H "Content-Type: application/json" \
             --data-binary @company_data.json
 
-          FINAL=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
+          FINAL=$(curl -s \
+            "https://api.peviitor.ro/v1/firme/company/?cif=${CIF}" | jq '.total')
 
           echo "${BRAND} count after upsert: $FINAL"
 
@@ -72,51 +69,46 @@ jobs:
 
       - name: Pre-scrape — Unit Tests
         run: |
+          mkdir -p docs/test-results
           npm run test:unit
           sed -i 's|<title>Test Report</title>|<title>Pre-scrape: Unit Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Pre-scrape: Unit Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/pre-scrape-unit.html || true
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
       - name: Pre-scrape — Integration Tests
         run: |
+          mkdir -p docs/test-results
           npm run test:integration
           sed -i 's|<title>Test Report</title>|<title>Pre-scrape: Integration Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Pre-scrape: Integration Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/pre-scrape-integration.html || true
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
       - name: Run scraper
         run: npm run scrape
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
           
       - name: Check for new jobs
         run: |
-          if [ -f tmp/jobs.json ]; then
+          if [ -f scraper/jobs.json ]; then
             echo "New jobs found:"
-            cat tmp/jobs.json | jq '.jobs | length'
+            cat scraper/jobs.json | jq '.jobs | length'
           else
             echo "No new jobs or scrape failed"
           fi
 
       - name: Post-scrape — E2E Tests
         run: |
+          mkdir -p docs/test-results
           npm run test:e2e
           sed -i 's|<title>Test Report</title>|<title>Post-scrape: E2E Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Post-scrape: E2E Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/post-scrape.html || true
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
       - name: Consistency Tests
         run: |
+          mkdir -p docs/test-results
           npm run test:consistency
           sed -i 's|<title>Test Report</title>|<title>Post-scrape: Consistency Tests — EPAM SYSTEMS INTERNATIONAL SRL</title>|;s|<h1 id="title">Test Report</h1>|<h1 id="title">Post-scrape: Consistency Tests — EPAM SYSTEMS INTERNATIONAL SRL</h1>|' test-report.html
           cp test-report.html docs/test-results/post-scrape-consistency.html || true
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
 
       - name: Upload test artifacts
         if: always()
@@ -129,9 +121,10 @@ jobs:
       - name: Push test results to docs/
         if: always()
         run: |
+          mkdir -p docs/test-results
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/test-results/
+          git add docs/test-results/ || true
           git add docs/jobs.md || true
           git commit -m "[skip ci] Update test results" || echo "No changes to commit"
           git push || echo "Push failed (race condition) — will be picked up next run"
@@ -142,6 +135,6 @@ jobs:
         with:
           name: scraped-jobs
           path: |
-            tmp/jobs.json
-            tmp/jobs_existing.json
+            scraper/jobs.json
+            scraper/jobs_existing.json
           retention-days: 7

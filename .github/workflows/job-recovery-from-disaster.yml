@@ -23,9 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Restore company in SOLR company core
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
+      - name: Restore company in Peviitor API
         run: |
           set -e
 
@@ -48,24 +46,17 @@ jobs:
           echo "Scraper:   $SCRAPER_FILE"
           echo "Date:      $TODAY"
 
-          BEFORE=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1")
+          BEFORE=$(curl -s \
+            "https://api.peviitor.ro/v1/firme/company/?cif=${CIF}")
           echo ""
           echo "=== Current state ==="
-          echo "$BEFORE" | jq '.response.docs[0] // {numFound: 0}'
+          echo "$BEFORE" | jq '.company // {error: "not found"}'
 
           if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
             echo ""
             echo "⚠️ DRY RUN — exiting without changes"
             exit 0
           fi
-
-          echo ""
-          echo "=== Deleting old entry ==="
-          curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/update?commit=true" \
-            -X POST -H "Content-Type: text/xml" \
-            --data-binary "<delete><id>${CIF}</id></delete>"
 
           echo ""
           echo "=== Creating fresh entry ==="
@@ -78,21 +69,21 @@ jobs:
             --arg loc "$DEFAULT_LOC" \
             --arg today "$TODAY" \
             --arg scraperFile "$SCRAPER_FILE" \
-            '[{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}]' \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
             > company_data.json
 
           echo "Inserting:"
           cat company_data.json | jq .
 
-          curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
-            -X POST -H "Content-Type: application/json" \
+          curl -s -X PUT \
+            "https://api.peviitor.ro/v1/firme/company/add/" \
+            -H "Content-Type: application/json" \
             --data-binary @company_data.json
 
           echo ""
           echo "=== Verification ==="
-          AFTER=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1")
+          AFTER=$(curl -s \
+            "https://api.peviitor.ro/v1/firme/company/?cif=${CIF}")
 
           VERIFIED=true
 
@@ -141,7 +132,7 @@ jobs:
             fi
           }
 
-          D=$(echo "$AFTER" | jq '.response.docs[0]')
+          D=$(echo "$AFTER" | jq '.company')
           echo ""
           echo "--- Field checks ---"
           check_field "CIF"        "$CIF"         "$(echo "$D" | jq -r '.id')"
@@ -170,14 +161,10 @@ jobs:
 
       - name: Run Integration Tests
         if: github.event.inputs.dry_run != 'true'
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
         run: |
           npm run test:integration
 
       - name: Run E2E Tests
         if: github.event.inputs.dry_run != 'true'
-        env:
-          SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
         run: |
           npm run test:e2e

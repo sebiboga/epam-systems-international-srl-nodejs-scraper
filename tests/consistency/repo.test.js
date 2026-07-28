@@ -81,17 +81,6 @@ describe("Repository Configuration", () => {
     });
   });
 
-  describe("SOLR_AUTH secret", () => {
-    it("should be defined in CI environment", () => {
-      if (!REPO) {
-        console.log("GITHUB_REPOSITORY not set — running locally, skipping");
-        return;
-      }
-      expect(process.env.SOLR_AUTH).toBeTruthy();
-      console.log("✅ SOLR_AUTH is set");
-    });
-  });
-
   describe("workflow files", () => {
     it("must have job-seeker-ro-spider.yml", () => {
       const ymlPath = path.resolve(__dirname, "../..", SCRAPER_YML);

@@ -278,13 +278,7 @@ gh api -X POST repos/sebiboga/<slug>-nodejs-scraper/pages \
   -f source[path]=/docs
 ```
 
-**The `SOLR_AUTH` secret must be added MANUALLY** via the UI:
-
-`Settings → Secrets and variables → Actions → New repository secret`
-- Name: `SOLR_AUTH`
-- Value: same as EPAM (user knows it; don't guess)
-
-You CANNOT copy secrets between repos via `gh` — flag this to the user as a manual step.
+**No secrets needed.** The EPAM template uses the Peviitor API (public, no auth). Derived scrapers follow the same pattern — no `SOLR_AUTH` or other secrets required.
 
 ---
 
@@ -293,7 +287,7 @@ You CANNOT copy secrets between repos via `gh` — flag this to the user as a ma
 ```bash
 npm install
 npm run test:unit        # Must pass before push
-node -e "import('./index.js').then(m => /* live scrape probe */)"
+node -e "import('./scraper/index.js').then(m => /* live scrape probe */)"
 ```
 
 Probe your scraping logic against the real site to confirm at least one job is parsed correctly.

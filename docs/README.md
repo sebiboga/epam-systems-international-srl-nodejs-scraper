@@ -4,6 +4,8 @@
 
 Extrage anunțurile de pe [EPAM Careers Romania](https://careers.epam.com/en/jobs/romania) și le publică în [peviitor.ro](https://peviitor.ro) prin API-ul Peviitor.
 
+> **🌱 Template repo.** Acest repo este **implementarea de referință** pentru toate scraper-ele Node.js din ecosistemul peviitor.ro. Alte scraper-e sunt derivate din acesta. Vezi [ai/AI-DERIVATION-GUIDE.md](../ai/AI-DERIVATION-GUIDE.md).
+
 ## Identificare
 
 Toate request-urile HTTP folosesc User-Agent-ul:
