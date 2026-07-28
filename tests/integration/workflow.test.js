@@ -152,7 +152,6 @@ describe('Integration: API Workflow', () => {
       expect(Array.isArray(result.career)).toBe(true);
       expect(result.career[0]).toMatch(/^https?:\/\/.+/);
       expect(result).toHaveProperty('lastScraped');
-      expect(result).toHaveProperty('scraperFile');
     }, 15000);
 
     itIfApi('should have optional field (group) if present', async () => {

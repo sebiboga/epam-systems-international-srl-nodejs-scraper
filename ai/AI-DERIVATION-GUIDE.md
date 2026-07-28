@@ -105,16 +105,16 @@ gh repo delete sebiboga/<slug>-nodejs-scraper --yes
 
 ```json
 {
-  "cif": "<7-9 digits>",
-  "legalName": "<COMPANY NAME LEGAL>",
+  "id": "<CIF/CUI, 8 digits>",
+  "company": "<COMPANY NAME LEGAL>",
   "brand": "<Commercial brand>",
-  "website": "https://...",
-  "careerUrl": "https://...",
+  "status": "activ",
+  "location": ["<city>"],
+  "website": ["https://..."],
+  "career": ["https://..."],
   "apiBase": "https://...",
   "apiEndpoint": "<optional, e.g. /_ajax/get-job-list.php>",
-  "apiCountryId": "<optional, only if site uses country IDs>",
-  "defaultLocation": "<city>",
-  "scraperFile": "https://raw.githubusercontent.com/sebiboga/<slug>-nodejs-scraper/main/.github/workflows/job-seeker-ro-spider.yml"
+  "apiCountryId": "<optional, only if site uses country IDs>"
 }
 ```
 

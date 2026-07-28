@@ -7,7 +7,7 @@ EPAM scraper for peviitor.ro (Node.js, ESM, Jest)
 This repo is the **reference implementation** for all Node.js scrapers in the peviitor.ro ecosystem. Other scrapers are derived from it.
 
 When making changes:
-- **All company-specific identity lives in `scraper/config/company.json`** (CIF, brand, legalName, URLs, API params). Read from `scraper/config/company.js` in Node code, or via `jq` in workflows. Never hardcode in source files.
+- **All company-specific identity lives in `scraper/config/company.json`** (id, company, brand, URLs, API params). Read from `scraper/config/company.js` in Node code, or via `jq` in workflows. Never hardcode in source files.
 - **Only the API parsing logic in `scraper/index.js`** (`fetchJobsPage`, `parseApiJobs`) is EPAM-specific. The output shape (`mapToJobModel`, `transformJobsForSOLR`) must stay uniform across derived scrapers.
 
 ## Critical Rules
