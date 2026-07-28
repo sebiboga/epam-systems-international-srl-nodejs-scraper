@@ -27,13 +27,12 @@ jobs:
         run: |
           set -e
 
-          CIF=$(jq -r '.cif' scraper/config/company.json)
-          LEGAL_NAME=$(jq -r '.legalName' scraper/config/company.json)
+          CIF=$(jq -r '.id' scraper/config/company.json)
+          LEGAL_NAME=$(jq -r '.company' scraper/config/company.json)
           BRAND=$(jq -r '.brand' scraper/config/company.json)
-          WEBSITE=$(jq -r '.website' scraper/config/company.json)
-          CAREER=$(jq -r '.careerUrl' scraper/config/company.json)
-          DEFAULT_LOC=$(jq -r '.defaultLocation' scraper/config/company.json)
-          SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
+          WEBSITE=$(jq -r '.website[0]' scraper/config/company.json)
+          CAREER=$(jq -r '.career[0]' scraper/config/company.json)
+          LOC=$(jq -r '.location[0]' scraper/config/company.json)
           TODAY=$(date -u +%Y-%m-%d)
 
           echo "=== Target state ==="
@@ -42,8 +41,7 @@ jobs:
           echo "Brand:     $BRAND"
           echo "Website:   $WEBSITE"
           echo "Career:    $CAREER"
-          echo "Location:  $DEFAULT_LOC"
-          echo "Scraper:   $SCRAPER_FILE"
+          echo "Location:  $LOC"
           echo "Date:      $TODAY"
 
           BEFORE=$(curl -s \
@@ -66,10 +64,9 @@ jobs:
             --arg brand "$BRAND" \
             --arg website "$WEBSITE" \
             --arg career "$CAREER" \
-            --arg loc "$DEFAULT_LOC" \
+            --arg loc "$LOC" \
             --arg today "$TODAY" \
-            --arg scraperFile "$SCRAPER_FILE" \
-            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today}' \
             > company_data.json
 
           echo "Inserting:"
@@ -142,8 +139,6 @@ jobs:
           check_array "Location"   "$(echo "$D" | jq '.location')"
           check_array "Website"    "$(echo "$D" | jq '.website')"
           check_array "Career"     "$(echo "$D" | jq '.career')"
-          check_field "scraperFile" "$SCRAPER_FILE" "$(echo "$D" | jq -r '.scraperFile')"
-
           WEB_URL=$(echo "$D" | jq -r '.website[0] // ""')
           CAREER_URL=$(echo "$D" | jq -r '.career[0] // ""')
           LAST_DATE=$(echo "$D" | jq -r '.lastScraped // ""')

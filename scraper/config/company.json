@@ -1,11 +1,11 @@
 {
-  "cif": "33159615",
-  "legalName": "EPAM SYSTEMS INTERNATIONAL SRL",
+  "id": "33159615",
+  "company": "EPAM SYSTEMS INTERNATIONAL SRL",
   "brand": "EPAM",
-  "website": "https://www.epam.com",
-  "careerUrl": "https://careers.epam.com",
+  "status": "activ",
+  "location": ["București"],
+  "website": ["https://www.epam.com"],
+  "career": ["https://careers.epam.com"],
   "apiBase": "https://careers.epam.com",
-  "apiCountryId": "8150000000000001155",
-  "defaultLocation": "București",
-  "scraperFile": "https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/main/.github/workflows/job-seeker-ro-spider.yml"
+  "apiCountryId": "8150000000000001155"
 }

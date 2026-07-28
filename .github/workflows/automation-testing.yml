@@ -88,13 +88,12 @@ jobs:
       - name: Ensure company exists in company core
         run: |
           TODAY=$(date -u +%Y-%m-%d)
-          CIF=$(jq -r '.cif' scraper/config/company.json)
-          LEGAL_NAME=$(jq -r '.legalName' scraper/config/company.json)
+          CIF=$(jq -r '.id' scraper/config/company.json)
+          LEGAL_NAME=$(jq -r '.company' scraper/config/company.json)
           BRAND=$(jq -r '.brand' scraper/config/company.json)
-          WEBSITE=$(jq -r '.website' scraper/config/company.json)
-          CAREER=$(jq -r '.careerUrl' scraper/config/company.json)
-          DEFAULT_LOC=$(jq -r '.defaultLocation' scraper/config/company.json)
-          SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
+          WEBSITE=$(jq -r '.website[0]' scraper/config/company.json)
+          CAREER=$(jq -r '.career[0]' scraper/config/company.json)
+          LOC=$(jq -r '.location[0]' scraper/config/company.json)
 
           jq -n \
             --arg id "$CIF" \
@@ -102,10 +101,9 @@ jobs:
             --arg brand "$BRAND" \
             --arg website "$WEBSITE" \
             --arg career "$CAREER" \
-            --arg loc "$DEFAULT_LOC" \
+            --arg loc "$LOC" \
             --arg today "$TODAY" \
-            --arg scraperFile "$SCRAPER_FILE" \
-            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today}' \
             > company_data.json
 
           echo "Upserting ${BRAND} (CIF: ${CIF}) via peviitor API..."

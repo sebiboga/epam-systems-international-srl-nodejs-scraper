@@ -6,7 +6,7 @@ import { querySOLR, upsertJobs, upsertCompany, deleteJobByUrl } from "./api.js";
 import { generateJobsMarkdown } from "./markdown-generator.js";
 import companyConfig from "./config/company.js";
 
-const COMPANY_CIF = companyConfig.cif;
+const COMPANY_CIF = companyConfig.id;
 const JOB_BASE = companyConfig.apiBase;
 const ROMANIA_COUNTRY_ID = companyConfig.apiCountryId;
 
@@ -267,14 +267,13 @@ async function main() {
         company,
         brand: companyConfig.brand || undefined,
         status: status === 'active' ? 'activ' : (status || "activ"),
-        location: address ? [address] : [companyConfig.defaultLocation],
-        website: [companyConfig.website],
-        career: [companyConfig.careerUrl],
-        scraperFile: companyConfig.scraperFile,
+        location: address ? [address] : companyConfig.location,
+        website: companyConfig.website,
+        career: companyConfig.career,
         lastScraped: new Date().toISOString().split('T')[0]
       });
     } catch (err) {
-      console.log(`Note: Could not upsert company to SOLR core: ${err.message}`);
+      console.log(`Note: Could not upsert company: ${err.message}`);
     }
 
     const rawJobs = await scrapeAllListings(testOnlyOnePage);
@@ -315,9 +314,9 @@ async function main() {
       company: transformedPayload.company,
       brand: companyConfig.brand || undefined,
       status: status === 'active' ? 'activ' : (status || "activ"),
-      location: address ? [address] : [companyConfig.defaultLocation],
-      website: [companyConfig.website],
-      career: [companyConfig.careerUrl],
+      location: address ? [address] : companyConfig.location,
+      website: companyConfig.website,
+      career: companyConfig.career,
       lastScraped: new Date().toISOString().split('T')[0]
     };
     const markdown = generateJobsMarkdown(companyData, transformedPayload.jobs);

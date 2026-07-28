@@ -17,9 +17,9 @@ import companyConfig from "./config/company.js";
 
 const Peviitor_API_URL = "https://api.peviitor.ro/v1/company/";
 
-const COMPANY_CIF = companyConfig.cif;
+const COMPANY_CIF = companyConfig.id;
 const COMPANY_BRAND = companyConfig.brand;
-const COMPANY_LEGAL_NAME = companyConfig.legalName;
+const COMPANY_LEGAL_NAME = companyConfig.company;
 
 const CACHE_MAX_AGE_DAYS = 7;
 const ROOT_CACHE_PATH = "company.json";

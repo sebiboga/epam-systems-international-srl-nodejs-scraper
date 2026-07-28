@@ -15,8 +15,8 @@ import companyConfig from "../scraper/config/company.js";
 import { querySOLR, deleteJobByUrl } from "../scraper/api.js";
 import { validateByHead } from "../scraper/job-validator.js";
 
-const CIF = companyConfig.cif;
-const COMPANY = companyConfig.legalName;
+const CIF = companyConfig.id;
+const COMPANY = companyConfig.company;
 
 async function main() {
   const dryRun = process.argv.includes("--dry-run");

@@ -46,9 +46,9 @@ function itIfAnaf(name, fn, timeout) {
 }
 
 import companyConfig from '../../scraper/config/company.js';
-const TEST_CIF = companyConfig.cif;
+const TEST_CIF = companyConfig.id;
 const TEST_BRAND = companyConfig.brand;
-const COMPANY_NAME = companyConfig.legalName;
+const COMPANY_NAME = companyConfig.company;
 const EPAM_API_URL = 'https://careers.epam.com/api/jobs/v2/search/careers-i18n?from=0&lang=en&size=5&sortBy=relevance%3Brelocation%3Dasc&websiteLocale=en-us&facets=country%3D8150000000000001155';
 
 beforeAll(async () => {

@@ -32,7 +32,7 @@ if (args[0] === "search") {
       process.exit(1);
     });
 } else {
-  const cif = args[0] || companyConfig.cif;
+  const cif = args[0] || companyConfig.id;
   console.log(`=== Testing ANAF API for CIF: ${cif} ===\n`);
 
   getCompanyFromANAF(cif)

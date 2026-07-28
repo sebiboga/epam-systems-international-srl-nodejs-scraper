@@ -46,9 +46,9 @@ function itIfAnaf(name, fn, timeout) {
 }
 
 import companyConfig from '../../scraper/config/company.js';
-const COMPANY_CIF = companyConfig.cif;
+const COMPANY_CIF = companyConfig.id;
 const COMPANY_BRAND = companyConfig.brand;
-const COMPANY_NAME = companyConfig.legalName;
+const COMPANY_NAME = companyConfig.company;
 
 beforeAll(async () => {
   [HAS_API, HAS_ANAF] = await Promise.all([checkApiAvailability(), checkAnafAvailability()]);
