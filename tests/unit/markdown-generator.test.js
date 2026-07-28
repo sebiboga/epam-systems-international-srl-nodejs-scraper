@@ -1,4 +1,4 @@
-import { generateJobsMarkdown } from "../../src/markdown-generator.js";
+import { generateJobsMarkdown } from "../../scraper/markdown-generator.js";
 
 const baseCompany = {
   id: "33159615",

@@ -168,9 +168,9 @@ Replace the `parseApiJobs` block (EPAM-specific) with tests for your new parser:
 
 Rename `EPAM_ANAF_RECORD` → `<COMPANY>_ANAF_RECORD` and update the mocked data to match the new ANAF response (run `curl https://demoanaf.ro/api/company/<CIF>` to see the real shape).
 
-### 5.3 `tests/unit/solr.test.js` — check CIF regex
+### 5.3 `tests/unit/api.test.js` — check CIF regex
 
-If your CIF is 7 digits (some Romanian companies have shorter CIFs), the default `/^\d{8}$/` regex will fail. Replace with `/^\d{6,9}$/` or whichever range covers Romanian CIFs you're targeting.
+If your CIF is 7 digits (some Romanian companies have shorter CIFs), update the `/^\d{6,9}$/` regex in the "Data Integrity" describe block to match your CIF range (e.g. `/^\d{7,8}$/`).
 
 ### 5.4 `tests/integration/workflow.test.js` — make config-driven
 
@@ -387,7 +387,7 @@ beforeAll(async () => { /* ... */ }, 60000);
 
 ### Pitfall #6 — CIF length varies (issue #9 Continental)
 
-Romanian CIFs are NOT always 8 digits. Continental Hotels has 7 digits (`1559737`). The default regex `/^\d{8}$/` in `tests/unit/solr.test.js` will fail. Use `/^\d{6,9}$/`.
+Romanian CIFs are NOT always 8 digits. Continental Hotels has 7 digits (`1559737`). The default regex `/^\d{6,9}$/` in `tests/unit/api.test.js` covers 6-9 digits. If your CIF range is narrower, update it (e.g. `/^\d{7,8}$/`).
 
 ### Pitfall #7 — Stale ANAF cache from template (issue #1 Continental)
 

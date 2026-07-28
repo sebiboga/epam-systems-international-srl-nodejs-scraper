@@ -4,7 +4,7 @@ describe('index.js Component Tests', () => {
   let index;
 
   beforeAll(async () => {
-    index = await import('../../index.js');
+    index = await import('../../scraper/index.js');
   });
 
   describe('transformJobsForSOLR', () => {

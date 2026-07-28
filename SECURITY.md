@@ -24,7 +24,7 @@ When using this project:
 - Never commit `.env` files or credentials to the repository
 - Store secrets in GitHub Secrets for CI/CD
 - Rotate credentials regularly
-- Review Solr access permissions
+- Review Peviitor API access permissions
 
 ## Dependencies
 

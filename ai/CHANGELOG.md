@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.4.2] - 2026-06-17
 
 ### Removed
-- Dead export `getCompanyBrand()` from `company.js` (only used by a tautological test that asserted `"EPAM" === "EPAM"`). Brand is now sourced from `config/company.json` via `companyConfig.brand`.
+- Dead export `getCompanyBrand()` from `company.js` (only used by a tautological test that asserted `"LSEG" === "LSEG"`). Brand is now sourced from `config/company.json` via `companyConfig.brand`.
 
 ### Changed
 - `solr.js`: `getSolrAuth()` now throws on missing `SOLR_AUTH` and is used internally by all 6 SOLR operations. Removed 6 inline duplications of `process.env.SOLR_AUTH` reads + error checks.

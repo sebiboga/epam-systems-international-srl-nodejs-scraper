@@ -2,9 +2,9 @@
   "name": "scraper-epam-ro",
   "version": "1.5.0",
   "type": "module",
-  "main": "index.js",
+  "main": "scraper/index.js",
   "scripts": {
-    "scrape": "node --no-deprecation index.js",
+    "scrape": "node --no-deprecation scraper/index.js",
     "test": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:unit": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=unit",
     "test:integration": "node --no-deprecation --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=integration",
@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "node-fetch": "^3.3.2",
-    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.4.0"
   },
   "devDependencies": {

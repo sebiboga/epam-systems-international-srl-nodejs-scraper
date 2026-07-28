@@ -6,11 +6,11 @@ jest.unstable_mockModule('node-fetch', () => ({
   default: mockFetch
 }));
 
-describe('src/job-validator.js', () => {
+describe('scraper/job-validator.js', () => {
   let validator;
 
   beforeAll(async () => {
-    validator = await import('../../src/job-validator.js');
+    validator = await import('../../scraper/job-validator.js');
   });
 
   beforeEach(() => {

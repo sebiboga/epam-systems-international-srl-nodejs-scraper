@@ -92,13 +92,13 @@ jobs:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
         run: |
           # Load company identity from single source of truth
-          CIF=$(jq -r '.cif' config/company.json)
-          LEGAL_NAME=$(jq -r '.legalName' config/company.json)
-          BRAND=$(jq -r '.brand' config/company.json)
-          WEBSITE=$(jq -r '.website' config/company.json)
-          CAREER=$(jq -r '.careerUrl' config/company.json)
-          DEFAULT_LOC=$(jq -r '.defaultLocation' config/company.json)
-          SCRAPER_FILE=$(jq -r '.scraperFile' config/company.json)
+          CIF=$(jq -r '.cif' scraper/config/company.json)
+          LEGAL_NAME=$(jq -r '.legalName' scraper/config/company.json)
+          BRAND=$(jq -r '.brand' scraper/config/company.json)
+          WEBSITE=$(jq -r '.website' scraper/config/company.json)
+          CAREER=$(jq -r '.careerUrl' scraper/config/company.json)
+          DEFAULT_LOC=$(jq -r '.defaultLocation' scraper/config/company.json)
+          SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
           TODAY=$(date -u +%Y-%m-%d)
 
           echo "Upserting ${BRAND} (CIF: ${CIF}) into Solr company core..."

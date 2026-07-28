@@ -11,9 +11,9 @@
  *   --dry-run    Show invalid jobs but do not delete
  *   --delete     Delete invalid jobs from SOLR after listing
  */
-import companyConfig from "../config/company.js";
-import { querySOLR, deleteJobByUrl } from "../solr.js";
-import { validateByHead } from "../src/job-validator.js";
+import companyConfig from "../scraper/config/company.js";
+import { querySOLR, deleteJobByUrl } from "../scraper/api.js";
+import { validateByHead } from "../scraper/job-validator.js";
 
 const CIF = companyConfig.cif;
 const COMPANY = companyConfig.legalName;

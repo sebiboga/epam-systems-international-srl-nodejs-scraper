@@ -1,19 +1,20 @@
 import { jest } from '@jest/globals';
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import fetch from 'node-fetch';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-dotenv.config({ path: path.resolve(__dirname, '../../.env.local') });
+const API_BASE = 'https://api.peviitor.ro/v1';
+const EPAM_CIF = '33159615';
 
-const HAS_SOLR = !!process.env.SOLR_AUTH;
+let HAS_API = false;
 
-function itIfSolr(name, fn, timeout) {
-  if (HAS_SOLR) {
-    return it(name, fn, timeout);
+async function checkApiAvailability() {
+  try {
+    const res = await fetch(`${API_BASE}/scraper/jobs/?cif=${EPAM_CIF}&rows=1`, {
+      signal: AbortSignal.timeout(5000)
+    });
+    return res.ok || res.status === 400;
+  } catch {
+    return false;
   }
-  return it.skip(`${name} (skipped: SOLR_AUTH not set)`, fn, timeout);
 }
 
 let HAS_ANAF = false;
@@ -30,6 +31,13 @@ async function checkAnafAvailability() {
   }
 }
 
+function itIfApi(name, fn, timeout) {
+  if (HAS_API) {
+    return it(name, fn, timeout);
+  }
+  return it.skip(`${name} (skipped: API unavailable)`, fn, timeout);
+}
+
 function itIfAnaf(name, fn, timeout) {
   if (HAS_ANAF) {
     return it(name, fn, timeout);
@@ -37,17 +45,15 @@ function itIfAnaf(name, fn, timeout) {
   return it.skip(`${name} (skipped: ANAF API unavailable)`, fn, timeout);
 }
 
-beforeAll(async () => {
-  HAS_ANAF = await checkAnafAvailability();
-  if (HAS_SOLR) {
-    process.env.SOLR_AUTH = process.env.SOLR_AUTH;
-  }
-});
-
-const TEST_CIF = '33159615';
-const TEST_BRAND = 'EPAM';
+import companyConfig from '../../scraper/config/company.js';
+const TEST_CIF = companyConfig.cif;
+const TEST_BRAND = companyConfig.brand;
+const COMPANY_NAME = companyConfig.legalName;
 const EPAM_API_URL = 'https://careers.epam.com/api/jobs/v2/search/careers-i18n?from=0&lang=en&size=5&sortBy=relevance%3Brelocation%3Dasc&websiteLocale=en-us&facets=country%3D8150000000000001155';
-const ROMANIAN_CITIES = ['Bucharest', 'București', 'Cluj-Napoca', 'Timișoara', 'Iași', 'Brașov', 'Constanța', 'Sibiu', 'Oradea'];
+
+beforeAll(async () => {
+  [HAS_API, HAS_ANAF] = await Promise.all([checkApiAvailability(), checkAnafAvailability()]);
+});
 
 describe('E2E: Full Scraping Pipeline', () => {
 
@@ -65,7 +71,6 @@ describe('E2E: Full Scraping Pipeline', () => {
     }, 15000);
 
     it('should respond with valid job data from EPAM API', () => {
-      expect(apiData).toHaveProperty('data');
       expect(apiData.data).toHaveProperty('jobs');
       expect(Array.isArray(apiData.data.jobs)).toBe(true);
       expect(apiData.data.jobs.length).toBeGreaterThan(0);
@@ -88,15 +93,6 @@ describe('E2E: Full Scraping Pipeline', () => {
       expect(allCountries.length).toBeGreaterThan(0);
       expect(allCountries.some(c => c === 'romania')).toBe(true);
     });
-
-    it('should have country set to Romania', () => {
-      const job = apiData.data.jobs[0];
-      expect(job).toHaveProperty('country');
-      const romaniaCountry = (job.country || []).some(c =>
-        c.name?.toLowerCase() === 'romania'
-      );
-      expect(romaniaCountry).toBe(true);
-    });
   });
 
   describe('Parse + Transform Pipeline', () => {
@@ -104,7 +100,7 @@ describe('E2E: Full Scraping Pipeline', () => {
     let apiData;
 
     beforeAll(async () => {
-      index = await import('../../index.js');
+      index = await import('../../scraper/index.js');
       const res = await fetch(EPAM_API_URL, {
         headers: {
           'User-Agent': 'job_seeker_ro_spider',
@@ -152,14 +148,14 @@ describe('E2E: Full Scraping Pipeline', () => {
 
       const payload = {
         source: 'epam.com',
-        company: 'EPAM SYSTEMS INTERNATIONAL SRL',
+        company: COMPANY_NAME,
         cif: TEST_CIF,
         jobs
       };
 
       const transformed = index.transformJobsForSOLR(payload);
 
-      expect(transformed.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
+      expect(transformed.company).toBe(COMPANY_NAME);
       expect(transformed.jobs.length).toBe(jobs.length);
 
       for (const job of transformed.jobs) {
@@ -188,15 +184,15 @@ describe('E2E: Full Scraping Pipeline', () => {
     let company;
 
     beforeAll(async () => {
-      anaf = await import('../../src/anaf.js');
-      company = await import('../../company.js');
+      anaf = await import('../../scraper/company-data.js');
+      company = await import('../../scraper/company.js');
     });
 
     itIfAnaf('should find EPAM in ANAF and validate active status', async () => {
       const results = await anaf.searchCompany(TEST_BRAND);
 
       const epam = results.find(c =>
-        c.name.toUpperCase().startsWith(TEST_BRAND + ' ') &&
+        c.cui.toString() === TEST_CIF &&
         c.statusLabel === 'Funcțiune'
       );
       expect(epam).toBeDefined();
@@ -207,15 +203,15 @@ describe('E2E: Full Scraping Pipeline', () => {
       expect(anafData.inactive).toBe(false);
     }, 30000);
 
-    itIfSolr('should run full validation and report active status with job count', async () => {
+    itIfApi('should run full validation and report active status with job count', async () => {
       const result = await company.validateAndGetCompany();
 
       expect(result.status).toBe('active');
-      expect(result.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
+      expect(result.company).toBe(COMPANY_NAME);
       expect(result.cif).toBe(TEST_CIF);
 
       if (result.existingJobsCount === 0) {
-        console.log('⚠️ No EPAM jobs in Solr — skipping job count assertion');
+        console.log('⚠️ No EPAM jobs in API — skipping job count assertion');
         return;
       }
       expect(result.existingJobsCount).toBeGreaterThan(0);
@@ -226,11 +222,11 @@ describe('E2E: Full Scraping Pipeline', () => {
     let anaf;
 
     beforeAll(async () => {
-      anaf = await import('../../src/anaf.js');
+      anaf = await import('../../scraper/company-data.js');
     });
 
     itIfAnaf('should detect inactive/radiated companies via ANAF', async () => {
-      const results = await anaf.searchCompany('EPAM');
+      const results = await anaf.searchCompany(TEST_BRAND);
 
       const nonActive = results.find(c => c.statusLabel !== 'Funcțiune');
 
@@ -248,34 +244,33 @@ describe('E2E: Full Scraping Pipeline', () => {
     }, 30000);
   });
 
-  describe('SOLR Data Verification', () => {
-    let solr;
+  describe('API Data Verification', () => {
+    let api;
 
     beforeAll(async () => {
-      solr = await import('../../solr.js');
+      api = await import('../../scraper/api.js');
     });
 
-    itIfSolr('should have EPAM jobs in SOLR with correct company name', async () => {
-      const result = await solr.querySOLR(TEST_CIF);
+    itIfApi('should have EPAM jobs in API with correct company name', async () => {
+      const result = await api.querySOLR(TEST_CIF);
 
       if (result.numFound === 0) {
-        console.log('⚠️ No EPAM jobs in Solr — skipping SOLR data verification');
+        console.log('⚠️ No EPAM jobs in API — skipping API data verification');
         return;
       }
 
       for (const job of result.docs) {
-        expect(job.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
+        expect(job.company).toBe(COMPANY_NAME);
         expect(job.cif).toBe(TEST_CIF);
       }
     }, 15000);
 
-    itIfSolr('should have EPAM company core entry with required fields', async () => {
-      const result = await solr.queryCompanySOLR(`id:${TEST_CIF}`);
+    itIfApi('should have EPAM company core entry with required fields', async () => {
+      const companyDoc = await api.getCompanyByCif(TEST_CIF);
 
-      expect(result.numFound).toBe(1);
-      const epam = result.docs[0];
-      expect(epam.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
-      expect(epam.status).toBe('activ');
+      expect(companyDoc).toBeDefined();
+      expect(companyDoc.company).toBe(COMPANY_NAME);
+      expect(companyDoc.status).toBe('activ');
     }, 15000);
   });
 });
