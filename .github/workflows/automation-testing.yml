@@ -91,19 +91,19 @@ jobs:
           CIF=$(jq -r '.id' scraper/config/company.json)
           LEGAL_NAME=$(jq -r '.company' scraper/config/company.json)
           BRAND=$(jq -r '.brand' scraper/config/company.json)
-          WEBSITE=$(jq -r '.website[0]' scraper/config/company.json)
-          CAREER=$(jq -r '.career[0]' scraper/config/company.json)
-          LOC=$(jq -r '.location[0]' scraper/config/company.json)
+          WEBSITE_JSON=$(jq -c '.website' scraper/config/company.json)
+          CAREER_JSON=$(jq -c '.career' scraper/config/company.json)
+          LOC_JSON=$(jq -c '.location' scraper/config/company.json)
 
           jq -n \
             --arg id "$CIF" \
             --arg company "$LEGAL_NAME" \
             --arg brand "$BRAND" \
-            --arg website "$WEBSITE" \
-            --arg career "$CAREER" \
-            --arg loc "$LOC" \
+            --argjson website "$WEBSITE_JSON" \
+            --argjson career "$CAREER_JSON" \
+            --argjson location "$LOC_JSON" \
             --arg today "$TODAY" \
-            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today}' \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:$location,website:$website,career:$career,lastScraped:$today}' \
             > company_data.json
 
           echo "Upserting ${BRAND} (CIF: ${CIF}) via peviitor API..."
