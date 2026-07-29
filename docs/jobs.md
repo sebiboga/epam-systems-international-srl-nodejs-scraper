@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-28 |
+| Last Scraped | 2026-07-29 |
 
 ## Current Job Listings (81)
 
-_Generated: 2026-07-28T08:24:51.585Z_
+_Generated: 2026-07-29T08:30:19.097Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -46,6 +46,14 @@ _Generated: 2026-07-28T08:24:51.585Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap sapui5, json, git, qunit
+- **Status:** scraped
+
+### SAP MDG Technical Architect / SME – Material Master Data
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt0qemxnh1ybnlcd8e_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt0qemxnh1ybnlcd8e_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
 - **Status:** scraped
 
 ### SAP S/4HANA Public Cloud Solution Architect
@@ -94,6 +102,14 @@ _Generated: 2026-07-28T08:24:51.585Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** delivery management.ai, generative ai fundamentals, amazon web services, google cloud platform, databricks
+- **Status:** scraped
+
+### SAP MDG Technical Architect / SME – Material Master Data
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
 - **Status:** scraped
 
 ### Manager, Data Analytics Consulting
@@ -608,14 +624,6 @@ _Generated: 2026-07-28T08:24:51.585Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
-### Lead SAP FSM Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-fsm-engineer-bltvj13nbi0qox36uj1_en](https://careers.epam.com/en/vacancy/lead-sap-fsm-engineer-bltvj13nbi0qox36uj1_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap cap based node.js, sapui5, cap, sap business technology platform
-- **Status:** scraped
-
 ### Senior Disaster Recovery Specialist
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-disaster-recovery-specialist-bltvwme4s0n7nswbz5k_en](https://careers.epam.com/en/vacancy/senior-disaster-recovery-specialist-bltvwme4s0n7nswbz5k_en)
@@ -630,14 +638,6 @@ _Generated: 2026-07-28T08:24:51.585Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
-### Senior SAP FSM Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-fsm-engineer-bltyma0j3xte63d5y3b_en](https://careers.epam.com/en/vacancy/senior-sap-fsm-engineer-bltyma0j3xte63d5y3b_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap cap based node.js, sapui5, cap, sap business technology platform
 - **Status:** scraped
 
 ### Lead Automation Tester in Python
