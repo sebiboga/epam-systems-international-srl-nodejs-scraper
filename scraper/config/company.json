@@ -5,7 +5,5 @@
   "status": "activ",
   "location": ["București"],
   "website": ["https://www.epam.com"],
-  "career": ["https://careers.epam.com"],
-  "apiBase": "https://careers.epam.com",
-  "apiCountryId": "8150000000000001155"
+  "career": ["https://careers.epam.com"]
 }

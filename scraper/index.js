@@ -5,10 +5,11 @@ import { validateAndGetCompany } from "./company.js";
 import { querySOLR, upsertJobs, upsertCompany, deleteJobByUrl } from "./api.js";
 import { generateJobsMarkdown } from "./markdown-generator.js";
 import companyConfig from "./config/company.js";
+import scraperConfig from "./config/scraper.js";
 
 const COMPANY_CIF = companyConfig.id;
-const JOB_BASE = companyConfig.apiBase;
-const ROMANIA_COUNTRY_ID = companyConfig.apiCountryId;
+const JOB_BASE = scraperConfig.apiBase;
+const ROMANIA_COUNTRY_ID = scraperConfig.apiCountryId;
 
 const TIMEOUT = 10000;
 const PAGE_SIZE = 10;
