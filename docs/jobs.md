@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-07-29 |
+| Last Scraped | 2026-07-30 |
 
-## Current Job Listings (81)
+## Current Job Listings (79)
 
-_Generated: 2026-07-29T08:30:19.097Z_
+_Generated: 2026-07-30T08:14:38.939Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -38,14 +38,6 @@ _Generated: 2026-07-29T08:30:19.097Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap basis and devops, sap basis, sap hana db, sap maxdb, ibm db2
-- **Status:** scraped
-
-### Senior SAP UI5 Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-ui5-engineer-blt0e1aea0e0e7dffac_en](https://careers.epam.com/en/vacancy/senior-sap-ui5-engineer-blt0e1aea0e0e7dffac_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap sapui5, json, git, qunit
 - **Status:** scraped
 
 ### SAP MDG Technical Architect / SME – Material Master Data
@@ -264,14 +256,6 @@ _Generated: 2026-07-29T08:30:19.097Z_
 - **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
-### Senior/Lead SAP OpenText VIM Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-lead-sap-opentext-vim-consultant-blt99e25310c2dc79a9_en](https://careers.epam.com/en/vacancy/senior-lead-sap-opentext-vim-consultant-blt99e25310c2dc79a9_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), opentext extended ecm for sap solutions, sap hana platform
-- **Status:** scraped
-
 ### Senior Data Analytics Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-analytics-consultant-blt9fdf7a4e1aeb5b66_en](https://careers.epam.com/en/vacancy/senior-data-analytics-consultant-blt9fdf7a4e1aeb5b66_en)
@@ -416,6 +400,14 @@ _Generated: 2026-07-29T08:30:19.097Z_
 - **Tags:** data science consulting, scrum, kanban, mlops, docker, kubernetes, github, numpy, pandas, tensorflow
 - **Status:** scraped
 
+### SAP GRC Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-grc-consultant-bltfcoc93wi0j863nye_en](https://careers.epam.com/en/vacancy/sap-grc-consultant-bltfcoc93wi0j863nye_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap security, sap script, sap query, odata, sap erp, sap fiori, abap restful programming model (rap), sap cap cds, sap grc and cybersecurity
+- **Status:** scraped
+
 ### Senior Data Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en)
@@ -526,14 +518,6 @@ _Generated: 2026-07-29T08:30:19.097Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
-### Senior UX Designer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-ux-designer-blto27crpm9c5icsqg0_en](https://careers.epam.com/en/vacancy/senior-ux-designer-blto27crpm9c5icsqg0_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** ux design, sap fiori ux, user research, visual design
 - **Status:** scraped
 
 ### Senior Automation Tester in Java
