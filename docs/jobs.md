@@ -12,9 +12,9 @@
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
 | Last Scraped | 2026-07-30 |
 
-## Current Job Listings (79)
+## Current Job Listings (78)
 
-_Generated: 2026-07-30T08:14:38.939Z_
+_Generated: 2026-07-30T16:14:42.058Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -590,14 +590,6 @@ _Generated: 2026-07-30T08:14:38.939Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** product management, sap logistics (scm)
-- **Status:** scraped
-
-### Scrum Master
-
-- **URL:** [https://careers.epam.com/en/vacancy/scrum-master-bltsrlgz79f1soijjjf_en](https://careers.epam.com/en/vacancy/scrum-master-bltsrlgz79f1soijjjf_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** scrum master, business process management (bpm), financial planning, microsoft powerpoint, stakeholder management, microsoft power bi
 - **Status:** scraped
 
 ### SAP R2R Architect
