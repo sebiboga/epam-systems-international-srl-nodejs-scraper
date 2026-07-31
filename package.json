@@ -1,6 +1,6 @@
 {
   "name": "scraper-epam-ro",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "type": "module",
   "main": "scraper/index.js",
   "scripts": {

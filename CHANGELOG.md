@@ -5,10 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.5.1] - 2026-06-21
+## [1.5.2] - 2026-07-31
 
-### Added
-- README "Derived Scrapers": added [ulma-packaging-srl-nodejs-scraper](https://github.com/sebiboga/ulma-packaging-srl-nodejs-scraper) (ULMA PACKAGING S.R.L., CIF 47978792, TalentClue HTML + ANOFM)
+### Removed
+- Stale derived-scraper reference in CHANGELOG — repo no longer links the first derivative (#47)
+
+## [1.5.1] - 2026-06-21
 
 ### Changed
 - `scraper/company-data.js` → `scraper/anaf.js`, `scraper/company-data-cli.js` → `scraper/demoanaf.js` (module rename; imports updated in `company.js`, tests, docs)
