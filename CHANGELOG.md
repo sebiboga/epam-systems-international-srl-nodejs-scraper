@@ -10,6 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - README "Derived Scrapers": added [ulma-packaging-srl-nodejs-scraper](https://github.com/sebiboga/ulma-packaging-srl-nodejs-scraper) (ULMA PACKAGING S.R.L., CIF 47978792, TalentClue HTML + ANOFM)
 
+### Changed
+- `scraper/company-data.js` → `scraper/anaf.js`, `scraper/company-data-cli.js` → `scraper/demoanaf.js` (module rename; imports updated in `company.js`, tests, docs)
+- `scraper/markdown-generator.js`: added `escapeMarkdown()` — escapes `# * _ [ ] \`` in company and job fields so `docs/jobs.md` stays valid Markdown
+- `scraper/job-validator.js`: added `validateByBrowser()` (Playwright headless Chromium, catches JS-rendered 404s) and new keyword "the page you are looking for doesn't exist"
+- `tests/validate-epam-jobs.js`: multi-mode validator (`--head`, `--content`, `--browser`, `--timeout`)
+- `scraper/config/company.json` + `docs/company.json`: added `scraperFile` (GitHub Actions workflow URL, no raw)
+- Workflows: `.github/workflows/job-seeker-ro-spider.yml`, `automation-testing.yml`, `job-recovery-from-disaster.yml` now upsert `scraperFile`; recovery workflow parses `.data[0]` and drops emoji output
+- New workflows: `.github/workflows/job-deep-validate.yml` (manual Playwright deep validation), `.github/workflows/automation-template-sync-check.yml` (weekly check that derived scrapers match this template)
+- New files: `CODE_OF_CONDUCT.md`, `ai/MAINTENANCE.md`
+- `ai/AGENTS.md`: added Maintenance Agent section; `ai/company-model.md` + `ai/files.md` + `ai/INSTRUCTIONS.md`: renamed ANAF module references and documented `scraperFile`
+- `package.json`: added `playwright` devDependency
+- `docs/index.html`: read company fields from `cfg.company`/`cfg.id` instead of the legacy `cfg.legalName`/`cfg.cif`
+
 ## [1.5.0] - 2026-06-18
 
 ### Added

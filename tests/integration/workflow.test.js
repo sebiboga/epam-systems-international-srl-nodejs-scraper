@@ -60,7 +60,7 @@ describe('Integration: API Workflow', () => {
     let anaf;
 
     beforeAll(async () => {
-      anaf = await import('../../scraper/company-data.js');
+      anaf = await import('../../scraper/anaf.js');
     });
 
     itIfAnaf('should search for company brand and find the company', async () => {
@@ -222,7 +222,7 @@ describe('Integration: API Workflow', () => {
     let api;
 
     beforeAll(async () => {
-      anaf = await import('../../scraper/company-data.js');
+      anaf = await import('../../scraper/anaf.js');
       companyModule = await import('../../scraper/company.js');
       api = await import('../../scraper/api.js');
     });

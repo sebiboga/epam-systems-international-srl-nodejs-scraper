@@ -5,5 +5,6 @@
   "status": "activ",
   "location": ["București"],
   "website": ["https://www.epam.com"],
-  "career": ["https://careers.epam.com"]
+  "career": ["https://careers.epam.com"],
+  "scraperFile": "https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml"
 }

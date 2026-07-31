@@ -33,7 +33,8 @@ jobs:
           BRAND=$(jq -r '.brand' scraper/config/company.json)
           WEBSITE=$(jq -r '.website[0]' scraper/config/company.json)
           CAREER=$(jq -r '.career[0]' scraper/config/company.json)
-          LOC=$(jq -r '.location[0]' scraper/config/company.json)
+          DEFAULT_LOC=$(jq -r '.location[0]' scraper/config/company.json)
+          SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
           TODAY=$(date -u +%Y-%m-%d)
 
           echo "Upserting ${BRAND} (CIF: ${CIF}) via peviitor API..."
@@ -43,9 +44,10 @@ jobs:
             --arg brand "$BRAND" \
             --arg website "$WEBSITE" \
             --arg career "$CAREER" \
-            --arg loc "$LOC" \
+            --arg loc "$DEFAULT_LOC" \
             --arg today "$TODAY" \
-            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today}' \
+            --arg scraperFile "$SCRAPER_FILE" \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
             > company_data.json
 
           curl -s -X PUT \

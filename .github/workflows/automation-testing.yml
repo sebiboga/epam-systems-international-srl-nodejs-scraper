@@ -44,7 +44,7 @@ jobs:
           5. Close this issue — the next push will re-trigger the workflow."
 
           gh issue create \
-            --title "🤖 Auto-heal: ${{ github.repository }} workflow failed $(date -u +%Y-%m-%d)" \
+            --title "Auto-heal: ${{ github.repository }} workflow failed $(date -u +%Y-%m-%d)" \
             --label "auto-heal" \
             --body "$BODY"
         env:
@@ -91,19 +91,21 @@ jobs:
           CIF=$(jq -r '.id' scraper/config/company.json)
           LEGAL_NAME=$(jq -r '.company' scraper/config/company.json)
           BRAND=$(jq -r '.brand' scraper/config/company.json)
-          WEBSITE_JSON=$(jq -c '.website' scraper/config/company.json)
-          CAREER_JSON=$(jq -c '.career' scraper/config/company.json)
-          LOC_JSON=$(jq -c '.location' scraper/config/company.json)
+          WEBSITE=$(jq -r '.website[0]' scraper/config/company.json)
+          CAREER=$(jq -r '.career[0]' scraper/config/company.json)
+          DEFAULT_LOC=$(jq -r '.location[0]' scraper/config/company.json)
+          SCRAPER_FILE=$(jq -r '.scraperFile' scraper/config/company.json)
 
           jq -n \
             --arg id "$CIF" \
             --arg company "$LEGAL_NAME" \
             --arg brand "$BRAND" \
-            --argjson website "$WEBSITE_JSON" \
-            --argjson career "$CAREER_JSON" \
-            --argjson location "$LOC_JSON" \
+            --arg website "$WEBSITE" \
+            --arg career "$CAREER" \
+            --arg loc "$DEFAULT_LOC" \
             --arg today "$TODAY" \
-            '{id:$id,company:$company,brand:$brand,status:"activ",location:$location,website:$website,career:$career,lastScraped:$today}' \
+            --arg scraperFile "$SCRAPER_FILE" \
+            '{id:$id,company:$company,brand:$brand,status:"activ",location:[$loc],website:[$website],career:[$career],lastScraped:$today,scraperFile:$scraperFile}' \
             > company_data.json
 
           echo "Upserting ${BRAND} (CIF: ${CIF}) via peviitor API..."

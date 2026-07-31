@@ -354,8 +354,8 @@ async function loadCompanyConfig() {
     const res = await fetch("./company.json", { cache: "no-cache" });
     if (!res.ok) return;
     const cfg = await res.json();
-    if (cfg.legalName) COMPANY = cfg.legalName;
-    if (cfg.cif) COMPANY_CIF = cfg.cif;
+    if (cfg.company) COMPANY = cfg.company;
+    if (cfg.id) COMPANY_CIF = cfg.id;
   } catch (e) {
     console.warn("company.json not available, using fallback constants");
   }

@@ -18,9 +18,11 @@
 | website      | string[] | Official company website. Must be valid HTTP/HTTPS URL |
 | career       | string[] | Official career/jobs page. Must be valid HTTP/HTTPS URL |
 | lastScraped  | string   | Date of last scrape in ISO8601 format |
+| scraperFile  | string   | URL to scraper GitHub Actions workflow (no raw) |
 
 ## Notes
 
 - Fields marked `string[]` are multi-valued arrays stored as arrays in SOLR/OpenSearch
 - Company status "activ" means jobs should be kept, otherwise remove jobs
 - website and career should be canonical URLs without trailing slash
+- **scraperFile**: Full URL to the GitHub Actions workflow (no raw, e.g. `https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml`)

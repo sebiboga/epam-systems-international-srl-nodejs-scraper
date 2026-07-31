@@ -1,0 +1,94 @@
+name: Template Sync Check
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Get template repo
+        id: template
+        run: |
+          TEMPLATE=$(gh api "repos/${{ github.repository }}" \
+            --jq '.template_repository.full_name // empty')
+          echo "repo=${TEMPLATE}" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Not a derived repo
+        if: steps.template.outputs.repo == ''
+        run: echo "This repo is a template (not derived). Skipping."
+
+      - name: Fetch versions
+        id: versions
+        if: steps.template.outputs.repo != ''
+        run: |
+          DERIVED=$(grep -m1 '^## \[' CHANGELOG.md | sed 's/## \[\(.*\)\]/\1/')
+          echo "derived=${DERIVED}" >> "$GITHUB_OUTPUT"
+
+          RAW=$(gh api "repos/${{ steps.template.outputs.repo }}/contents/CHANGELOG.md" \
+            --jq '.content' | base64 -d)
+          TEMPLATE=$(echo "$RAW" | grep -m1 '^## \[' | sed 's/## \[\(.*\)\]/\1/')
+          echo "template=${TEMPLATE}" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compare versions
+        id: compare
+        if: steps.template.outputs.repo != ''
+        run: |
+          D="${{ steps.versions.outputs.derived }}"
+          T="${{ steps.versions.outputs.template }}"
+          LOWER=$(printf '%s\n' "$D" "$T" | sort -V | head -1)
+          if [ "$LOWER" = "$D" ] && [ "$D" != "$T" ]; then
+            echo "ahead=true" >> "$GITHUB_OUTPUT"
+            echo "Template ${T} > derived ${D} — issue needed"
+          else
+            echo "ahead=false" >> "$GITHUB_OUTPUT"
+            echo "Derived ${D} is up to date with template ${T}"
+          fi
+
+      - name: Create sync issue
+        if: steps.compare.outputs.ahead == 'true'
+        run: |
+          LABEL="template-sync"
+          gh label create "$LABEL" \
+            --color "bfdadc" \
+            --description "EPAM template has a newer version available" \
+            2>/dev/null || true
+
+          EXISTING=$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            echo "Issue #${EXISTING} already exists. Skipping."
+            exit 0
+          fi
+
+          BODY="## Template Update Available
+
+          A newer version of the **[EPAM template](https://github.com/${{ steps.template.outputs.repo }})** is available.
+
+          | | Version |
+          |---|---|
+          | **Template (EPAM)** | ${{ steps.versions.outputs.template }} |
+          | **This repo** | ${{ steps.versions.outputs.derived }} |
+
+          ### What to do
+          1. Review the [template changelog](https://github.com/${{ steps.template.outputs.repo }}/blob/main/CHANGELOG.md) for relevant changes
+          2. Compare differences between the template and this derived scraper
+          3. Apply relevant template updates
+          4. Close this issue when done"
+
+          gh issue create \
+            --title "Template sync: EPAM v${{ steps.versions.outputs.template }} available" \
+            --label "$LABEL" \
+            --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

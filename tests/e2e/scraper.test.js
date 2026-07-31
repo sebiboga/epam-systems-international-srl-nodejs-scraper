@@ -184,7 +184,7 @@ describe('E2E: Full Scraping Pipeline', () => {
     let company;
 
     beforeAll(async () => {
-      anaf = await import('../../scraper/company-data.js');
+      anaf = await import('../../scraper/anaf.js');
       company = await import('../../scraper/company.js');
     });
 
@@ -222,7 +222,7 @@ describe('E2E: Full Scraping Pipeline', () => {
     let anaf;
 
     beforeAll(async () => {
-      anaf = await import('../../scraper/company-data.js');
+      anaf = await import('../../scraper/anaf.js');
     });
 
     itIfAnaf('should detect inactive/radiated companies via ANAF', async () => {

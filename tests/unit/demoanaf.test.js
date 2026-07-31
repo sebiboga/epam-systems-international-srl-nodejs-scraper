@@ -69,11 +69,11 @@ const CACHED_DATA = {
   onrcStatusLabel: 'Funcțiune'
 };
 
-describe('scraper/company-data.js', () => {
+describe('scraper/anaf.js', () => {
   let anaf;
 
   beforeAll(async () => {
-    anaf = await import('../../scraper/company-data.js');
+    anaf = await import('../../scraper/anaf.js');
   });
 
   beforeEach(() => {

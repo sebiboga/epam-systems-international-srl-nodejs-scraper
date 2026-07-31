@@ -7,5 +7,6 @@
   "website": ["https://www.epam.com"],
   "career": ["https://careers.epam.com"],
   "apiBase": "https://careers.epam.com",
-  "apiCountryId": "8150000000000001155"
+  "apiCountryId": "8150000000000001155",
+  "scraperFile": "https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml"
 }

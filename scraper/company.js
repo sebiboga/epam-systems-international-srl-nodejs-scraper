@@ -8,7 +8,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
 import { querySOLR, deleteJobsByCIF } from "./api.js";
-import { getCompanyFromANAF } from "./company-data.js";
+import { getCompanyFromANAF } from "./anaf.js";
 import companyConfig from "./config/company.js";
 
 // ============================================================================
