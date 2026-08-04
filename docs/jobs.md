@@ -10,11 +10,11 @@
 | Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-03 |
+| Last Scraped | 2026-08-04 |
 
-## Current Job Listings (69)
+## Current Job Listings (74)
 
-_Generated: 2026-08-03T09:33:14.156Z_
+_Generated: 2026-08-04T08:28:10.673Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -160,6 +160,14 @@ _Generated: 2026-08-03T09:33:14.156Z_
 - **Tags:** solution architecture
 - **Status:** scraped
 
+### Senior DevOps Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-blt63xpmkbnwpl3kq57_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-blt63xpmkbnwpl3kq57_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** amazon web services, ci/cd, docker, kubernetes, python, terraform
+- **Status:** scraped
+
 ### Lead SAP FICO Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-sap-fico-consultant-blt6604cb4132cc6e3a_en](https://careers.epam.com/en/vacancy/lead-sap-fico-consultant-blt6604cb4132cc6e3a_en)
@@ -221,7 +229,7 @@ _Generated: 2026-08-03T09:33:14.156Z_
 - **URL:** [https://careers.epam.com/en/vacancy/data-technology-consultant-blt87s0n0a5rjwi6462_en](https://careers.epam.com/en/vacancy/data-technology-consultant-blt87s0n0a5rjwi6462_en)
 - **Work Mode:** hybrid
 - **Location:** Bucharest
-- **Tags:** data technology consulting, python, snowflake, ci/cd, sql, dbt
+- **Tags:** data integration, python, snowflake, ci/cd, sql, dbt
 - **Status:** scraped
 
 ### Senior/Lead SAP Logistics VIM Consultant with Coupa expertise
@@ -278,6 +286,14 @@ _Generated: 2026-08-03T09:33:14.156Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap cap based node.js
+- **Status:** scraped
+
+### Senior Business Analyst / Finance Digital SME - FIT & S/4HANA Finance
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-business-analyst-finance-digital-sme-fit-s-4hana-finance-bltb5jelmduqopu5if2_en](https://careers.epam.com/en/vacancy/senior-business-analyst-finance-digital-sme-fit-s-4hana-finance-bltb5jelmduqopu5if2_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** business analysis, finance transformation, sap hana platform
 - **Status:** scraped
 
 ### Salesforce Delivery Manager
@@ -448,6 +464,14 @@ _Generated: 2026-08-03T09:33:14.156Z_
 - **Tags:** uipath
 - **Status:** scraped
 
+### Senior Automation Tester in Python
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-python-bltmj8eag4fu452o04b_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-python-bltmj8eag4fu452o04b_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** automated testing in python, python testing, sql, selenium, test automation frameworks
+- **Status:** scraped
+
 ### SAP ABAP Engineering Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltmjg76o2x3d98ym8g_en](https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltmjg76o2x3d98ym8g_en)
@@ -550,6 +574,22 @@ _Generated: 2026-08-03T09:33:14.156Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
+### Senior Azure Platform Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-azure-platform-engineer-bltww02pzabh610mbqv_en](https://careers.epam.com/en/vacancy/senior-azure-platform-engineer-bltww02pzabh610mbqv_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** microsoft azure, platform engineering
+- **Status:** scraped
+
+### Senior DevOps Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
 - **Status:** scraped
 
 ### Senior SecOps Engineer
