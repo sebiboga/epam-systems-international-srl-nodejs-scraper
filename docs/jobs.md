@@ -10,11 +10,11 @@
 | Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-04 |
+| Last Scraped | 2026-08-05 |
 
-## Current Job Listings (74)
+## Current Job Listings (76)
 
-_Generated: 2026-08-04T08:28:10.673Z_
+_Generated: 2026-08-05T08:27:20.855Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -222,6 +222,14 @@ _Generated: 2026-08-04T08:28:10.673Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** ai solution engineering, agentic workflows, google agent development kit, google cloud bigquery, google cloud run, large language models (llm), python
+- **Status:** scraped
+
+### Senior Manager, BAC
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-manager-bac-blt7wow3zy4jcvoan8b_en](https://careers.epam.com/en/vacancy/senior-manager-bac-blt7wow3zy4jcvoan8b_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** business analytics consulting
 - **Status:** scraped
 
 ### Data Technology Consultant
@@ -502,6 +510,14 @@ _Generated: 2026-08-04T08:28:10.673Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** automated testing in java, git, java, postman, sdlc methodologies, sql, test design techniques, amazon web services, cucumber, reactjs, zephyr enterprise
+- **Status:** scraped
+
+### Regional AI Run Lead
+
+- **URL:** [https://careers.epam.com/en/vacancy/regional-ai-run-lead-bltpdjnjqfvbhtjuv6m_en](https://careers.epam.com/en/vacancy/regional-ai-run-lead-bltpdjnjqfvbhtjuv6m_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** delivery management.ai
 - **Status:** scraped
 
 ### Senior Cloudflare Developer
