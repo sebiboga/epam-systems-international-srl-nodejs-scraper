@@ -10,11 +10,11 @@
 | Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-05 |
+| Last Scraped | 2026-08-06 |
 
 ## Current Job Listings (76)
 
-_Generated: 2026-08-05T08:27:20.855Z_
+_Generated: 2026-08-06T08:25:15.471Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
