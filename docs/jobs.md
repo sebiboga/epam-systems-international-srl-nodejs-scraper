@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-07 |
+| Last Scraped | 2026-08-08 |
 
-## Current Job Listings (76)
+## Current Job Listings (75)
 
-_Generated: 2026-08-07T07:57:52.402Z_
+_Generated: 2026-08-08T06:41:09.593Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -614,12 +614,4 @@ _Generated: 2026-08-07T07:57:52.402Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kubernetes, security hardening, security testing tools, security assessment, vulnerability management, google cloud platform, open source software development
-- **Status:** scraped
-
-### Senior SAPUI5/BTP Developer (relocation to Cyprus)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sapui5-btp-developer-relocation-to-cyprus-blt8gr4d522n8hs04ql_en](https://careers.epam.com/en/vacancy/senior-sapui5-btp-developer-relocation-to-cyprus-blt8gr4d522n8hs04ql_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap sapui5, data science
 - **Status:** scraped
