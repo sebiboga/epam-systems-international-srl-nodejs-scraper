@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-11 |
+| Last Scraped | 2026-08-12 |
 
-## Current Job Listings (75)
+## Current Job Listings (73)
 
-_Generated: 2026-08-11T06:57:05.972Z_
+_Generated: 2026-08-12T07:16:07.669Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -488,14 +488,6 @@ _Generated: 2026-08-11T06:57:05.972Z_
 - **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
 - **Status:** scraped
 
-### Senior SAP Retail Master Data Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-retail-master-data-consultant-bltmkr4n8dz3xksa3i9_en](https://careers.epam.com/en/vacancy/senior-sap-retail-master-data-consultant-bltmkr4n8dz3xksa3i9_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap mdm/mdg, sap retail master data, sap-is: retail solutions
-- **Status:** scraped
-
 ### SAP Basis Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-basis-architect-bltnwmzd9806o5gn8li_en](https://careers.epam.com/en/vacancy/sap-basis-architect-bltnwmzd9806o5gn8li_en)
@@ -542,14 +534,6 @@ _Generated: 2026-08-11T06:57:05.972Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap java
-- **Status:** scraped
-
-### Lead SAP Retail Master Data Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-retail-master-data-consultant-bltr7f2wulqnmfu50kk_en](https://careers.epam.com/en/vacancy/lead-sap-retail-master-data-consultant-bltr7f2wulqnmfu50kk_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap mdm/mdg, sap retail master data, sap-is: retail solutions
 - **Status:** scraped
 
 ### Senior Supply Chain Architect (Supply Chain IT Product)
