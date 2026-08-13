@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-12 |
+| Last Scraped | 2026-08-13 |
 
-## Current Job Listings (73)
+## Current Job Listings (76)
 
-_Generated: 2026-08-12T07:16:07.669Z_
+_Generated: 2026-08-13T07:18:11.039Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -230,6 +230,14 @@ _Generated: 2026-08-12T07:16:07.669Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Senior Full-stack IoT Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-full-stack-iot-engineer-blt80c41uliwspt0kvg_en](https://careers.epam.com/en/vacancy/senior-full-stack-iot-engineer-blt80c41uliwspt0kvg_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** python.data, python, apache kafka, kubernetes
 - **Status:** scraped
 
 ### Data Technology Consultant
@@ -544,6 +552,14 @@ _Generated: 2026-08-12T07:16:07.669Z_
 - **Tags:** enterprise architecture, apache kafka, mulesoft, sap commerce fulfilment, supply chain operations
 - **Status:** scraped
 
+### Senior Program Manager, Data Practice
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-program-manager-data-practice-bltrrdnf0f65oqe96lv_en](https://careers.epam.com/en/vacancy/senior-program-manager-data-practice-bltrrdnf0f65oqe96lv_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** program management
+- **Status:** scraped
+
 ### SAP Logistics (SCM) Engineering Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en](https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en)
@@ -574,6 +590,14 @@ _Generated: 2026-08-12T07:16:07.669Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
+### Lead Salesforce Technical Business Analyst
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-salesforce-technical-business-analyst-bltwf25eu6hnxrexuzu_en](https://careers.epam.com/en/vacancy/lead-salesforce-technical-business-analyst-bltwf25eu6hnxrexuzu_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** salesforce, investment advisory, requirements analysis, salesforce financial services, salesforce financial services cloud, stakeholder management, user stories
 - **Status:** scraped
 
 ### Senior Azure Platform Engineer
