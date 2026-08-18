@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
+| Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-17 |
+| Last Scraped | 2026-08-18 |
 
-## Current Job Listings (77)
+## Current Job Listings (70)
 
-_Generated: 2026-08-17T06:41:31.054Z_
+_Generated: 2026-08-18T06:33:13.622Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -240,14 +240,6 @@ _Generated: 2026-08-17T06:41:31.054Z_
 - **Tags:** python.data, python, apache kafka, kubernetes
 - **Status:** scraped
 
-### Data Technology Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/data-technology-consultant-blt87s0n0a5rjwi6462_en](https://careers.epam.com/en/vacancy/data-technology-consultant-blt87s0n0a5rjwi6462_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** data integration, python, snowflake, ci/cd, sql, dbt
-- **Status:** scraped
-
 ### Senior/Lead SAP Logistics VIM Consultant with Coupa expertise
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-lead-sap-logistics-vim-consultant-with-coupa-expertise-blt90cf14088bf36d91_en](https://careers.epam.com/en/vacancy/senior-lead-sap-logistics-vim-consultant-with-coupa-expertise-blt90cf14088bf36d91_en)
@@ -342,14 +334,6 @@ _Generated: 2026-08-17T06:41:31.054Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico
-- **Status:** scraped
-
-### Salesforce Product Owner / Product Manager
-
-- **URL:** [https://careers.epam.com/en/vacancy/salesforce-product-owner-product-manager-bltcdsbryojszp422o6_en](https://careers.epam.com/en/vacancy/salesforce-product-owner-product-manager-bltcdsbryojszp422o6_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** salesforce
 - **Status:** scraped
 
 ### Senior Site Reliability Engineer (SRE)
@@ -472,14 +456,6 @@ _Generated: 2026-08-17T06:41:31.054Z_
 - **Tags:** salesforce
 - **Status:** scraped
 
-### Lead UiPath Agentic Automation Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en](https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** uipath
-- **Status:** scraped
-
 ### Senior Automation Tester in Python
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-python-bltmj8eag4fu452o04b_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-python-bltmj8eag4fu452o04b_en)
@@ -494,14 +470,6 @@ _Generated: 2026-08-17T06:41:31.054Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
-- **Status:** scraped
-
-### Senior SAP MM/PP Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-mm-pp-consultant-bltn61psat1mgkkmutq_en](https://careers.epam.com/en/vacancy/senior-sap-mm-pp-consultant-bltn61psat1mgkkmutq_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), sap-mm: purchasing
 - **Status:** scraped
 
 ### SAP Basis Architect
@@ -526,22 +494,6 @@ _Generated: 2026-08-17T06:41:31.054Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management.ai
-- **Status:** scraped
-
-### Senior Cloudflare Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-cloudflare-developer-bltpzhdluj7p6zuz6rv_en](https://careers.epam.com/en/vacancy/senior-cloudflare-developer-bltpzhdluj7p6zuz6rv_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** cloud native development, cloudflare, gen ai assisted development, python, javascript, multi-access edge computing, serverless
-- **Status:** scraped
-
-### Senior Site Reliability Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-site-reliability-engineer-bltqzf3nf8aymsjrn5r_en](https://careers.epam.com/en/vacancy/senior-site-reliability-engineer-bltqzf3nf8aymsjrn5r_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** site reliability engineering, datadog, java, kubernetes, linux, spring boot, unix, kong
 - **Status:** scraped
 
 ### Engineering Manager, SAP CAP Java
@@ -622,12 +574,4 @@ _Generated: 2026-08-17T06:41:31.054Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
-- **Status:** scraped
-
-### Senior SecOps Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-secops-engineer-bltz80yqmd3at4vy099_en](https://careers.epam.com/en/vacancy/senior-secops-engineer-bltz80yqmd3at4vy099_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** security.engineering, ci/cd, kubernetes, security hardening, security testing tools, security assessment, vulnerability management, google cloud platform, open source software development
 - **Status:** scraped
