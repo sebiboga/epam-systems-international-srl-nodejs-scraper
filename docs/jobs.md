@@ -10,11 +10,11 @@
 | Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-18 |
+| Last Scraped | 2026-08-19 |
 
-## Current Job Listings (70)
+## Current Job Listings (71)
 
-_Generated: 2026-08-18T06:33:13.622Z_
+_Generated: 2026-08-19T06:33:57.687Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -136,14 +136,6 @@ _Generated: 2026-08-18T06:33:13.622Z_
 - **Tags:** business analytics consulting
 - **Status:** scraped
 
-### SAP Logistics Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-architect-blt4jnh7pmawhzrh26q_en](https://careers.epam.com/en/vacancy/sap-logistics-architect-blt4jnh7pmawhzrh26q_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap logistics (scm)
-- **Status:** scraped
-
 ### Senior SAP MDG Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-mdg-consultant-blt56be081bac442c32_en](https://careers.epam.com/en/vacancy/senior-sap-mdg-consultant-blt56be081bac442c32_en)
@@ -230,6 +222,14 @@ _Generated: 2026-08-18T06:33:13.622Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### SAP SuccessFactors Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-successfactors-consultant-blt7zvk3y3mljqqwtny_en](https://careers.epam.com/en/vacancy/sap-successfactors-consultant-blt7zvk3y3mljqqwtny_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap success factors, sap successfactors
 - **Status:** scraped
 
 ### Senior Full-stack IoT Engineer
@@ -470,6 +470,14 @@ _Generated: 2026-08-18T06:33:13.622Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
+- **Status:** scraped
+
+### Senior SAP SuccessFactors Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-successfactors-consultant-bltnlwlyazu4aeh91xf_en](https://careers.epam.com/en/vacancy/senior-sap-successfactors-consultant-bltnlwlyazu4aeh91xf_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap success factors, sap successfactors
 - **Status:** scraped
 
 ### SAP Basis Architect
