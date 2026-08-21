@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-20 |
+| Last Scraped | 2026-08-21 |
 
-## Current Job Listings (72)
+## Current Job Listings (73)
 
-_Generated: 2026-08-20T06:37:51.008Z_
+_Generated: 2026-08-21T06:36:06.259Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -46,6 +46,14 @@ _Generated: 2026-08-20T06:37:51.008Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
+- **Status:** scraped
+
+### Senior SAP SRM Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-srm-consultant-blt0z9v1eoxk5dwxuot_en](https://careers.epam.com/en/vacancy/senior-sap-srm-consultant-blt0z9v1eoxk5dwxuot_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), sap supplier relationship management, sap-srm: strategic sourcing
 - **Status:** scraped
 
 ### SAP S/4HANA Public Cloud Solution Architect
