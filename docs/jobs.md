@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-24 |
+| Last Scraped | 2026-08-25 |
 
-## Current Job Listings (73)
+## Current Job Listings (77)
 
-_Generated: 2026-08-24T06:44:17.480Z_
+_Generated: 2026-08-25T06:36:31.107Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -264,6 +264,14 @@ _Generated: 2026-08-24T06:44:17.480Z_
 - **Tags:** product management
 - **Status:** scraped
 
+### Senior Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-blt93m37yo33dt2hf6l_en](https://careers.epam.com/en/vacancy/senior-data-engineer-blt93m37yo33dt2hf6l_en)
+- **Work Mode:** remote
+- **Location:** Bucharest
+- **Tags:** data software engineering, apache spark, cloud, data warehouse development, python, python data pipelines in cloud, sql, google cloud bigquery, google cloud platform
+- **Status:** scraped
+
 ### Microsoft Dynamics 365 / Power Platform Lead Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/microsoft-dynamics-365-power-platform-lead-developer-blt93myxj4y6krbvf6r_en](https://careers.epam.com/en/vacancy/microsoft-dynamics-365-power-platform-lead-developer-blt93myxj4y6krbvf6r_en)
@@ -352,14 +360,6 @@ _Generated: 2026-08-24T06:44:17.480Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
-### Senior Site Reliability Engineer (SRE)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-site-reliability-engineer-sre-bltcn0yi6hh9ev7oeb9_en](https://careers.epam.com/en/vacancy/senior-site-reliability-engineer-sre-bltcn0yi6hh9ev7oeb9_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust, datadog, gitops, java, javascript, kubernetes, monitoring and observability, python
-- **Status:** scraped
-
 ### Forward Deployed Engineer (Chief Role)
 
 - **URL:** [https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en](https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en)
@@ -382,6 +382,14 @@ _Generated: 2026-08-24T06:44:17.480Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap logistics (scm)
+- **Status:** scraped
+
+### .NET Team Lead
+
+- **URL:** [https://careers.epam.com/en/vacancy/net-team-lead-bltecruq2zxpqqtpf91_en](https://careers.epam.com/en/vacancy/net-team-lead-bltecruq2zxpqqtpf91_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** .net, .net framework, ai native engineering, microsoft azure, microsoft sql server, reactjs, solution architecture, property and casualty
 - **Status:** scraped
 
 ### Senior/Lead SAP CAP Node.JS Developer
@@ -414,6 +422,14 @@ _Generated: 2026-08-24T06:44:17.480Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap security, sap script, sap query, odata, sap erp, sap fiori, abap restful programming model (rap), sap cap cds, sap grc and cybersecurity
+- **Status:** scraped
+
+### Senior Python Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-python-engineer-bltgathedqzkujtjifd_en](https://careers.epam.com/en/vacancy/senior-python-engineer-bltgathedqzkujtjifd_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** python.core, ci/cd, sql, snowflake
 - **Status:** scraped
 
 ### Senior Data Engineer
@@ -470,6 +486,14 @@ _Generated: 2026-08-24T06:44:17.480Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** salesforce
+- **Status:** scraped
+
+### Senior Real-Time Observability Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-real-time-observability-engineer-bltljhkedft5ygsqtj9_en](https://careers.epam.com/en/vacancy/senior-real-time-observability-engineer-bltljhkedft5ygsqtj9_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust
 - **Status:** scraped
 
 ### Senior Automation Tester in Python
@@ -598,4 +622,12 @@ _Generated: 2026-08-24T06:44:17.480Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
+- **Status:** scraped
+
+### Senior DevOps Engineer/AWS/Azure
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** amazon web services, ai agents development, ci/cd, git, terraform, docker, microsoft azure, powershell, python, scripting languages, terragrunt, vm migration
 - **Status:** scraped
