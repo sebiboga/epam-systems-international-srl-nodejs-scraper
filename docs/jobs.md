@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-30 |
+| Last Scraped | 2026-08-31 |
 
 ## Current Job Listings (78)
 
-_Generated: 2026-08-30T11:04:19.756Z_
+_Generated: 2026-08-31T12:26:55.881Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -144,6 +144,14 @@ _Generated: 2026-08-30T11:04:19.756Z_
 - **Tags:** business analytics consulting
 - **Status:** scraped
 
+### Senior DevSecOps Engineer - Security Automation
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devsecops-engineer-security-automation-blt44btrwhbzonyb9rq_en](https://careers.epam.com/en/vacancy/senior-devsecops-engineer-security-automation-blt44btrwhbzonyb9rq_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
+- **Status:** scraped
+
 ### Senior SAP MDG Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-mdg-consultant-blt56be081bac442c32_en](https://careers.epam.com/en/vacancy/senior-sap-mdg-consultant-blt56be081bac442c32_en)
@@ -216,12 +224,12 @@ _Generated: 2026-08-30T11:04:19.756Z_
 - **Tags:** presales consulting
 - **Status:** scraped
 
-### Lead Python Engineer - Agentic AI
+### Senior Full Stack Developer - Python, React
 
-- **URL:** [https://careers.epam.com/en/vacancy/lead-python-engineer-agentic-ai-blt7fq34ppxq9duji7g_en](https://careers.epam.com/en/vacancy/lead-python-engineer-agentic-ai-blt7fq34ppxq9duji7g_en)
+- **URL:** [https://careers.epam.com/en/vacancy/senior-full-stack-developer-python-react-blt7gfgzimpms8ynnju_en](https://careers.epam.com/en/vacancy/senior-full-stack-developer-python-react-blt7gfgzimpms8ynnju_en)
 - **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** ai solution engineering, agentic workflows, google agent development kit, google cloud bigquery, google cloud run, large language models (llm), python
+- **Location:** România
+- **Tags:** python.core, docker, fastapi, microsoft azure, python, reactjs, sql, kubernetes, playwright, terraform
 - **Status:** scraped
 
 ### Senior Manager, BAC
@@ -606,14 +614,6 @@ _Generated: 2026-08-30T11:04:19.756Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
-### Lead Salesforce Technical Business Analyst
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-salesforce-technical-business-analyst-bltwf25eu6hnxrexuzu_en](https://careers.epam.com/en/vacancy/lead-salesforce-technical-business-analyst-bltwf25eu6hnxrexuzu_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** salesforce, investment advisory, requirements analysis, salesforce financial services, salesforce financial services cloud, stakeholder management, user stories
 - **Status:** scraped
 
 ### Senior Azure Platform Engineer
