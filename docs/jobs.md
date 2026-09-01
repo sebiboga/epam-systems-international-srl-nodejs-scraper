@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-08-31 |
+| Last Scraped | 2026-09-01 |
 
-## Current Job Listings (78)
+## Current Job Listings (77)
 
-_Generated: 2026-08-31T12:26:55.881Z_
+_Generated: 2026-09-01T10:57:23.852Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -342,14 +342,6 @@ _Generated: 2026-08-31T12:26:55.881Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** talent acquisition
-- **Status:** scraped
-
-### Lead SAP Developer (with Java)
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-developer-with-java-bltbw5car7c5um3zfoa_en](https://careers.epam.com/en/vacancy/lead-sap-developer-with-java-bltbw5car7c5um3zfoa_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap cap based java, sap fiori elements, spring boot, team management
 - **Status:** scraped
 
 ### Senior SAP ABAP Developer
