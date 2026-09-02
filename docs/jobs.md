@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
 | Last Scraped | 2026-09-02 |
 
-## Current Job Listings (59)
+## Current Job Listings (60)
 
-_Generated: 2026-09-02T10:25:25.301Z_
+_Generated: 2026-09-02T16:28:52.296Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -414,6 +414,14 @@ _Generated: 2026-09-02T10:25:25.301Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust
+- **Status:** scraped
+
+### Lead UiPath Agentic Automation Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en](https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** uipath
 - **Status:** scraped
 
 ### Senior Automation Tester in Python
