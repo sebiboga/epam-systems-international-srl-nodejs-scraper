@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-03 |
+| Last Scraped | 2026-09-04 |
 
-## Current Job Listings (60)
+## Current Job Listings (72)
 
-_Generated: 2026-09-03T10:33:17.441Z_
+_Generated: 2026-09-04T10:28:14.570Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -38,6 +38,14 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap basis and devops, sap basis, sap hana db, sap maxdb, ibm db2
+- **Status:** scraped
+
+### Senior SAP SRM Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-srm-consultant-blt0z9v1eoxk5dwxuot_en](https://careers.epam.com/en/vacancy/senior-sap-srm-consultant-blt0z9v1eoxk5dwxuot_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), sap supplier relationship management, sap-srm: strategic sourcing
 - **Status:** scraped
 
 ### Senior AI Engineer
@@ -134,6 +142,14 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** solution architecture
+- **Status:** scraped
+
+### Lead SAP S/4HANA Credit Management Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-s-4hana-credit-management-consultant-blt5rm2v48n6vl9k2yi_en](https://careers.epam.com/en/vacancy/lead-sap-s-4hana-credit-management-consultant-blt5rm2v48n6vl9k2yi_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), credit risk, credit scoring
 - **Status:** scraped
 
 ### Senior DevOps Engineer
@@ -336,6 +352,14 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Tags:** .net, .net framework, ai native engineering, microsoft azure, microsoft sql server, reactjs, solution architecture, property and casualty
 - **Status:** scraped
 
+### Chief SAP S/4HANA Credit Management Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-s-4hana-credit-management-consultant-bltewtyasg6jqqq20t8_en](https://careers.epam.com/en/vacancy/chief-sap-s-4hana-credit-management-consultant-bltewtyasg6jqqq20t8_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), credit risk, credit scoring
+- **Status:** scraped
+
 ### Senior/Lead SAP CAP Node.JS Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-lead-sap-cap-node-js-developer-bltf15487baa78c9a4f_en](https://careers.epam.com/en/vacancy/senior-lead-sap-cap-node-js-developer-bltf15487baa78c9a4f_en)
@@ -384,12 +408,44 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Tags:** sap cap based java, sap fiori elements, spring boot
 - **Status:** scraped
 
+### Lead SAP e-invoicing Consultant (SD/FI)
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-e-invoicing-consultant-sd-fi-bltiv6ypy9gr8q0z5pz_en](https://careers.epam.com/en/vacancy/lead-sap-e-invoicing-consultant-sd-fi-bltiv6ypy9gr8q0z5pz_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
+- **Status:** scraped
+
 ### SAP MDG Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-consultant-bltkaxd4ksj2mz621nu_en](https://careers.epam.com/en/vacancy/sap-mdg-consultant-bltkaxd4ksj2mz621nu_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap mdm/mdg
+- **Status:** scraped
+
+### Senior ABAP/EWM Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-abap-ewm-engineer-bltkm1r02pngcfl8hbi_en](https://careers.epam.com/en/vacancy/senior-abap-ewm-engineer-bltkm1r02pngcfl8hbi_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap abap, abap, sap ewm
+- **Status:** scraped
+
+### Lead SAP CAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltko58ua53pu35t5zl_en](https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltko58ua53pu35t5zl_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap cap based java, java
+- **Status:** scraped
+
+### Senior SAP e-invoicing Consultant (SD/FI)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-e-invoicing-consultant-sd-fi-bltkzdhrl09a789lzi3_en](https://careers.epam.com/en/vacancy/senior-sap-e-invoicing-consultant-sd-fi-bltkzdhrl09a789lzi3_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
 - **Status:** scraped
 
 ### Salesforce Lead Developer / Consultant
@@ -432,6 +488,14 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Tags:** automated testing in python, python testing, sql, selenium, test automation frameworks
 - **Status:** scraped
 
+### SAP Basis Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-basis-architect-bltnwmzd9806o5gn8li_en](https://careers.epam.com/en/vacancy/sap-basis-architect-bltnwmzd9806o5gn8li_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
 ### Senior Automation Tester in Java
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-java-bltopaeb6k18qe4fztm_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-java-bltopaeb6k18qe4fztm_en)
@@ -464,6 +528,22 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Tags:** program management
 - **Status:** scraped
 
+### Senior SAP CAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-developer-blttr0b9b0i1kkwvgqp_en](https://careers.epam.com/en/vacancy/senior-sap-cap-developer-blttr0b9b0i1kkwvgqp_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap cap based java, java
+- **Status:** scraped
+
+### Chief SAP e-invoicing Consultant (SD/FI)
+
+- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-e-invoicing-consultant-sd-fi-bltuqqyc6u1o00mwxup_en](https://careers.epam.com/en/vacancy/chief-sap-e-invoicing-consultant-sd-fi-bltuqqyc6u1o00mwxup_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
+- **Status:** scraped
+
 ### Senior Disaster Recovery Specialist
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-disaster-recovery-specialist-bltvwme4s0n7nswbz5k_en](https://careers.epam.com/en/vacancy/senior-disaster-recovery-specialist-bltvwme4s0n7nswbz5k_en)
@@ -480,12 +560,28 @@ _Generated: 2026-09-03T10:33:17.441Z_
 - **Tags:** microsoft azure, platform engineering
 - **Status:** scraped
 
+### Chief ABAP/EWM Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/chief-abap-ewm-engineer-bltx26qhc3cv1735fmh_en](https://careers.epam.com/en/vacancy/chief-abap-ewm-engineer-bltx26qhc3cv1735fmh_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap abap, abap, sap ewm
+- **Status:** scraped
+
 ### Senior DevOps Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en)
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
+- **Status:** scraped
+
+### Lead ABAP/EWM Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-abap-ewm-engineer-blty0hwvesqzdaoz2ij_en](https://careers.epam.com/en/vacancy/lead-abap-ewm-engineer-blty0hwvesqzdaoz2ij_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap abap, abap, sap ewm
 - **Status:** scraped
 
 ### Senior DevOps Engineer/AWS/Azure
