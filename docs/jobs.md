@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-04 |
+| Last Scraped | 2026-09-05 |
 
-## Current Job Listings (72)
+## Current Job Listings (86)
 
-_Generated: 2026-09-04T10:28:14.570Z_
+_Generated: 2026-09-05T09:50:27.593Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -38,6 +38,14 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap basis and devops, sap basis, sap hana db, sap maxdb, ibm db2
+- **Status:** scraped
+
+### SAP MDG Technical Architect / SME – Material Master Data
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt0qemxnh1ybnlcd8e_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt0qemxnh1ybnlcd8e_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
 - **Status:** scraped
 
 ### Senior SAP SRM Consultant
@@ -72,6 +80,14 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Tags:** data solution architecture, solution architecture, cloud
 - **Status:** scraped
 
+### Lead SAP EWM Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-ewm-consultant-blt1nx9v4qj9urdnoo7_en](https://careers.epam.com/en/vacancy/lead-sap-ewm-consultant-blt1nx9v4qj9urdnoo7_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap ewm
+- **Status:** scraped
+
 ### Senior Data Delivery Manager (Engagement Lead)
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-delivery-manager-engagement-lead-blt1z0hdjtss4gmakkt_en](https://careers.epam.com/en/vacancy/senior-data-delivery-manager-engagement-lead-blt1z0hdjtss4gmakkt_en)
@@ -86,6 +102,14 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** delivery management.ai, generative ai fundamentals, amazon web services, google cloud platform, databricks
+- **Status:** scraped
+
+### SAP MDG Technical Architect / SME – Material Master Data
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
 - **Status:** scraped
 
 ### Manager, Data Analytics Consulting
@@ -134,6 +158,14 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap mdm/mdg
+- **Status:** scraped
+
+### Dynamics 365 CE Lead Software Engineer with Copilot
+
+- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-software-engineer-with-copilot-blt59pdgnpo9dym7pz8_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-software-engineer-with-copilot-blt59pdgnpo9dym7pz8_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
 ### CTO / Principal Solution Architect
@@ -296,6 +328,14 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Tags:** business analysis, finance transformation, sap hana platform
 - **Status:** scraped
 
+### Lead SAP SRM Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-srm-consultant-bltb8nwki9mg7s93tsk_en](https://careers.epam.com/en/vacancy/lead-sap-srm-consultant-bltb8nwki9mg7s93tsk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), sap supplier relationship management, sap-srm: strategic sourcing
+- **Status:** scraped
+
 ### Salesforce Delivery Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/salesforce-delivery-manager-bltbmk7i58ip5ohrb0v_en](https://careers.epam.com/en/vacancy/salesforce-delivery-manager-bltbmk7i58ip5ohrb0v_en)
@@ -328,12 +368,44 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
+### Dynamics 365 CE Solution Architect with Copilot
+
+- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-solution-architect-with-copilot-bltcqbqifkdqfo3lfvk_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-solution-architect-with-copilot-bltcqbqifkdqfo3lfvk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft dynamics 365 crm
+- **Status:** scraped
+
+### Senior SAP MM/AFS Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-mm-afs-consultant-bltdmedvwaf6u6oxmdw_en](https://careers.epam.com/en/vacancy/senior-sap-mm-afs-consultant-bltdmedvwaf6u6oxmdw_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap logistics (scm), sap-mm: purchasing
+- **Status:** scraped
+
 ### Forward Deployed Engineer (Chief Role)
 
 - **URL:** [https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en](https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** data science
+- **Status:** scraped
+
+### SAP FICO Engineering Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-fico-engineering-manager-blte2ub1rh2x71vyith_en](https://careers.epam.com/en/vacancy/sap-fico-engineering-manager-blte2ub1rh2x71vyith_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap fico
+- **Status:** scraped
+
+### Lead SAP MM/AFS Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-mm-afs-consultant-blte672uowg3yzmwpht_en](https://careers.epam.com/en/vacancy/lead-sap-mm-afs-consultant-blte672uowg3yzmwpht_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap logistics (scm), sap-mm: purchasing
 - **Status:** scraped
 
 ### Senior SAP SD Consultant
@@ -528,6 +600,38 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Tags:** program management
 - **Status:** scraped
 
+### Dynamics 365 CE Senior Software Engineer with Copilot
+
+- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-senior-software-engineer-with-copilot-blts732049nbety5ojb_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-senior-software-engineer-with-copilot-blts732049nbety5ojb_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft dynamics 365 crm
+- **Status:** scraped
+
+### SAP Logistics (SCM) Engineering Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en](https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** product management, sap logistics (scm)
+- **Status:** scraped
+
+### Senior SAP EWM Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-ewm-consultant-bltt7cuku8b8m05n4ky_en](https://careers.epam.com/en/vacancy/senior-sap-ewm-consultant-bltt7cuku8b8m05n4ky_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap ewm
+- **Status:** scraped
+
+### SAP R2R Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en](https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap fico
+- **Status:** scraped
+
 ### Senior SAP CAP Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-developer-blttr0b9b0i1kkwvgqp_en](https://careers.epam.com/en/vacancy/senior-sap-cap-developer-blttr0b9b0i1kkwvgqp_en)
@@ -574,6 +678,14 @@ _Generated: 2026-09-04T10:28:14.570Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
+- **Status:** scraped
+
+### Dynamics 365 CE Lead Functional Consultant with Copilot
+
+- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
 ### Lead ABAP/EWM Engineer
