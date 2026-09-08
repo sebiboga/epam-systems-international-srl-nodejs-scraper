@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-07 |
+| Last Scraped | 2026-09-08 |
 
-## Current Job Listings (94)
+## Current Job Listings (96)
 
-_Generated: 2026-09-07T11:21:25.692Z_
+_Generated: 2026-09-08T10:26:51.267Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -632,6 +632,14 @@ _Generated: 2026-09-07T11:21:25.692Z_
 - **Tags:** solution architecture, amazon web services
 - **Status:** scraped
 
+### SAP BTP Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-btp-architect-blto03cn4snxnblngsd_en](https://careers.epam.com/en/vacancy/sap-btp-architect-blto03cn4snxnblngsd_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
 ### Senior Automation Tester in Java
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-java-bltopaeb6k18qe4fztm_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-java-bltopaeb6k18qe4fztm_en)
@@ -718,6 +726,14 @@ _Generated: 2026-09-07T11:21:25.692Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** go language, docker, kubernetes, kotlin, node.js, python
+- **Status:** scraped
+
+### SAP BTP Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-btp-architect-bltw8oknzrq5vhdcnl5_en](https://careers.epam.com/en/vacancy/sap-btp-architect-bltw8oknzrq5vhdcnl5_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture, amazon web services
 - **Status:** scraped
 
 ### Senior Azure Platform Engineer
