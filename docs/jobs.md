@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-08 |
+| Last Scraped | 2026-09-09 |
 
-## Current Job Listings (96)
+## Current Job Listings (94)
 
-_Generated: 2026-09-08T10:26:51.267Z_
+_Generated: 2026-09-09T10:36:57.812Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -110,14 +110,6 @@ _Generated: 2026-09-08T10:26:51.267Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
-- **Status:** scraped
-
-### Manager, Data Analytics Consulting
-
-- **URL:** [https://careers.epam.com/en/vacancy/manager-data-analytics-consulting-blt2846417b5486aabb_en](https://careers.epam.com/en/vacancy/manager-data-analytics-consulting-blt2846417b5486aabb_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** business analytics consulting
 - **Status:** scraped
 
 ### Security Software Architect
@@ -256,14 +248,6 @@ _Generated: 2026-09-08T10:26:51.267Z_
 - **Tags:** python.core, docker, fastapi, microsoft azure, python, reactjs, sql, kubernetes, playwright, terraform
 - **Status:** scraped
 
-### Senior Manager, BAC
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-manager-bac-blt7wow3zy4jcvoan8b_en](https://careers.epam.com/en/vacancy/senior-manager-bac-blt7wow3zy4jcvoan8b_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** business analytics consulting
-- **Status:** scraped
-
 ### SAP SuccessFactors Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-successfactors-consultant-blt7zvk3y3mljqqwtny_en](https://careers.epam.com/en/vacancy/sap-successfactors-consultant-blt7zvk3y3mljqqwtny_en)
@@ -310,14 +294,6 @@ _Generated: 2026-09-08T10:26:51.267Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** microsoft dynamics 365 crm
-- **Status:** scraped
-
-### Senior Data Analytics Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-data-analytics-consultant-blt9fdf7a4e1aeb5b66_en](https://careers.epam.com/en/vacancy/senior-data-analytics-consultant-blt9fdf7a4e1aeb5b66_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** business analytics consulting, data & analytics, data products sdlc
 - **Status:** scraped
 
 ### Senior Data Quality Engineer
@@ -584,20 +560,20 @@ _Generated: 2026-09-08T10:26:51.267Z_
 - **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust
 - **Status:** scraped
 
+### Senior SAP Data Deployment Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-data-deployment-engineer-bltm9dmb3km07flje9d_en](https://careers.epam.com/en/vacancy/senior-sap-data-deployment-engineer-bltm9dmb3km07flje9d_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
+- **Status:** scraped
+
 ### Chief S/4 HANA Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/chief-s-4-hana-developer-bltme7sw87u5n0n4mnq_en](https://careers.epam.com/en/vacancy/chief-s-4-hana-developer-bltme7sw87u5n0n4mnq_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap hana data warehousing, sap hana cloud
-- **Status:** scraped
-
-### Lead UiPath Agentic Automation Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en](https://careers.epam.com/en/vacancy/lead-uipath-agentic-automation-engineer-bltmif8fcrj0efwslvk_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** uipath
 - **Status:** scraped
 
 ### Senior Automation Tester in Python
@@ -710,6 +686,14 @@ _Generated: 2026-09-08T10:26:51.267Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap cap based java, java
+- **Status:** scraped
+
+### SAP Data Deployment Lead
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en](https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
 - **Status:** scraped
 
 ### Chief SAP e-invoicing Consultant (SD/FI)
