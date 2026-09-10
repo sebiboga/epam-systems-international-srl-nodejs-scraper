@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-09 |
+| Last Scraped | 2026-09-10 |
 
-## Current Job Listings (94)
+## Current Job Listings (99)
 
-_Generated: 2026-09-09T10:36:57.812Z_
+_Generated: 2026-09-10T10:24:56.409Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -104,12 +104,28 @@ _Generated: 2026-09-09T10:36:57.812Z_
 - **Tags:** delivery management.ai, generative ai fundamentals, amazon web services, google cloud platform, databricks
 - **Status:** scraped
 
+### Data & AI Consulting Manager / Senior Manager in Consumer & Retail
+
+- **URL:** [https://careers.epam.com/en/vacancy/data-ai-consulting-manager-senior-manager-in-consumer-retail-blt25h07a1b5prs92kl_en](https://careers.epam.com/en/vacancy/data-ai-consulting-manager-senior-manager-in-consumer-retail-blt25h07a1b5prs92kl_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
+- **Status:** scraped
+
 ### SAP MDG Technical Architect / SME – Material Master Data
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en)
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
+- **Status:** scraped
+
+### Senior Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-blt29ag4dxe2dxvk07u_en](https://careers.epam.com/en/vacancy/senior-data-engineer-blt29ag4dxe2dxvk07u_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** data software engineering, databricks, microsoft azure, python, sql, ci/cd, github actions, microsoft power bi, scaled agile framework
 - **Status:** scraped
 
 ### Security Software Architect
@@ -368,6 +384,14 @@ _Generated: 2026-09-09T10:36:57.812Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
+### Senior Data Integration Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-integration-engineer-bltc60bqksa6q8ih4yg_en](https://careers.epam.com/en/vacancy/senior-data-integration-engineer-bltc60bqksa6q8ih4yg_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data integration, python, snowflake, ci/cd, sql, dbt
+- **Status:** scraped
+
 ### Dynamics 365 CE Solution Architect with Copilot
 
 - **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-solution-architect-with-copilot-bltcqbqifkdqfo3lfvk_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-solution-architect-with-copilot-bltcqbqifkdqfo3lfvk_en)
@@ -600,6 +624,14 @@ _Generated: 2026-09-09T10:36:57.812Z_
 - **Tags:** sap success factors, sap successfactors
 - **Status:** scraped
 
+### SAP Joule & Multi-Agent Integration Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-joule-multi-agent-integration-engineer-bltnwfddyw8sw56wp3v_en](https://careers.epam.com/en/vacancy/sap-joule-multi-agent-integration-engineer-bltnwfddyw8sw56wp3v_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap (others), hana cloud platform, sap c/4hana
+- **Status:** scraped
+
 ### SAP Basis Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-basis-architect-bltnwmzd9806o5gn8li_en](https://careers.epam.com/en/vacancy/sap-basis-architect-bltnwmzd9806o5gn8li_en)
@@ -766,4 +798,12 @@ _Generated: 2026-09-09T10:36:57.812Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** amazon web services, ai agents development, ci/cd, git, terraform, docker, microsoft azure, powershell, python, scripting languages, terragrunt, vm migration
+- **Status:** scraped
+
+### Manager / Senior Manager, Data & AI Consulting (AI Product Manager)
+
+- **URL:** [https://careers.epam.com/en/vacancy/manager-senior-manager-data-ai-consulting-ai-product-manager-bltzmrz8ntjc6a3k0ej_en](https://careers.epam.com/en/vacancy/manager-senior-manager-data-ai-consulting-ai-product-manager-bltzmrz8ntjc6a3k0ej_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
 - **Status:** scraped
