@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-10 |
+| Last Scraped | 2026-09-11 |
 
 ## Current Job Listings (99)
 
-_Generated: 2026-09-10T10:24:56.409Z_
+_Generated: 2026-09-11T10:29:13.977Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -38,14 +38,6 @@ _Generated: 2026-09-10T10:24:56.409Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap basis and devops, sap basis, sap hana db, sap maxdb, ibm db2
-- **Status:** scraped
-
-### SAP MDG Technical Architect / SME – Material Master Data
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt0qemxnh1ybnlcd8e_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt0qemxnh1ybnlcd8e_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
 - **Status:** scraped
 
 ### Senior SAP SRM Consultant
@@ -110,14 +102,6 @@ _Generated: 2026-09-10T10:24:56.409Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
-- **Status:** scraped
-
-### SAP MDG Technical Architect / SME – Material Master Data
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en](https://careers.epam.com/en/vacancy/sap-mdg-technical-architect-sme-material-master-data-blt276vsktvpersnwwd_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap mdm/mdg, sap-ca-mdg: master data governance, data governance, reference and master data management
 - **Status:** scraped
 
 ### Senior Data Engineer
@@ -230,6 +214,14 @@ _Generated: 2026-09-10T10:24:56.409Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap logistics (scm), erp, sap, communication
+- **Status:** scraped
+
+### Data Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/data-consultant-blt6tb840c67dmtywfa_en](https://careers.epam.com/en/vacancy/data-consultant-blt6tb840c67dmtywfa_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data technology consulting, business consulting, business development, data analytics consulting, relationship management, ai architecture, ai platforms, ai strategy, data governance, data platforms & solutions
 - **Status:** scraped
 
 ### Senior S/4 HANA Developer
@@ -526,6 +518,14 @@ _Generated: 2026-09-10T10:24:56.409Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
+- **Status:** scraped
+
+### Principal/Director, Data Analytics Consulting for Financial Services
+
+- **URL:** [https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en](https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
 - **Status:** scraped
 
 ### SAP MDG Consultant
