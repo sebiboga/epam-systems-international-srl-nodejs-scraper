@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-11 |
+| Last Scraped | 2026-09-12 |
 
-## Current Job Listings (99)
+## Current Job Listings (97)
 
-_Generated: 2026-09-11T16:02:57.476Z_
+_Generated: 2026-09-12T09:56:10.779Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -512,14 +512,6 @@ _Generated: 2026-09-11T16:02:57.476Z_
 - **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
 - **Status:** scraped
 
-### SAP ABAP Engineering Manager
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltj4vrkf0a4l571pct_en](https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltj4vrkf0a4l571pct_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
-- **Status:** scraped
-
 ### Principal/Director, Data Analytics Consulting for Financial Services
 
 - **URL:** [https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en](https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en)
@@ -606,14 +598,6 @@ _Generated: 2026-09-11T16:02:57.476Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** automated testing in python, python testing, sql, selenium, test automation frameworks
-- **Status:** scraped
-
-### SAP ABAP Engineering Manager
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltmjg76o2x3d98ym8g_en](https://careers.epam.com/en/vacancy/sap-abap-engineering-manager-bltmjg76o2x3d98ym8g_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap abap, sap abap in s/4hana, sap-fi: fiori application, ci/cd in sap
 - **Status:** scraped
 
 ### Senior SAP SuccessFactors Consultant
