@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-13 |
+| Last Scraped | 2026-09-14 |
 
-## Current Job Listings (97)
+## Current Job Listings (98)
 
-_Generated: 2026-09-13T10:57:00.372Z_
+_Generated: 2026-09-14T11:31:07.077Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -718,6 +718,14 @@ _Generated: 2026-09-13T10:57:00.372Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
+- **Status:** scraped
+
+### Senior AI Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-ai-engineer-bltvc4qa0g7l17zoitx_en](https://careers.epam.com/en/vacancy/senior-ai-engineer-bltvc4qa0g7l17zoitx_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** data software engineering, databricks, model context protocol, python, rag applications development
 - **Status:** scraped
 
 ### Senior Disaster Recovery Specialist
