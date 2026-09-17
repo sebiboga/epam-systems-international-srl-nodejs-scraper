@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-15 |
+| Last Scraped | 2026-09-17 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-09-15T10:52:15.068Z_
+_Generated: 2026-09-17T10:49:41.484Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -344,14 +344,6 @@ _Generated: 2026-09-15T10:52:15.068Z_
 - **Tags:** delivery management, salesforce
 - **Status:** scraped
 
-### Senior Talent Acquisition Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltbr7y5eyk5gngd058_en](https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltbr7y5eyk5gngd058_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** talent acquisition
-- **Status:** scraped
-
 ### Lead S/4 HANA Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-s-4-hana-developer-bltbz67u5mgai45itja_en](https://careers.epam.com/en/vacancy/lead-s-4-hana-developer-bltbz67u5mgai45itja_en)
@@ -560,6 +552,14 @@ _Generated: 2026-09-15T10:52:15.068Z_
 - **Tags:** salesforce sales cloud
 - **Status:** scraped
 
+### Lead AI Solutions Engineer with Python
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-ai-solutions-engineer-with-python-bltl17b0g53xfk0ldu8_en](https://careers.epam.com/en/vacancy/lead-ai-solutions-engineer-with-python-bltl17b0g53xfk0ldu8_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** ai solution engineering
+- **Status:** scraped
+
 ### Salesforce Business Analyst / Business Solution Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/salesforce-business-analyst-business-solution-architect-bltlivhecyh0rxupz0j_en](https://careers.epam.com/en/vacancy/salesforce-business-analyst-business-solution-architect-bltlivhecyh0rxupz0j_en)
@@ -630,6 +630,14 @@ _Generated: 2026-09-15T10:52:15.068Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
+### Senior Kotlin Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-kotlin-developer-bltogjpma9m0ik7ghkn_en](https://careers.epam.com/en/vacancy/senior-kotlin-developer-bltogjpma9m0ik7ghkn_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** kotlin, postgresql, rest api, spring boot, apache kafka, java, microsoft azure
 - **Status:** scraped
 
 ### Senior Automation Tester in Java
@@ -806,12 +814,4 @@ _Generated: 2026-09-15T10:52:15.068Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap
-- **Status:** scraped
-
-### Senior / Lead Machine Learning Engineer - LLM & GenAI Applications (relocation to Cyprus)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-lead-machine-learning-engineer-llm-genai-applications-relocation-to-cyprus-bltmcw7aqio9dlxsted_en](https://careers.epam.com/en/vacancy/senior-lead-machine-learning-engineer-llm-genai-applications-relocation-to-cyprus-bltmcw7aqio9dlxsted_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** ai solution engineering
 - **Status:** scraped
