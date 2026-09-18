@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-17 |
+| Last Scraped | 2026-09-18 |
 
-## Current Job Listings (100)
+## Current Job Listings (98)
 
-_Generated: 2026-09-17T10:49:41.484Z_
+_Generated: 2026-09-18T10:24:56.939Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -520,14 +520,6 @@ _Generated: 2026-09-17T10:49:41.484Z_
 - **Tags:** sap mdm/mdg
 - **Status:** scraped
 
-### Senior ABAP/EWM Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-abap-ewm-engineer-bltkm1r02pngcfl8hbi_en](https://careers.epam.com/en/vacancy/senior-abap-ewm-engineer-bltkm1r02pngcfl8hbi_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap abap, abap, sap ewm
-- **Status:** scraped
-
 ### Lead SAP CAP Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltko58ua53pu35t5zl_en](https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltko58ua53pu35t5zl_en)
@@ -760,14 +752,6 @@ _Generated: 2026-09-17T10:49:41.484Z_
 - **Tags:** microsoft azure, platform engineering
 - **Status:** scraped
 
-### Chief ABAP/EWM Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/chief-abap-ewm-engineer-bltx26qhc3cv1735fmh_en](https://careers.epam.com/en/vacancy/chief-abap-ewm-engineer-bltx26qhc3cv1735fmh_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap abap, abap, sap ewm
-- **Status:** scraped
-
 ### Senior DevOps Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en)
@@ -782,14 +766,6 @@ _Generated: 2026-09-17T10:49:41.484Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** microsoft dynamics 365 crm
-- **Status:** scraped
-
-### Lead ABAP/EWM Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-abap-ewm-engineer-blty0hwvesqzdaoz2ij_en](https://careers.epam.com/en/vacancy/lead-abap-ewm-engineer-blty0hwvesqzdaoz2ij_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap abap, abap, sap ewm
 - **Status:** scraped
 
 ### Senior DevOps Engineer/AWS/Azure
@@ -814,4 +790,12 @@ _Generated: 2026-09-17T10:49:41.484Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap
+- **Status:** scraped
+
+### Senior / Lead Machine Learning Engineer - LLM & GenAI Applications (relocation to Cyprus)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-lead-machine-learning-engineer-llm-genai-applications-relocation-to-cyprus-bltmcw7aqio9dlxsted_en](https://careers.epam.com/en/vacancy/senior-lead-machine-learning-engineer-llm-genai-applications-relocation-to-cyprus-bltmcw7aqio9dlxsted_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** ai solution engineering
 - **Status:** scraped
