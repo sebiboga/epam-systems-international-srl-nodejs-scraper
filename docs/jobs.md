@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-18 |
+| Last Scraped | 2026-09-19 |
 
-## Current Job Listings (98)
+## Current Job Listings (96)
 
-_Generated: 2026-09-18T10:24:56.939Z_
+_Generated: 2026-09-19T10:09:16.029Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -70,14 +70,6 @@ _Generated: 2026-09-18T10:24:56.939Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** data solution architecture, solution architecture, cloud
-- **Status:** scraped
-
-### Lead SAP EWM Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-ewm-consultant-blt1nx9v4qj9urdnoo7_en](https://careers.epam.com/en/vacancy/lead-sap-ewm-consultant-blt1nx9v4qj9urdnoo7_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap ewm
 - **Status:** scraped
 
 ### Senior Data Delivery Manager (Engagement Lead)
@@ -678,14 +670,6 @@ _Generated: 2026-09-18T10:24:56.939Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** product management, sap logistics (scm)
-- **Status:** scraped
-
-### Senior SAP EWM Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-ewm-consultant-bltt7cuku8b8m05n4ky_en](https://careers.epam.com/en/vacancy/senior-sap-ewm-consultant-bltt7cuku8b8m05n4ky_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap ewm
 - **Status:** scraped
 
 ### SAP R2R Architect
