@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-22 |
+| Last Scraped | 2026-09-23 |
 
-## Current Job Listings (96)
+## Current Job Listings (98)
 
-_Generated: 2026-09-22T10:50:14.838Z_
+_Generated: 2026-09-23T10:37:48.688Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -608,6 +608,14 @@ _Generated: 2026-09-22T10:50:14.838Z_
 - **Tags:** solution architecture, amazon web services
 - **Status:** scraped
 
+### Senior SAP IBP Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-ibp-consultant-bltnzlcqttgututpu9r_en](https://careers.epam.com/en/vacancy/senior-sap-ibp-consultant-bltnzlcqttgututpu9r_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap ibp, sap erp, sap logistics (scm)
+- **Status:** scraped
+
 ### SAP BTP Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-btp-architect-blto03cn4snxnblngsd_en](https://careers.epam.com/en/vacancy/sap-btp-architect-blto03cn4snxnblngsd_en)
@@ -734,6 +742,14 @@ _Generated: 2026-09-22T10:50:14.838Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** microsoft azure, platform engineering
+- **Status:** scraped
+
+### Senior SAP DRC Consultant (e-invoicing)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-drc-consultant-e-invoicing-bltx39zstb61ob0nvxe_en](https://careers.epam.com/en/vacancy/senior-sap-drc-consultant-e-invoicing-bltx39zstb61ob0nvxe_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap fico, sap financial accounting, gaap accounting, sap business technology platform, sap controlling
 - **Status:** scraped
 
 ### Senior DevOps Engineer
