@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-23 |
+| Last Scraped | 2026-09-24 |
 
-## Current Job Listings (98)
+## Current Job Listings (95)
 
-_Generated: 2026-09-23T10:37:48.688Z_
+_Generated: 2026-09-24T10:57:35.506Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -216,14 +216,6 @@ _Generated: 2026-09-23T10:37:48.688Z_
 - **Tags:** data technology consulting, business consulting, business development, data analytics consulting, relationship management, ai architecture, ai platforms, ai strategy, data governance, data platforms & solutions
 - **Status:** scraped
 
-### Senior S/4 HANA Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-s-4-hana-developer-blt70nlnxji11b3guuo_en](https://careers.epam.com/en/vacancy/senior-s-4-hana-developer-blt70nlnxji11b3guuo_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap hana data warehousing, sap hana cloud
-- **Status:** scraped
-
 ### Senior ABAP Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-abap-developer-blt732864c20e7ab15c_en](https://careers.epam.com/en/vacancy/senior-abap-developer-blt732864c20e7ab15c_en)
@@ -334,14 +326,6 @@ _Generated: 2026-09-23T10:37:48.688Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management, salesforce
-- **Status:** scraped
-
-### Lead S/4 HANA Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-s-4-hana-developer-bltbz67u5mgai45itja_en](https://careers.epam.com/en/vacancy/lead-s-4-hana-developer-bltbz67u5mgai45itja_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap hana data warehousing, sap hana cloud
 - **Status:** scraped
 
 ### Senior SAP ABAP Developer
@@ -568,14 +552,6 @@ _Generated: 2026-09-23T10:37:48.688Z_
 - **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
 - **Status:** scraped
 
-### Chief S/4 HANA Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/chief-s-4-hana-developer-bltme7sw87u5n0n4mnq_en](https://careers.epam.com/en/vacancy/chief-s-4-hana-developer-bltme7sw87u5n0n4mnq_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap hana data warehousing, sap hana cloud
-- **Status:** scraped
-
 ### Senior Automation Tester in Python
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-python-bltmj8eag4fu452o04b_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-python-bltmj8eag4fu452o04b_en)
@@ -720,6 +696,14 @@ _Generated: 2026-09-23T10:37:48.688Z_
 - **Tags:** data software engineering, databricks, model context protocol, python, rag applications development
 - **Status:** scraped
 
+### Azure Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/azure-architect-bltvlmjb6n1kuxbhly4_en](https://careers.epam.com/en/vacancy/azure-architect-bltvlmjb6n1kuxbhly4_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** cloud engineering management, microsoft azure
+- **Status:** scraped
+
 ### Senior Disaster Recovery Specialist
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-disaster-recovery-specialist-bltvwme4s0n7nswbz5k_en](https://careers.epam.com/en/vacancy/senior-disaster-recovery-specialist-bltvwme4s0n7nswbz5k_en)
@@ -790,12 +774,4 @@ _Generated: 2026-09-23T10:37:48.688Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap abap
-- **Status:** scraped
-
-### Senior / Lead Machine Learning Engineer - LLM & GenAI Applications (relocation to Cyprus)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-lead-machine-learning-engineer-llm-genai-applications-relocation-to-cyprus-bltmcw7aqio9dlxsted_en](https://careers.epam.com/en/vacancy/senior-lead-machine-learning-engineer-llm-genai-applications-relocation-to-cyprus-bltmcw7aqio9dlxsted_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** ai solution engineering
 - **Status:** scraped
