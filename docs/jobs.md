@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-24 |
+| Last Scraped | 2026-09-25 |
 
-## Current Job Listings (95)
+## Current Job Listings (91)
 
-_Generated: 2026-09-24T10:57:35.506Z_
+_Generated: 2026-09-25T10:58:14.143Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -288,6 +288,14 @@ _Generated: 2026-09-24T10:57:35.506Z_
 - **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
+### Senior Product Manager - Data & AI in Clinical Trials
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-product-manager-data-ai-in-clinical-trials-blt9p5l3n50a8pbp4vv_en](https://careers.epam.com/en/vacancy/senior-product-manager-data-ai-in-clinical-trials-blt9p5l3n50a8pbp4vv_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
+- **Status:** scraped
+
 ### Senior Data Quality Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-quality-engineer-blta9or02umn0m0bec0_en](https://careers.epam.com/en/vacancy/senior-data-quality-engineer-blta9or02umn0m0bec0_en)
@@ -472,14 +480,6 @@ _Generated: 2026-09-24T10:57:35.506Z_
 - **Tags:** sap cap based java, sap fiori elements, spring boot
 - **Status:** scraped
 
-### Lead SAP e-invoicing Consultant (SD/FI)
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-e-invoicing-consultant-sd-fi-bltiv6ypy9gr8q0z5pz_en](https://careers.epam.com/en/vacancy/lead-sap-e-invoicing-consultant-sd-fi-bltiv6ypy9gr8q0z5pz_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
-- **Status:** scraped
-
 ### Principal/Director, Data Analytics Consulting for Financial Services
 
 - **URL:** [https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en](https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en)
@@ -494,22 +494,6 @@ _Generated: 2026-09-24T10:57:35.506Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap mdm/mdg
-- **Status:** scraped
-
-### Lead SAP CAP Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltko58ua53pu35t5zl_en](https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltko58ua53pu35t5zl_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap cap based java, java
-- **Status:** scraped
-
-### Senior SAP e-invoicing Consultant (SD/FI)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-e-invoicing-consultant-sd-fi-bltkzdhrl09a789lzi3_en](https://careers.epam.com/en/vacancy/senior-sap-e-invoicing-consultant-sd-fi-bltkzdhrl09a789lzi3_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
 - **Status:** scraped
 
 ### Salesforce Lead Developer / Consultant
@@ -664,28 +648,12 @@ _Generated: 2026-09-24T10:57:35.506Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
-### Senior SAP CAP Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-developer-blttr0b9b0i1kkwvgqp_en](https://careers.epam.com/en/vacancy/senior-sap-cap-developer-blttr0b9b0i1kkwvgqp_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap cap based java, java
-- **Status:** scraped
-
 ### SAP Data Deployment Lead
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en](https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
-- **Status:** scraped
-
-### Chief SAP e-invoicing Consultant (SD/FI)
-
-- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-e-invoicing-consultant-sd-fi-bltuqqyc6u1o00mwxup_en](https://careers.epam.com/en/vacancy/chief-sap-e-invoicing-consultant-sd-fi-bltuqqyc6u1o00mwxup_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), e-invoicing, sap-sd: sales
 - **Status:** scraped
 
 ### Senior AI Engineer
