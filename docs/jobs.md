@@ -12,9 +12,9 @@
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
 | Last Scraped | 2026-09-28 |
 
-## Current Job Listings (78)
+## Current Job Listings (84)
 
-_Generated: 2026-09-28T12:40:17.244Z_
+_Generated: 2026-09-28T16:23:06.699Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -118,6 +118,14 @@ _Generated: 2026-09-28T12:40:17.244Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Senior DevSecOps Engineer - Security Automation
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devsecops-engineer-security-automation-blt44btrwhbzonyb9rq_en](https://careers.epam.com/en/vacancy/senior-devsecops-engineer-security-automation-blt44btrwhbzonyb9rq_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
 - **Status:** scraped
 
 ### Senior SAP MDG Consultant
@@ -232,6 +240,14 @@ _Generated: 2026-09-28T12:40:17.244Z_
 - **Tags:** sap success factors, sap successfactors
 - **Status:** scraped
 
+### Senior Full-stack IoT Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-full-stack-iot-engineer-blt80c41uliwspt0kvg_en](https://careers.epam.com/en/vacancy/senior-full-stack-iot-engineer-blt80c41uliwspt0kvg_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** python.data, python, apache kafka, kubernetes
+- **Status:** scraped
+
 ### Senior/Lead SAP Logistics VIM Consultant with Coupa expertise
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-lead-sap-logistics-vim-consultant-with-coupa-expertise-blt90cf14088bf36d91_en](https://careers.epam.com/en/vacancy/senior-lead-sap-logistics-vim-consultant-with-coupa-expertise-blt90cf14088bf36d91_en)
@@ -246,6 +262,14 @@ _Generated: 2026-09-28T12:40:17.244Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** product management
+- **Status:** scraped
+
+### Senior Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-blt93m37yo33dt2hf6l_en](https://careers.epam.com/en/vacancy/senior-data-engineer-blt93m37yo33dt2hf6l_en)
+- **Work Mode:** remote
+- **Location:** Bucharest
+- **Tags:** data software engineering, apache spark, cloud, data warehouse development, python, python data pipelines in cloud, sql, google cloud bigquery, google cloud platform
 - **Status:** scraped
 
 ### Microsoft Dynamics 365 / Power Platform Lead Developer
@@ -400,6 +424,22 @@ _Generated: 2026-09-28T12:40:17.244Z_
 - **Tags:** sap logistics (scm), gxp, sap, sap implementation excellence, sap process orchestration, sap: le-wm warehouse management, sap: lo-bm batches
 - **Status:** scraped
 
+### Senior Python Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-python-engineer-bltgathedqzkujtjifd_en](https://careers.epam.com/en/vacancy/senior-python-engineer-bltgathedqzkujtjifd_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data integration, ci/cd, sql, snowflake
+- **Status:** scraped
+
+### Senior Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data integration, amazon web services, ci/cd, python for data integration, sql, snowflake, apache airflow, apache kafka, data transformation concepts, databricks, microsoft azure, oracle rdbms, terraform
+- **Status:** scraped
+
 ### Senior SAP CAP Java Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-java-developer-blth0d4ahlpixji079a_en](https://careers.epam.com/en/vacancy/senior-sap-cap-java-developer-blth0d4ahlpixji079a_en)
@@ -446,6 +486,14 @@ _Generated: 2026-09-28T12:40:17.244Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** salesforce
+- **Status:** scraped
+
+### Senior Real-Time Observability Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-real-time-observability-engineer-bltljhkedft5ygsqtj9_en](https://careers.epam.com/en/vacancy/senior-real-time-observability-engineer-bltljhkedft5ygsqtj9_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust
 - **Status:** scraped
 
 ### Senior SAP Data Deployment Engineer
