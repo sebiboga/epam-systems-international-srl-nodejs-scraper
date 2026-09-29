@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-28 |
+| Last Scraped | 2026-09-29 |
 
-## Current Job Listings (84)
+## Current Job Listings (85)
 
-_Generated: 2026-09-28T16:23:06.699Z_
+_Generated: 2026-09-29T11:58:36.831Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -53,7 +53,7 @@ _Generated: 2026-09-28T16:23:06.699Z_
 - **URL:** [https://careers.epam.com/en/vacancy/senior-ai-engineer-blt16mne4xh3n6m96xd_en](https://careers.epam.com/en/vacancy/senior-ai-engineer-blt16mne4xh3n6m96xd_en)
 - **Work Mode:** hybrid
 - **Location:** România
-- **Tags:** ai engineering
+- **Tags:** ai solution engineering
 - **Status:** scraped
 
 ### Data Technology Consultant
@@ -606,6 +606,14 @@ _Generated: 2026-09-28T16:23:06.699Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
+- **Status:** scraped
+
+### Senior Data Engineer - Palantir Foundry
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-palantir-foundry-bltu7xj1zh7wqvosr4h_en](https://careers.epam.com/en/vacancy/senior-data-engineer-palantir-foundry-bltu7xj1zh7wqvosr4h_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** data software engineering, databricks, pyspark, sql, insurance, palantir platform
 - **Status:** scraped
 
 ### Senior AI Engineer
