@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-29 |
+| Last Scraped | 2026-09-30 |
 
-## Current Job Listings (85)
+## Current Job Listings (92)
 
-_Generated: 2026-09-29T11:58:36.831Z_
+_Generated: 2026-09-30T11:46:33.969Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -104,6 +104,14 @@ _Generated: 2026-09-29T11:58:36.831Z_
 - **Tags:** data software engineering, databricks, microsoft azure, python, sql, ci/cd, github actions, microsoft power bi, scaled agile framework
 - **Status:** scraped
 
+### SAP BI Team Lead (HANA Modeling)
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-bi-team-lead-hana-modeling-blt29pmyop48gfsy2g5_en](https://careers.epam.com/en/vacancy/sap-bi-team-lead-hana-modeling-blt29pmyop48gfsy2g5_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
+- **Status:** scraped
+
 ### Data Governance Consultant - Informatica Cloud
 
 - **URL:** [https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en](https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en)
@@ -126,6 +134,14 @@ _Generated: 2026-09-29T11:58:36.831Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
+- **Status:** scraped
+
+### Project Administrator
+
+- **URL:** [https://careers.epam.com/en/vacancy/project-administrator-blt45cu5hqny6ojl0py_en](https://careers.epam.com/en/vacancy/project-administrator-blt45cu5hqny6ojl0py_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** project administration
 - **Status:** scraped
 
 ### Senior SAP MDG Consultant
@@ -368,6 +384,14 @@ _Generated: 2026-09-29T11:58:36.831Z_
 - **Tags:** data science
 - **Status:** scraped
 
+### SAP Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-data-engineer-bltdy93kqotw3vfyt5v_en](https://careers.epam.com/en/vacancy/sap-data-engineer-bltdy93kqotw3vfyt5v_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap datasphere
+- **Status:** scraped
+
 ### SAP FICO Engineering Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-fico-engineering-manager-blte2ub1rh2x71vyith_en](https://careers.epam.com/en/vacancy/sap-fico-engineering-manager-blte2ub1rh2x71vyith_en)
@@ -414,6 +438,14 @@ _Generated: 2026-09-29T11:58:36.831Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** data science consulting, scrum, kanban, mlops, docker, kubernetes, github, numpy, pandas, tensorflow
+- **Status:** scraped
+
+### Chief SAP BI Developer (HANA Modeling)
+
+- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-bi-developer-hana-modeling-bltfaba69gvluaye34c_en](https://careers.epam.com/en/vacancy/chief-sap-bi-developer-hana-modeling-bltfaba69gvluaye34c_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
 - **Status:** scraped
 
 ### Senior SAP Data Migration Consultant
@@ -600,6 +632,22 @@ _Generated: 2026-09-29T11:58:36.831Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
+### Lead SAP HANA Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-hana-developer-blttfgm3csu41fxcgpn_en](https://careers.epam.com/en/vacancy/lead-sap-hana-developer-blttfgm3csu41fxcgpn_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap hana data warehousing, sap hana cloud
+- **Status:** scraped
+
+### Senior SAP CPI Engineer (PI/PO)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cpi-engineer-pi-po-blttmakv1cm9gum9n3l_en](https://careers.epam.com/en/vacancy/senior-sap-cpi-engineer-pi-po-blttmakv1cm9gum9n3l_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap pi/po and cloud integration, sap erp, sap integration suite
+- **Status:** scraped
+
 ### SAP Data Deployment Lead
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en](https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en)
@@ -638,6 +686,14 @@ _Generated: 2026-09-29T11:58:36.831Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
+### Senior SAP Data Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-data-engineer-bltwk1ey7rvlu2p4w0f_en](https://careers.epam.com/en/vacancy/senior-sap-data-engineer-bltwk1ey7rvlu2p4w0f_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap datasphere
 - **Status:** scraped
 
 ### Senior Azure Platform Engineer
