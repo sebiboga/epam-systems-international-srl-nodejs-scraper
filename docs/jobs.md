@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-09-30 |
+| Last Scraped | 2026-10-01 |
 
-## Current Job Listings (92)
+## Current Job Listings (91)
 
-_Generated: 2026-09-30T11:46:33.969Z_
+_Generated: 2026-10-01T12:15:48.836Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -742,12 +742,4 @@ _Generated: 2026-09-30T11:46:33.969Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
-- **Status:** scraped
-
-### RAP Developer (Relocation to Cyprus)
-
-- **URL:** [https://careers.epam.com/en/vacancy/rap-developer-relocation-to-cyprus-bltk5a8t0itiwv4eerh_en](https://careers.epam.com/en/vacancy/rap-developer-relocation-to-cyprus-bltk5a8t0itiwv4eerh_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap abap
 - **Status:** scraped
