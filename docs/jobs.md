@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-01 |
+| Last Scraped | 2026-10-02 |
 
-## Current Job Listings (91)
+## Current Job Listings (89)
 
-_Generated: 2026-10-01T12:15:48.836Z_
+_Generated: 2026-10-02T11:44:45.854Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -166,14 +166,6 @@ _Generated: 2026-10-01T12:15:48.836Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** solution architecture
-- **Status:** scraped
-
-### Lead SAP S/4HANA Credit Management Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-s-4hana-credit-management-consultant-blt5rm2v48n6vl9k2yi_en](https://careers.epam.com/en/vacancy/lead-sap-s-4hana-credit-management-consultant-blt5rm2v48n6vl9k2yi_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap logistics (scm), credit risk, credit scoring
 - **Status:** scraped
 
 ### Senior DevOps Engineer
@@ -414,14 +406,6 @@ _Generated: 2026-10-01T12:15:48.836Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap logistics (scm)
-- **Status:** scraped
-
-### Chief SAP S/4HANA Credit Management Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-s-4hana-credit-management-consultant-bltewtyasg6jqqq20t8_en](https://careers.epam.com/en/vacancy/chief-sap-s-4hana-credit-management-consultant-bltewtyasg6jqqq20t8_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap logistics (scm), credit risk, credit scoring
 - **Status:** scraped
 
 ### Senior/Lead SAP CAP Node.JS Developer
