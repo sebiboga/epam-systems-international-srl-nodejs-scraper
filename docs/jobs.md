@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-02 |
+| Last Scraped | 2026-10-03 |
 
-## Current Job Listings (89)
+## Current Job Listings (90)
 
-_Generated: 2026-10-02T11:44:45.854Z_
+_Generated: 2026-10-03T11:00:35.821Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -574,6 +574,14 @@ _Generated: 2026-10-02T11:44:45.854Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management.ai
+- **Status:** scraped
+
+### Lead Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-solution-architect-bltpehjxzsr74aniy3c_en](https://careers.epam.com/en/vacancy/lead-solution-architect-bltpehjxzsr74aniy3c_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture, data mapping solution, e-commerce, integration architecture, oms in fluent commerce, salesforce commerce cloud
 - **Status:** scraped
 
 ### Senior Supply Chain Architect (Supply Chain IT Product)
