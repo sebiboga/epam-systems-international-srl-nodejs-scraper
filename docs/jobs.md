@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-04 |
+| Last Scraped | 2026-10-05 |
 
-## Current Job Listings (90)
+## Current Job Listings (89)
 
-_Generated: 2026-10-04T11:40:30.600Z_
+_Generated: 2026-10-05T13:21:10.632Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -104,14 +104,6 @@ _Generated: 2026-10-04T11:40:30.600Z_
 - **Tags:** data software engineering, databricks, microsoft azure, python, sql, ci/cd, github actions, microsoft power bi, scaled agile framework
 - **Status:** scraped
 
-### SAP BI Team Lead (HANA Modeling)
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-bi-team-lead-hana-modeling-blt29pmyop48gfsy2g5_en](https://careers.epam.com/en/vacancy/sap-bi-team-lead-hana-modeling-blt29pmyop48gfsy2g5_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
-- **Status:** scraped
-
 ### Data Governance Consultant - Informatica Cloud
 
 - **URL:** [https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en](https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en)
@@ -126,6 +118,14 @@ _Generated: 2026-10-04T11:40:30.600Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### OMS Lead Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/oms-lead-engineer-blt3o9oz9act0h63kuc_en](https://careers.epam.com/en/vacancy/oms-lead-engineer-blt3o9oz9act0h63kuc_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** fluent commerce oms, data mapping solution, e-commerce, integration architecture, oms in fluent commerce, salesforce commerce cloud
 - **Status:** scraped
 
 ### Senior DevSecOps Engineer - Security Automation
@@ -422,14 +422,6 @@ _Generated: 2026-10-04T11:40:30.600Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** data science consulting, scrum, kanban, mlops, docker, kubernetes, github, numpy, pandas, tensorflow
-- **Status:** scraped
-
-### Chief SAP BI Developer (HANA Modeling)
-
-- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-bi-developer-hana-modeling-bltfaba69gvluaye34c_en](https://careers.epam.com/en/vacancy/chief-sap-bi-developer-hana-modeling-bltfaba69gvluaye34c_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
 - **Status:** scraped
 
 ### Senior SAP Data Migration Consultant
