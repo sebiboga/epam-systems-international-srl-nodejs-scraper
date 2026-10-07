@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-06 |
+| Last Scraped | 2026-10-07 |
 
-## Current Job Listings (91)
+## Current Job Listings (95)
 
-_Generated: 2026-10-06T12:36:44.955Z_
+_Generated: 2026-10-07T12:29:42.684Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -232,6 +232,14 @@ _Generated: 2026-10-06T12:36:44.955Z_
 - **Tags:** sap abap
 - **Status:** scraped
 
+### Senior Full-stack JavaScript Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-full-stack-javascript-developer-blt74rt1aemz606cx47_en](https://careers.epam.com/en/vacancy/senior-full-stack-javascript-developer-blt74rt1aemz606cx47_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** javascript (fullstack)
+- **Status:** scraped
+
 ### Presales Solution Consultant – Data and AI
 
 - **URL:** [https://careers.epam.com/en/vacancy/presales-solution-consultant-data-and-ai-blt792827nrlotetup2_en](https://careers.epam.com/en/vacancy/presales-solution-consultant-data-and-ai-blt792827nrlotetup2_en)
@@ -246,6 +254,14 @@ _Generated: 2026-10-06T12:36:44.955Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** python.core, docker, fastapi, microsoft azure, python, reactjs, sql, kubernetes, playwright, terraform
+- **Status:** scraped
+
+### AI Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/ai-solution-architect-blt7j1q4t3ao67vq7wv_en](https://careers.epam.com/en/vacancy/ai-solution-architect-blt7j1q4t3ao67vq7wv_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** ai solution engineering
 - **Status:** scraped
 
 ### SAP SuccessFactors Consultant
@@ -336,6 +352,14 @@ _Generated: 2026-10-06T12:36:44.955Z_
 - **Tags:** delivery management, salesforce
 - **Status:** scraped
 
+### Business Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/business-solution-architect-bltbt6mmrkzxwaedo5h_en](https://careers.epam.com/en/vacancy/business-solution-architect-bltbt6mmrkzxwaedo5h_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture
+- **Status:** scraped
+
 ### Senior SAP ABAP Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-abap-developer-bltc2ble4t34rrituoy_en](https://careers.epam.com/en/vacancy/senior-sap-abap-developer-bltc2ble4t34rrituoy_en)
@@ -422,6 +446,14 @@ _Generated: 2026-10-06T12:36:44.955Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap cap based node.js, sapui5, agile, javascript
+- **Status:** scraped
+
+### Salesforce Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/salesforce-solution-architect-bltf8f1q82pe5wc0xuk_en](https://careers.epam.com/en/vacancy/salesforce-solution-architect-bltf8f1q82pe5wc0xuk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture
 - **Status:** scraped
 
 ### Data Science Consultant
