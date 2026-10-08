@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-07 |
+| Last Scraped | 2026-10-08 |
 
-## Current Job Listings (95)
+## Current Job Listings (94)
 
-_Generated: 2026-10-07T12:29:42.684Z_
+_Generated: 2026-10-08T12:39:27.398Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -470,14 +470,6 @@ _Generated: 2026-10-07T12:29:42.684Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
-- **Status:** scraped
-
-### Senior SAP Data Migration Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-data-migration-consultant-bltg4t3p0mjka1yybz0_en](https://careers.epam.com/en/vacancy/senior-sap-data-migration-consultant-bltg4t3p0mjka1yybz0_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap logistics (scm), gxp, sap, sap implementation excellence, sap process orchestration, sap: le-wm warehouse management, sap: lo-bm batches
 - **Status:** scraped
 
 ### Senior Python Engineer
