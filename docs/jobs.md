@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-08 |
+| Last Scraped | 2026-10-09 |
 
-## Current Job Listings (94)
+## Current Job Listings (93)
 
-_Generated: 2026-10-08T12:39:27.398Z_
+_Generated: 2026-10-09T12:26:39.086Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -152,6 +152,14 @@ _Generated: 2026-10-08T12:39:27.398Z_
 - **Tags:** project administration
 - **Status:** scraped
 
+### Senior Java Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en](https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** java, order management systems, fluent commerce oms
+- **Status:** scraped
+
 ### Senior SAP MDG Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-mdg-consultant-blt56be081bac442c32_en](https://careers.epam.com/en/vacancy/senior-sap-mdg-consultant-blt56be081bac442c32_en)
@@ -262,14 +270,6 @@ _Generated: 2026-10-08T12:39:27.398Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** ai solution engineering
-- **Status:** scraped
-
-### SAP SuccessFactors Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-successfactors-consultant-blt7zvk3y3mljqqwtny_en](https://careers.epam.com/en/vacancy/sap-successfactors-consultant-blt7zvk3y3mljqqwtny_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap success factors, sap successfactors
 - **Status:** scraped
 
 ### Senior Full-stack IoT Engineer
@@ -550,14 +550,6 @@ _Generated: 2026-10-08T12:39:27.398Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
-- **Status:** scraped
-
-### Senior SAP SuccessFactors Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-successfactors-consultant-bltnlwlyazu4aeh91xf_en](https://careers.epam.com/en/vacancy/senior-sap-successfactors-consultant-bltnlwlyazu4aeh91xf_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap success factors, sap successfactors
 - **Status:** scraped
 
 ### SAP Joule & Multi-Agent Integration Engineer
