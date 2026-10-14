@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-13 |
+| Last Scraped | 2026-10-14 |
 
 ## Current Job Listings (93)
 
-_Generated: 2026-10-13T13:22:07.095Z_
+_Generated: 2026-10-14T11:00:55.766Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -142,14 +142,6 @@ _Generated: 2026-10-13T13:22:07.095Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
-- **Status:** scraped
-
-### Project Administrator
-
-- **URL:** [https://careers.epam.com/en/vacancy/project-administrator-blt45cu5hqny6ojl0py_en](https://careers.epam.com/en/vacancy/project-administrator-blt45cu5hqny6ojl0py_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** project administration
 - **Status:** scraped
 
 ### Senior Java Engineer
@@ -376,6 +368,14 @@ _Generated: 2026-10-13T13:22:07.095Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
+### Senior SAP Fieldglass Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-fieldglass-consultant-bltc520o8ubybqz9ieq_en](https://careers.epam.com/en/vacancy/senior-sap-fieldglass-consultant-bltc520o8ubybqz9ieq_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap functional consulting, requirements definition and management, sap fieldglass, agile, sap ariba, systems thinking
+- **Status:** scraped
+
 ### Senior Data Integration Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-integration-engineer-bltc60bqksa6q8ih4yg_en](https://careers.epam.com/en/vacancy/senior-data-integration-engineer-bltc60bqksa6q8ih4yg_en)
@@ -430,6 +430,14 @@ _Generated: 2026-10-13T13:22:07.095Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap logistics (scm), sap-mm: purchasing
+- **Status:** scraped
+
+### Senior SAP SuccessFactors Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-successfactors-consultant-blte8elc3o2ky1eo7l9_en](https://careers.epam.com/en/vacancy/senior-sap-successfactors-consultant-blte8elc3o2ky1eo7l9_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap success factors
 - **Status:** scraped
 
 ### Senior SAP SD Consultant
@@ -544,14 +552,6 @@ _Generated: 2026-10-13T13:22:07.095Z_
 - **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust
 - **Status:** scraped
 
-### Senior SAP Data Deployment Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-data-deployment-engineer-bltm9dmb3km07flje9d_en](https://careers.epam.com/en/vacancy/senior-sap-data-deployment-engineer-bltm9dmb3km07flje9d_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
-- **Status:** scraped
-
 ### SAP Joule & Multi-Agent Integration Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-joule-multi-agent-integration-engineer-bltnwfddyw8sw56wp3v_en](https://careers.epam.com/en/vacancy/sap-joule-multi-agent-integration-engineer-bltnwfddyw8sw56wp3v_en)
@@ -664,14 +664,6 @@ _Generated: 2026-10-13T13:22:07.095Z_
 - **Tags:** sap pi/po and cloud integration, sap erp, sap integration suite
 - **Status:** scraped
 
-### SAP Data Deployment Lead
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en](https://careers.epam.com/en/vacancy/sap-data-deployment-lead-bltu3aybr8v8gcwf0t3_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap (others), communication, etl/elt solutions, end-user adoption and change management, sap-sd: master data, sap materials management
-- **Status:** scraped
-
 ### Senior Data Engineer - Palantir Foundry
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-palantir-foundry-bltu7xj1zh7wqvosr4h_en](https://careers.epam.com/en/vacancy/senior-data-engineer-palantir-foundry-bltu7xj1zh7wqvosr4h_en)
@@ -758,4 +750,12 @@ _Generated: 2026-10-13T13:22:07.095Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Lead SAP SuccessFactors Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-successfactors-consultant-bltzy4vaaom6o2rhdwc_en](https://careers.epam.com/en/vacancy/lead-sap-successfactors-consultant-bltzy4vaaom6o2rhdwc_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap success factors
 - **Status:** scraped
