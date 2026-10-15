@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-14 |
+| Last Scraped | 2026-10-15 |
 
-## Current Job Listings (93)
+## Current Job Listings (91)
 
-_Generated: 2026-10-14T11:00:55.766Z_
+_Generated: 2026-10-15T10:43:37.661Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -232,14 +232,6 @@ _Generated: 2026-10-14T11:00:55.766Z_
 - **Tags:** sap abap
 - **Status:** scraped
 
-### Senior Full-stack JavaScript Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-full-stack-javascript-developer-blt74rt1aemz606cx47_en](https://careers.epam.com/en/vacancy/senior-full-stack-javascript-developer-blt74rt1aemz606cx47_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** javascript (fullstack)
-- **Status:** scraped
-
 ### Presales Solution Consultant – Data and AI
 
 - **URL:** [https://careers.epam.com/en/vacancy/presales-solution-consultant-data-and-ai-blt792827nrlotetup2_en](https://careers.epam.com/en/vacancy/presales-solution-consultant-data-and-ai-blt792827nrlotetup2_en)
@@ -408,14 +400,6 @@ _Generated: 2026-10-14T11:00:55.766Z_
 - **Tags:** data science
 - **Status:** scraped
 
-### SAP Data Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-data-engineer-bltdy93kqotw3vfyt5v_en](https://careers.epam.com/en/vacancy/sap-data-engineer-bltdy93kqotw3vfyt5v_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap datasphere
-- **Status:** scraped
-
 ### SAP FICO Engineering Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-fico-engineering-manager-blte2ub1rh2x71vyith_en](https://careers.epam.com/en/vacancy/sap-fico-engineering-manager-blte2ub1rh2x71vyith_en)
@@ -504,6 +488,14 @@ _Generated: 2026-10-14T11:00:55.766Z_
 - **Tags:** sap cap based java, sap fiori elements, spring boot
 - **Status:** scraped
 
+### Lead SAP S/4HANA Consultant: SD, Variant Configuration and B2B EDI
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltiv5y4giwm68bv1g7_en](https://careers.epam.com/en/vacancy/lead-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltiv5y4giwm68bv1g7_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), sap c/4hana
+- **Status:** scraped
+
 ### Principal/Director, Data Analytics Consulting for Financial Services
 
 - **URL:** [https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en](https://careers.epam.com/en/vacancy/principal-director-data-analytics-consulting-for-financial-services-bltjii77r07qtq3gmv6_en)
@@ -518,6 +510,14 @@ _Generated: 2026-10-14T11:00:55.766Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap mdm/mdg
+- **Status:** scraped
+
+### Senior SAP S/4HANA Consultant: SD, Variant Configuration and B2B EDI
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltkqeofdgqx2ilxs3b_en](https://careers.epam.com/en/vacancy/senior-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltkqeofdgqx2ilxs3b_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap logistics (scm), sap c/4hana
 - **Status:** scraped
 
 ### Salesforce Lead Developer / Consultant
@@ -598,14 +598,6 @@ _Generated: 2026-10-14T11:00:55.766Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management.ai
-- **Status:** scraped
-
-### Lead Solution Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-solution-architect-bltpehjxzsr74aniy3c_en](https://careers.epam.com/en/vacancy/lead-solution-architect-bltpehjxzsr74aniy3c_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** solution architecture, data mapping solution, e-commerce, integration architecture, oms in fluent commerce, salesforce commerce cloud
 - **Status:** scraped
 
 ### Senior Supply Chain Architect (Supply Chain IT Product)
@@ -694,14 +686,6 @@ _Generated: 2026-10-14T11:00:55.766Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
-### Senior SAP Data Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-data-engineer-bltwk1ey7rvlu2p4w0f_en](https://careers.epam.com/en/vacancy/senior-sap-data-engineer-bltwk1ey7rvlu2p4w0f_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap datasphere
 - **Status:** scraped
 
 ### Senior Azure Platform Engineer
