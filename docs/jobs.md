@@ -12,9 +12,9 @@
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
 | Last Scraped | 2026-10-15 |
 
-## Current Job Listings (91)
+## Current Job Listings (92)
 
-_Generated: 2026-10-15T10:43:37.661Z_
+_Generated: 2026-10-15T18:43:51.810Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -598,6 +598,14 @@ _Generated: 2026-10-15T10:43:37.661Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management.ai
+- **Status:** scraped
+
+### Senior Java Backend Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-java-backend-engineer-bltqing4nrl0czqs3gu_en](https://careers.epam.com/en/vacancy/senior-java-backend-engineer-bltqing4nrl0czqs3gu_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** java, cloud, microservice architecture style, google cloud platform
 - **Status:** scraped
 
 ### Senior Supply Chain Architect (Supply Chain IT Product)
