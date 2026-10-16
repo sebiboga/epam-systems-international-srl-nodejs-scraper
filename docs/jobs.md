@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-15 |
+| Last Scraped | 2026-10-16 |
 
-## Current Job Listings (92)
+## Current Job Listings (96)
 
-_Generated: 2026-10-15T18:43:51.810Z_
+_Generated: 2026-10-16T10:30:54.613Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -150,6 +150,14 @@ _Generated: 2026-10-15T18:43:51.810Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** java, order management systems, fluent commerce oms
+- **Status:** scraped
+
+### Network Security Operations Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/network-security-operations-engineer-blt4cqm77w8oz9r5qpz_en](https://careers.epam.com/en/vacancy/network-security-operations-engineer-blt4cqm77w8oz9r5qpz_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** security.operations, network security
 - **Status:** scraped
 
 ### Senior SAP MDG Consultant
@@ -310,6 +318,14 @@ _Generated: 2026-10-15T18:43:51.810Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap cap based node.js
+- **Status:** scraped
+
+### Senior Cyber Incident Responder
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-cyber-incident-responder-bltb0gqxyrlmtocnjdf_en](https://careers.epam.com/en/vacancy/senior-cyber-incident-responder-bltb0gqxyrlmtocnjdf_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** security.operations, security incident response
 - **Status:** scraped
 
 ### Senior Business Analyst / Finance Digital SME - FIT & S/4HANA Finance
@@ -640,6 +656,14 @@ _Generated: 2026-10-15T18:43:51.810Z_
 - **Tags:** product management, sap logistics (scm)
 - **Status:** scraped
 
+### Platform Security Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/platform-security-consultant-bltsew297pozdijo49s_en](https://careers.epam.com/en/vacancy/platform-security-consultant-bltsew297pozdijo49s_en)
+- **Work Mode:** remote
+- **Location:** Bucharest
+- **Tags:** technology consulting, application security, cloud, network security, sdlc implementation
+- **Status:** scraped
+
 ### SAP R2R Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en](https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en)
@@ -742,6 +766,14 @@ _Generated: 2026-10-15T18:43:51.810Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Senior Security Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-security-engineer-bltzwpif1dwyifzvg6y_en](https://careers.epam.com/en/vacancy/senior-security-engineer-bltzwpif1dwyifzvg6y_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** security.engineering, gen ai assisted development, vulnerability management
 - **Status:** scraped
 
 ### Lead SAP SuccessFactors Consultant
