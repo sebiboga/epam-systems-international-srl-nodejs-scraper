@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-16 |
+| Last Scraped | 2026-10-17 |
 
-## Current Job Listings (96)
+## Current Job Listings (97)
 
-_Generated: 2026-10-16T10:30:54.613Z_
+_Generated: 2026-10-17T10:01:25.758Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -398,6 +398,14 @@ _Generated: 2026-10-16T10:30:54.613Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** microsoft dynamics 365 crm
+- **Status:** scraped
+
+### Enterprise Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/enterprise-architect-bltd0gu117xikr4yekb_en](https://careers.epam.com/en/vacancy/enterprise-architect-bltd0gu117xikr4yekb_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** enterprise architecture, b2b commerce, enterprise architecture frameworks, enterprise architecture tools, enterprise transformation strategy, order management systems, roadmap, crm, solution architecture, supply chain management, supply chain platforms
 - **Status:** scraped
 
 ### Senior SAP MM/AFS Consultant
