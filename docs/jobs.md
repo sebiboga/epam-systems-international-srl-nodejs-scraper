@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-18 |
+| Last Scraped | 2026-10-19 |
 
-## Current Job Listings (97)
+## Current Job Listings (96)
 
-_Generated: 2026-10-18T10:14:00.032Z_
+_Generated: 2026-10-19T11:51:50.089Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -38,14 +38,6 @@ _Generated: 2026-10-18T10:14:00.032Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap basis and devops, sap basis, sap hana db, sap maxdb, ibm db2
-- **Status:** scraped
-
-### Senior SAP SRM Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-srm-consultant-blt0z9v1eoxk5dwxuot_en](https://careers.epam.com/en/vacancy/senior-sap-srm-consultant-blt0z9v1eoxk5dwxuot_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap logistics (scm), sap supplier relationship management, sap-srm: strategic sourcing
 - **Status:** scraped
 
 ### Senior AI Engineer
@@ -334,14 +326,6 @@ _Generated: 2026-10-18T10:14:00.032Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** business analysis, finance transformation, sap hana platform
-- **Status:** scraped
-
-### Lead SAP SRM Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-srm-consultant-bltb8nwki9mg7s93tsk_en](https://careers.epam.com/en/vacancy/lead-sap-srm-consultant-bltb8nwki9mg7s93tsk_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap logistics (scm), sap supplier relationship management, sap-srm: strategic sourcing
 - **Status:** scraped
 
 ### Salesforce Delivery Manager
@@ -766,6 +750,14 @@ _Generated: 2026-10-18T10:14:00.032Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** amazon web services, ai agents development, ci/cd, git, terraform, docker, microsoft azure, powershell, python, scripting languages, terragrunt, vm migration
+- **Status:** scraped
+
+### Senior API/Integration Engineer (IBM webMethods)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-api-integration-engineer-ibm-webmethods-bltyktb398e40dyhzkk_en](https://careers.epam.com/en/vacancy/senior-api-integration-engineer-ibm-webmethods-bltyktb398e40dyhzkk_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** apis and integration, cloud migration and infrastructure modernization, ibm webmethods api management, ibm webmethods integration, sap business technology platform, sap idoc
 - **Status:** scraped
 
 ### Manager / Senior Manager, Data & AI Consulting (AI Product Manager)
