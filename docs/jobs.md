@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
+| Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-19 |
+| Last Scraped | 2026-10-20 |
 
 ## Current Job Listings (96)
 
-_Generated: 2026-10-19T11:51:50.089Z_
+_Generated: 2026-10-20T10:48:50.945Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -248,9 +248,9 @@ _Generated: 2026-10-19T11:51:50.089Z_
 - **Tags:** python.core, docker, fastapi, microsoft azure, python, reactjs, sql, kubernetes, playwright, terraform
 - **Status:** scraped
 
-### AI Solution Architect
+### AI Native Solution Architect
 
-- **URL:** [https://careers.epam.com/en/vacancy/ai-solution-architect-blt7j1q4t3ao67vq7wv_en](https://careers.epam.com/en/vacancy/ai-solution-architect-blt7j1q4t3ao67vq7wv_en)
+- **URL:** [https://careers.epam.com/en/vacancy/ai-native-solution-architect-blt7j1q4t3ao67vq7wv_en](https://careers.epam.com/en/vacancy/ai-native-solution-architect-blt7j1q4t3ao67vq7wv_en)
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** ai solution engineering
