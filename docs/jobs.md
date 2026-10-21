@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-20 |
+| Last Scraped | 2026-10-21 |
 
-## Current Job Listings (96)
+## Current Job Listings (97)
 
-_Generated: 2026-10-20T10:48:50.945Z_
+_Generated: 2026-10-21T11:01:03.773Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -392,14 +392,6 @@ _Generated: 2026-10-20T10:48:50.945Z_
 - **Tags:** enterprise architecture, b2b commerce, enterprise architecture frameworks, enterprise architecture tools, enterprise transformation strategy, order management systems, roadmap, crm, solution architecture, supply chain management, supply chain platforms
 - **Status:** scraped
 
-### Senior SAP MM/AFS Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-mm-afs-consultant-bltdmedvwaf6u6oxmdw_en](https://careers.epam.com/en/vacancy/senior-sap-mm-afs-consultant-bltdmedvwaf6u6oxmdw_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), sap-mm: purchasing
-- **Status:** scraped
-
 ### Forward Deployed Engineer (Chief Role)
 
 - **URL:** [https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en](https://careers.epam.com/en/vacancy/forward-deployed-engineer-chief-role-bltduxf022ag9s03k2a_en)
@@ -414,14 +406,6 @@ _Generated: 2026-10-20T10:48:50.945Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico
-- **Status:** scraped
-
-### Lead SAP MM/AFS Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-mm-afs-consultant-blte672uowg3yzmwpht_en](https://careers.epam.com/en/vacancy/lead-sap-mm-afs-consultant-blte672uowg3yzmwpht_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap logistics (scm), sap-mm: purchasing
 - **Status:** scraped
 
 ### Senior SAP SuccessFactors Consultant
@@ -470,6 +454,14 @@ _Generated: 2026-10-20T10:48:50.945Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
+- **Status:** scraped
+
+### Lead SAP CAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltfk5cumcsous5yufc_en](https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltfk5cumcsous5yufc_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap cap based java, java
 - **Status:** scraped
 
 ### Senior Python Engineer
@@ -560,6 +552,14 @@ _Generated: 2026-10-20T10:48:50.945Z_
 - **Tags:** advanced systems engineering, c++, ci/cd, go language, observability and troubleshooting in distributed systems, opentelemetry, rust
 - **Status:** scraped
 
+### Senior SAP CAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-developer-bltnbo6m9s3yqc9b1kn_en](https://careers.epam.com/en/vacancy/senior-sap-cap-developer-bltnbo6m9s3yqc9b1kn_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap cap based java, java
+- **Status:** scraped
+
 ### SAP Joule & Multi-Agent Integration Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-joule-multi-agent-integration-engineer-bltnwfddyw8sw56wp3v_en](https://careers.epam.com/en/vacancy/sap-joule-multi-agent-integration-engineer-bltnwfddyw8sw56wp3v_en)
@@ -590,6 +590,14 @@ _Generated: 2026-10-20T10:48:50.945Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
+### Project Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/project-manager-blto17aj4cb2mwf429i_en](https://careers.epam.com/en/vacancy/project-manager-blto17aj4cb2mwf429i_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** project management, erp implementation
 - **Status:** scraped
 
 ### Senior Kotlin Developer
