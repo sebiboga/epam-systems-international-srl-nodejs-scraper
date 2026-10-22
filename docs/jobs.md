@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-21 |
+| Last Scraped | 2026-10-22 |
 
 ## Current Job Listings (97)
 
-_Generated: 2026-10-21T11:01:03.773Z_
+_Generated: 2026-10-22T10:59:42.945Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -299,6 +299,14 @@ _Generated: 2026-10-21T11:01:03.773Z_
 ### Senior Product Manager - Data & AI in Clinical Trials
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-product-manager-data-ai-in-clinical-trials-blt9p5l3n50a8pbp4vv_en](https://careers.epam.com/en/vacancy/senior-product-manager-data-ai-in-clinical-trials-blt9p5l3n50a8pbp4vv_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Data & AI Manager — Revenue Growth Management
+
+- **URL:** [https://careers.epam.com/en/vacancy/data-ai-manager-revenue-growth-management-blta7bv1emy0ddy91ck_en](https://careers.epam.com/en/vacancy/data-ai-manager-revenue-growth-management-blta7bv1emy0ddy91ck_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
@@ -678,14 +686,6 @@ _Generated: 2026-10-21T11:01:03.773Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap hana data warehousing, sap hana cloud
-- **Status:** scraped
-
-### Senior SAP CPI Engineer (PI/PO)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cpi-engineer-pi-po-blttmakv1cm9gum9n3l_en](https://careers.epam.com/en/vacancy/senior-sap-cpi-engineer-pi-po-blttmakv1cm9gum9n3l_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap pi/po and cloud integration, sap erp, sap integration suite
 - **Status:** scraped
 
 ### Senior Data Engineer - Palantir Foundry
