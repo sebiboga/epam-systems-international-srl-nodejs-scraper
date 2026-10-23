@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-22 |
+| Last Scraped | 2026-10-23 |
 
-## Current Job Listings (97)
+## Current Job Listings (99)
 
-_Generated: 2026-10-22T10:59:42.945Z_
+_Generated: 2026-10-23T10:53:10.251Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -496,6 +496,14 @@ _Generated: 2026-10-22T10:59:42.945Z_
 - **Tags:** sap cap based java, sap fiori elements, spring boot
 - **Status:** scraped
 
+### SAP S/4HANA Public Cloud Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-s-4hana-public-cloud-solution-architect-blthehfjhc7833ryl08_en](https://careers.epam.com/en/vacancy/sap-s-4hana-public-cloud-solution-architect-blthehfjhc7833ryl08_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** solution architecture
+- **Status:** scraped
+
 ### Lead SAP S/4HANA Consultant: SD, Variant Configuration and B2B EDI
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltiv5y4giwm68bv1g7_en](https://careers.epam.com/en/vacancy/lead-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltiv5y4giwm68bv1g7_en)
@@ -766,6 +774,14 @@ _Generated: 2026-10-22T10:59:42.945Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** apis and integration, cloud migration and infrastructure modernization, ibm webmethods api management, ibm webmethods integration, sap business technology platform, sap idoc
+- **Status:** scraped
+
+### AI Native Delivery Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/ai-native-delivery-manager-bltyoazn7d3d6rcvcnw_en](https://careers.epam.com/en/vacancy/ai-native-delivery-manager-bltyoazn7d3d6rcvcnw_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** delivery management.ai
 - **Status:** scraped
 
 ### Manager / Senior Manager, Data & AI Consulting (AI Product Manager)
