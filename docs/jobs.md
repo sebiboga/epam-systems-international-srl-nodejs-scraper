@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-23 |
+| Last Scraped | 2026-10-24 |
 
-## Current Job Listings (99)
+## Current Job Listings (98)
 
-_Generated: 2026-10-23T10:53:10.251Z_
+_Generated: 2026-10-24T10:07:31.686Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -134,14 +134,6 @@ _Generated: 2026-10-23T10:53:10.251Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
-- **Status:** scraped
-
-### Senior Java Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en](https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** java, order management systems, fluent commerce oms
 - **Status:** scraped
 
 ### Network Security Operations Engineer
