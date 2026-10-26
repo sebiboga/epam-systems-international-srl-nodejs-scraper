@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-25 |
+| Last Scraped | 2026-10-26 |
 
-## Current Job Listings (98)
+## Current Job Listings (100)
 
-_Generated: 2026-10-25T10:33:00.831Z_
+_Generated: 2026-10-26T12:06:05.914Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -94,14 +94,6 @@ _Generated: 2026-10-25T10:33:00.831Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** data software engineering, databricks, microsoft azure, python, sql, ci/cd, github actions, microsoft power bi, scaled agile framework
-- **Status:** scraped
-
-### SAP BI Team Lead (HANA Modeling)
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-bi-team-lead-hana-modeling-blt29pmyop48gfsy2g5_en](https://careers.epam.com/en/vacancy/sap-bi-team-lead-hana-modeling-blt29pmyop48gfsy2g5_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
 - **Status:** scraped
 
 ### Data Governance Consultant - Informatica Cloud
@@ -384,6 +376,14 @@ _Generated: 2026-10-25T10:33:00.831Z_
 - **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
+### Senior SAS Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sas-developer-bltcwj5u23wckul8uh4_en](https://careers.epam.com/en/vacancy/senior-sas-developer-bltcwj5u23wckul8uh4_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** data integration, data warehouse development, sas, sas base, sas data integration studio, sql, cloud data services, financial services, regulatory requirements, standards and procedures, snowflake, treasury
+- **Status:** scraped
+
 ### Enterprise Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/enterprise-architect-bltd0gu117xikr4yekb_en](https://careers.epam.com/en/vacancy/enterprise-architect-bltd0gu117xikr4yekb_en)
@@ -448,14 +448,6 @@ _Generated: 2026-10-25T10:33:00.831Z_
 - **Tags:** data science consulting, scrum, kanban, mlops, docker, kubernetes, github, numpy, pandas, tensorflow
 - **Status:** scraped
 
-### Chief SAP BI Developer (HANA Modeling)
-
-- **URL:** [https://careers.epam.com/en/vacancy/chief-sap-bi-developer-hana-modeling-bltfaba69gvluaye34c_en](https://careers.epam.com/en/vacancy/chief-sap-bi-developer-hana-modeling-bltfaba69gvluaye34c_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap analytics cloud, sap analysis for microsoft office, sap bpc, sap bw
-- **Status:** scraped
-
 ### Lead SAP CAP Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltfk5cumcsous5yufc_en](https://careers.epam.com/en/vacancy/lead-sap-cap-developer-bltfk5cumcsous5yufc_en)
@@ -496,6 +488,14 @@ _Generated: 2026-10-25T10:33:00.831Z_
 - **Tags:** solution architecture
 - **Status:** scraped
 
+### Junior AI .NET Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/junior-ai-net-engineer-blthnbnxg3xj291zjop_en](https://careers.epam.com/en/vacancy/junior-ai-net-engineer-blthnbnxg3xj291zjop_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** .net, asp.net web api, agile, c\#, entity framework core, gen ai assisted development, sql, .net web development, ai agents development, ai native engineering, amazon web services, angular, microsoft azure, reactjs
+- **Status:** scraped
+
 ### Lead SAP S/4HANA Consultant: SD, Variant Configuration and B2B EDI
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltiv5y4giwm68bv1g7_en](https://careers.epam.com/en/vacancy/lead-sap-s-4hana-consultant-sd-variant-configuration-and-b2b-edi-bltiv5y4giwm68bv1g7_en)
@@ -518,6 +518,22 @@ _Generated: 2026-10-25T10:33:00.831Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap mdm/mdg
+- **Status:** scraped
+
+### Enterprise Integration Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/enterprise-integration-architect-bltkei458vedmc2ebqj_en](https://careers.epam.com/en/vacancy/enterprise-integration-architect-bltkei458vedmc2ebqj_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** apis and integration, graphql, kotlin, platform engineering, crypto payments
+- **Status:** scraped
+
+### Senior Business Analyst - Data Ingestion
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-business-analyst-data-ingestion-bltknyhmn4bfat4yz2j_en](https://careers.epam.com/en/vacancy/senior-business-analyst-data-ingestion-bltknyhmn4bfat4yz2j_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** business analysis, google cloud platform, data model, data modeling, data modeling concepts, data modeling fundamentals, data vault 2.0
 - **Status:** scraped
 
 ### Senior SAP S/4HANA Consultant: SD, Variant Configuration and B2B EDI
