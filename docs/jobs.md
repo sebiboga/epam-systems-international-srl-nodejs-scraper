@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-26 |
+| Last Scraped | 2026-10-27 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-10-26T12:06:05.914Z_
+_Generated: 2026-10-27T11:26:27.212Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -128,12 +128,28 @@ _Generated: 2026-10-26T12:06:05.914Z_
 - **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
 - **Status:** scraped
 
+### Senior Java Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en](https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** java, order management systems, fluent commerce oms
+- **Status:** scraped
+
 ### Network Security Operations Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/network-security-operations-engineer-blt4cqm77w8oz9r5qpz_en](https://careers.epam.com/en/vacancy/network-security-operations-engineer-blt4cqm77w8oz9r5qpz_en)
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.operations, network security
+- **Status:** scraped
+
+### Cloud Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/cloud-architect-blt4djbg3uv7anom6h7_en](https://careers.epam.com/en/vacancy/cloud-architect-blt4djbg3uv7anom6h7_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** google cloud platform
 - **Status:** scraped
 
 ### Senior SAP MDG Consultant
@@ -158,6 +174,14 @@ _Generated: 2026-10-26T12:06:05.914Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** solution architecture
+- **Status:** scraped
+
+### Senior AI Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-ai-engineer-blt5yafoc2bw3eyjpch_en](https://careers.epam.com/en/vacancy/senior-ai-engineer-blt5yafoc2bw3eyjpch_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** ai solution engineering, databricks, machine learning, microsoft azure
 - **Status:** scraped
 
 ### Senior DevOps Engineer
@@ -238,6 +262,14 @@ _Generated: 2026-10-26T12:06:05.914Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** ai solution engineering
+- **Status:** scraped
+
+### Senior Software Engineer - Google Cloud Platform
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-software-engineer-google-cloud-platform-blt7lmfs2u4m3ifhje1_en](https://careers.epam.com/en/vacancy/senior-software-engineer-google-cloud-platform-blt7lmfs2u4m3ifhje1_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** data software engineering, financial services, gcp security and identity, github actions, google cloud bigquery, python, terraform, apache airflow, apache beam, data vault 2.0, java
 - **Status:** scraped
 
 ### Senior Full-stack IoT Engineer
@@ -648,6 +680,14 @@ _Generated: 2026-10-26T12:06:05.914Z_
 - **Tags:** java, cloud, microservice architecture style, google cloud platform
 - **Status:** scraped
 
+### Python Technical Lead
+
+- **URL:** [https://careers.epam.com/en/vacancy/python-technical-lead-bltqxdacsqbw70viubp_en](https://careers.epam.com/en/vacancy/python-technical-lead-bltqxdacsqbw70viubp_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** python.core, fastapi, microsoft azure, pydantic, python cloud apis, rest api, apache airflow, atlassian jira, azure kubernetes service, databricks, docker, gitlab ci, mlflow, microsoft fabric
+- **Status:** scraped
+
 ### Senior Supply Chain Architect (Supply Chain IT Product)
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-supply-chain-architect-supply-chain-it-product-bltrizzf9u0hziot1y1_en](https://careers.epam.com/en/vacancy/senior-supply-chain-architect-supply-chain-it-product-bltrizzf9u0hziot1y1_en)
@@ -768,50 +808,10 @@ _Generated: 2026-10-26T12:06:05.914Z_
 - **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
-### Senior DevOps Engineer/AWS/Azure
+### Senior Network Test Automation Engineer
 
-- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** amazon web services, ai agents development, ci/cd, git, terraform, docker, microsoft azure, powershell, python, scripting languages, terragrunt, vm migration
-- **Status:** scraped
-
-### Senior API/Integration Engineer (IBM webMethods)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-api-integration-engineer-ibm-webmethods-bltyktb398e40dyhzkk_en](https://careers.epam.com/en/vacancy/senior-api-integration-engineer-ibm-webmethods-bltyktb398e40dyhzkk_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** apis and integration, cloud migration and infrastructure modernization, ibm webmethods api management, ibm webmethods integration, sap business technology platform, sap idoc
-- **Status:** scraped
-
-### AI Native Delivery Manager
-
-- **URL:** [https://careers.epam.com/en/vacancy/ai-native-delivery-manager-bltyoazn7d3d6rcvcnw_en](https://careers.epam.com/en/vacancy/ai-native-delivery-manager-bltyoazn7d3d6rcvcnw_en)
+- **URL:** [https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en](https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en)
 - **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** delivery management.ai
-- **Status:** scraped
-
-### Manager / Senior Manager, Data & AI Consulting (AI Product Manager)
-
-- **URL:** [https://careers.epam.com/en/vacancy/manager-senior-manager-data-ai-consulting-ai-product-manager-bltzmrz8ntjc6a3k0ej_en](https://careers.epam.com/en/vacancy/manager-senior-manager-data-ai-consulting-ai-product-manager-bltzmrz8ntjc6a3k0ej_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** business analytics consulting
-- **Status:** scraped
-
-### Senior Security Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-security-engineer-bltzwpif1dwyifzvg6y_en](https://careers.epam.com/en/vacancy/senior-security-engineer-bltzwpif1dwyifzvg6y_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** security.engineering, gen ai assisted development, vulnerability management
-- **Status:** scraped
-
-### Lead SAP SuccessFactors Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-successfactors-consultant-bltzy4vaaom6o2rhdwc_en](https://careers.epam.com/en/vacancy/lead-sap-successfactors-consultant-bltzy4vaaom6o2rhdwc_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap success factors
+- **Location:** Bucharest
+- **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
 - **Status:** scraped
