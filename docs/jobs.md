@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-27 |
+| Last Scraped | 2026-10-28 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-10-27T11:26:27.212Z_
+_Generated: 2026-10-28T11:58:53.745Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -688,6 +688,14 @@ _Generated: 2026-10-27T11:26:27.212Z_
 - **Tags:** python.core, fastapi, microsoft azure, pydantic, python cloud apis, rest api, apache airflow, atlassian jira, azure kubernetes service, databricks, docker, gitlab ci, mlflow, microsoft fabric
 - **Status:** scraped
 
+### Senior SAP HANA & ABAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-hana-abap-developer-bltr9rwkw195brsst8m_en](https://careers.epam.com/en/vacancy/senior-sap-hana-abap-developer-bltr9rwkw195brsst8m_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap hana platform
+- **Status:** scraped
+
 ### Senior Supply Chain Architect (Supply Chain IT Product)
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-supply-chain-architect-supply-chain-it-product-bltrizzf9u0hziot1y1_en](https://careers.epam.com/en/vacancy/senior-supply-chain-architect-supply-chain-it-product-bltrizzf9u0hziot1y1_en)
@@ -710,6 +718,14 @@ _Generated: 2026-10-27T11:26:27.212Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** microsoft dynamics 365 crm
+- **Status:** scraped
+
+### DevOps Team Lead
+
+- **URL:** [https://careers.epam.com/en/vacancy/devops-team-lead-bltscrcs57wk1jcxb5n_en](https://careers.epam.com/en/vacancy/devops-team-lead-bltscrcs57wk1jcxb5n_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft azure, docker, kubernetes, python, terraform, databricks, mlops, microsoft fabric
 - **Status:** scraped
 
 ### SAP Logistics (SCM) Engineering Manager
@@ -798,20 +814,4 @@ _Generated: 2026-10-27T11:26:27.212Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
-- **Status:** scraped
-
-### Dynamics 365 CE Lead Functional Consultant with Copilot
-
-- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** microsoft dynamics 365 crm
-- **Status:** scraped
-
-### Senior Network Test Automation Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en](https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
 - **Status:** scraped
