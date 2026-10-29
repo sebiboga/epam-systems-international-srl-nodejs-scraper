@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-28 |
+| Last Scraped | 2026-10-29 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-10-28T11:58:53.745Z_
+_Generated: 2026-10-29T12:07:48.895Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -640,14 +640,6 @@ _Generated: 2026-10-28T11:58:53.745Z_
 - **Tags:** sap ibp, sap erp, sap logistics (scm)
 - **Status:** scraped
 
-### SAP BTP Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-btp-architect-blto03cn4snxnblngsd_en](https://careers.epam.com/en/vacancy/sap-btp-architect-blto03cn4snxnblngsd_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
 ### Project Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/project-manager-blto17aj4cb2mwf429i_en](https://careers.epam.com/en/vacancy/project-manager-blto17aj4cb2mwf429i_en)
@@ -720,14 +712,6 @@ _Generated: 2026-10-28T11:58:53.745Z_
 - **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
 
-### DevOps Team Lead
-
-- **URL:** [https://careers.epam.com/en/vacancy/devops-team-lead-bltscrcs57wk1jcxb5n_en](https://careers.epam.com/en/vacancy/devops-team-lead-bltscrcs57wk1jcxb5n_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** microsoft azure, docker, kubernetes, python, terraform, databricks, mlops, microsoft fabric
-- **Status:** scraped
-
 ### SAP Logistics (SCM) Engineering Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en](https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en)
@@ -784,14 +768,6 @@ _Generated: 2026-10-28T11:58:53.745Z_
 - **Tags:** cloud engineering management, microsoft azure
 - **Status:** scraped
 
-### SAP BTP Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-btp-architect-bltw8oknzrq5vhdcnl5_en](https://careers.epam.com/en/vacancy/sap-btp-architect-bltw8oknzrq5vhdcnl5_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
 ### Senior Azure Platform Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-azure-platform-engineer-bltww02pzabh610mbqv_en](https://careers.epam.com/en/vacancy/senior-azure-platform-engineer-bltww02pzabh610mbqv_en)
@@ -814,4 +790,28 @@ _Generated: 2026-10-28T11:58:53.745Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
+- **Status:** scraped
+
+### Dynamics 365 CE Lead Functional Consultant with Copilot
+
+- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft dynamics 365 crm
+- **Status:** scraped
+
+### Senior Network Test Automation Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en](https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
+- **Status:** scraped
+
+### Senior DevOps Engineer/AWS/Azure
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** amazon web services, ai agents development, ci/cd, git, terraform, docker, microsoft azure, powershell, python, scripting languages, terragrunt, vm migration
 - **Status:** scraped
