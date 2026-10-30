@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-29 |
+| Last Scraped | 2026-10-30 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-10-29T12:07:48.895Z_
+_Generated: 2026-10-30T11:59:20.891Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -294,6 +294,14 @@ _Generated: 2026-10-29T12:07:48.895Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** product management
+- **Status:** scraped
+
+### Senior SAP CAP Java Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-cap-java-developer-blt936s1rwnypmnxcno_en](https://careers.epam.com/en/vacancy/senior-sap-cap-java-developer-blt936s1rwnypmnxcno_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap cap based java, java
 - **Status:** scraped
 
 ### Senior Data Engineer
@@ -806,12 +814,4 @@ _Generated: 2026-10-29T12:07:48.895Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
-- **Status:** scraped
-
-### Senior DevOps Engineer/AWS/Azure
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-aws-azure-bltyca8xjot5rrpbb6k_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** amazon web services, ai agents development, ci/cd, git, terraform, docker, microsoft azure, powershell, python, scripting languages, terragrunt, vm migration
 - **Status:** scraped
