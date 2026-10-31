@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-10-30 |
+| Last Scraped | 2026-10-31 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-10-30T11:59:20.891Z_
+_Generated: 2026-10-31T11:33:47.817Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -504,6 +504,14 @@ _Generated: 2026-10-30T11:59:20.891Z_
 - **Tags:** data integration, ci/cd, sql, snowflake
 - **Status:** scraped
 
+### Business Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/business-solution-architect-bltgn1a6yb8q4a1r6la_en](https://careers.epam.com/en/vacancy/business-solution-architect-bltgn1a6yb8q4a1r6la_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap functional consulting, sap, sap fico, sap treasury and risk management (trm)
+- **Status:** scraped
+
 ### Senior Data Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en)
@@ -638,6 +646,14 @@ _Generated: 2026-10-30T11:59:20.891Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
+- **Status:** scraped
+
+### Business Solution Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/business-solution-architect-bltny0gb5p8el0snk15_en](https://careers.epam.com/en/vacancy/business-solution-architect-bltny0gb5p8el0snk15_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap functional consulting, sap, sap fico, sap treasury and risk management (trm)
 - **Status:** scraped
 
 ### Senior SAP IBP Consultant
@@ -798,20 +814,4 @@ _Generated: 2026-10-30T11:59:20.891Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
-- **Status:** scraped
-
-### Dynamics 365 CE Lead Functional Consultant with Copilot
-
-- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** microsoft dynamics 365 crm
-- **Status:** scraped
-
-### Senior Network Test Automation Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en](https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
 - **Status:** scraped
