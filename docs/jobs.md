@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-02 |
+| Last Scraped | 2026-11-03 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-02T14:32:21.372Z_
+_Generated: 2026-11-03T13:28:16.024Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -110,14 +110,6 @@ _Generated: 2026-11-02T14:32:21.372Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
-- **Status:** scraped
-
-### OMS Lead Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/oms-lead-engineer-blt3o9oz9act0h63kuc_en](https://careers.epam.com/en/vacancy/oms-lead-engineer-blt3o9oz9act0h63kuc_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** fluent commerce oms, data mapping solution, e-commerce, integration architecture, oms in fluent commerce, salesforce commerce cloud
 - **Status:** scraped
 
 ### Senior DevSecOps Engineer - Security Automation
@@ -814,4 +806,12 @@ _Generated: 2026-11-02T14:32:21.372Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
+- **Status:** scraped
+
+### Dynamics 365 CE Lead Functional Consultant with Copilot
+
+- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** microsoft dynamics 365 crm
 - **Status:** scraped
