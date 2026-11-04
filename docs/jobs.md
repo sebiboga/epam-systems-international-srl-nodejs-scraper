@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
+| Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-03 |
+| Last Scraped | 2026-11-04 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-03T13:28:16.024Z_
+_Generated: 2026-11-04T13:39:22.759Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -96,6 +96,14 @@ _Generated: 2026-11-03T13:28:16.024Z_
 - **Tags:** data software engineering, databricks, microsoft azure, python, sql, ci/cd, github actions, microsoft power bi, scaled agile framework
 - **Status:** scraped
 
+### Senior SAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-developer-blt2juz2vdroi3u5wok_en](https://careers.epam.com/en/vacancy/senior-sap-developer-blt2juz2vdroi3u5wok_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap ewm, sap cloud platform
+- **Status:** scraped
+
 ### Data Governance Consultant - Informatica Cloud
 
 - **URL:** [https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en](https://careers.epam.com/en/vacancy/data-governance-consultant-informatica-cloud-blt2x95tt0noii1lifb_en)
@@ -118,14 +126,6 @@ _Generated: 2026-11-03T13:28:16.024Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
-- **Status:** scraped
-
-### Senior Java Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en](https://careers.epam.com/en/vacancy/senior-java-engineer-blt46akkvaddqc3q2m3_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** java, order management systems, fluent commerce oms
 - **Status:** scraped
 
 ### Network Security Operations Engineer
@@ -190,14 +190,6 @@ _Generated: 2026-11-03T13:28:16.024Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** sap fico
-- **Status:** scraped
-
-### Senior SAP HANA Developer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-hana-developer-blt67372560c140a3d7_en](https://careers.epam.com/en/vacancy/senior-sap-hana-developer-blt67372560c140a3d7_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap hana platform, sap web ide, atlassian confluence, atlassian jira
 - **Status:** scraped
 
 ### Lead SAP CAP Developer with Java
@@ -334,14 +326,6 @@ _Generated: 2026-11-03T13:28:16.024Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap cap based node.js
-- **Status:** scraped
-
-### Senior Cyber Incident Responder
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-cyber-incident-responder-bltb0gqxyrlmtocnjdf_en](https://careers.epam.com/en/vacancy/senior-cyber-incident-responder-bltb0gqxyrlmtocnjdf_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** security.operations, security incident response
 - **Status:** scraped
 
 ### Senior Business Analyst / Finance Digital SME - FIT & S/4HANA Finance
@@ -550,6 +534,14 @@ _Generated: 2026-11-03T13:28:16.024Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** business analytics consulting
+- **Status:** scraped
+
+### Lead SAP Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-developer-bltjntiwyemm10s6col_en](https://careers.epam.com/en/vacancy/lead-sap-developer-bltjntiwyemm10s6col_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap ewm, sap cloud platform
 - **Status:** scraped
 
 ### SAP MDG Consultant
@@ -814,4 +806,12 @@ _Generated: 2026-11-03T13:28:16.024Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** microsoft dynamics 365 crm
+- **Status:** scraped
+
+### Senior Network Test Automation Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en](https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
 - **Status:** scraped
