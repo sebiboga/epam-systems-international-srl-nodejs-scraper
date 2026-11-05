@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-04 |
+| Last Scraped | 2026-11-05 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-04T13:39:22.759Z_
+_Generated: 2026-11-05T13:51:45.219Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -126,6 +126,14 @@ _Generated: 2026-11-04T13:39:22.759Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** security.engineering, ci/cd, kpi analysis, poc ideation & facilitation, sast (static application security testing), security
+- **Status:** scraped
+
+### Senior SAP HANA Developer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-hana-developer-blt49kj3ogqi1k4pwes_en](https://careers.epam.com/en/vacancy/senior-sap-hana-developer-blt49kj3ogqi1k4pwes_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap hana platform, sap hana cloud, sapui5
 - **Status:** scraped
 
 ### Network Security Operations Engineer
@@ -736,6 +744,14 @@ _Generated: 2026-11-04T13:39:22.759Z_
 - **Tags:** technology consulting, application security, cloud, network security, sdlc implementation
 - **Status:** scraped
 
+### Lead Software Engineer - SAP Analytics Cloud for Planning (SAC-P)
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-software-engineer-sap-analytics-cloud-for-planning-sac-p-bltt9918njvigh5vxp4_en](https://careers.epam.com/en/vacancy/lead-software-engineer-sap-analytics-cloud-for-planning-sac-p-bltt9918njvigh5vxp4_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** sap analytics cloud
+- **Status:** scraped
+
 ### SAP R2R Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en](https://careers.epam.com/en/vacancy/sap-r2r-architect-blttchu6xlmvveaidf7_en)
@@ -798,20 +814,4 @@ _Generated: 2026-11-04T13:39:22.759Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
-- **Status:** scraped
-
-### Dynamics 365 CE Lead Functional Consultant with Copilot
-
-- **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** microsoft dynamics 365 crm
-- **Status:** scraped
-
-### Senior Network Test Automation Engineer
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en](https://careers.epam.com/en/vacancy/senior-network-test-automation-engineer-bltyb8703f2j0eol6jk_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
 - **Status:** scraped
