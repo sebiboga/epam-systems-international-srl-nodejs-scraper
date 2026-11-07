@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-06 |
+| Last Scraped | 2026-11-07 |
 
-## Current Job Listings (94)
+## Current Job Listings (95)
 
-_Generated: 2026-11-06T13:37:46.781Z_
+_Generated: 2026-11-07T12:17:36.064Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -670,6 +670,14 @@ _Generated: 2026-11-06T13:37:46.781Z_
 - **Work Mode:** remote
 - **Location:** Bucharest
 - **Tags:** technology consulting, application security, cloud, network security, sdlc implementation
+- **Status:** scraped
+
+### Lead Automation Engineer - Network Product Services
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-automation-engineer-network-product-services-bltsphgmdo2voa4oo3f_en](https://careers.epam.com/en/vacancy/lead-automation-engineer-network-product-services-bltsphgmdo2voa4oo3f_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** .net, .net api development & integration, devops, kotlin, masstransit, java, spring boot
 - **Status:** scraped
 
 ### Lead Software Engineer - SAP Analytics Cloud for Planning (SAC-P)
