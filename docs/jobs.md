@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-08 |
+| Last Scraped | 2026-11-09 |
 
-## Current Job Listings (95)
+## Current Job Listings (98)
 
-_Generated: 2026-11-08T12:37:33.168Z_
+_Generated: 2026-11-09T14:56:06.326Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -536,6 +536,14 @@ _Generated: 2026-11-08T12:37:33.168Z_
 - **Tags:** sap logistics (scm), sap c/4hana
 - **Status:** scraped
 
+### Lead DevOps Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-devops-engineer-bltksyz5cm7bmxshr4g_en](https://careers.epam.com/en/vacancy/lead-devops-engineer-bltksyz5cm7bmxshr4g_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** google cloud platform, containerization, gcp security, google cloud identity and access management, google cloud secret manager, helm, terraform, amazon web services, microsoft azure
+- **Status:** scraped
+
 ### Salesforce Lead Developer / Consultant
 
 - **URL:** [https://careers.epam.com/en/vacancy/salesforce-lead-developer-consultant-bltl1479axo8z9ilow2_en](https://careers.epam.com/en/vacancy/salesforce-lead-developer-consultant-bltl1479axo8z9ilow2_en)
@@ -656,6 +664,14 @@ _Generated: 2026-11-08T12:37:33.168Z_
 - **Tags:** program management
 - **Status:** scraped
 
+### Senior Data Analyst / Analytics Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-data-analyst-analytics-engineer-blts3qa6wa7ykl6mwku_en](https://careers.epam.com/en/vacancy/senior-data-analyst-analytics-engineer-blts3qa6wa7ykl6mwku_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** data analytics and visualization, microsoft power bi, sql, dbt, databricks for data analytics
+- **Status:** scraped
+
 ### SAP Logistics (SCM) Engineering Manager
 
 - **URL:** [https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en](https://careers.epam.com/en/vacancy/sap-logistics-scm-engineering-manager-bltsdfwaeix5mu475ix_en)
@@ -696,6 +712,14 @@ _Generated: 2026-11-08T12:37:33.168Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
+### Lead Microsoft M365 Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-microsoft-m365-engineer-bltv4upo26prmxuk1sd_en](https://careers.epam.com/en/vacancy/lead-microsoft-m365-engineer-bltv4upo26prmxuk1sd_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** microsoft 365 engineering, javascript, microsoft 365, microsoft azure, powershell
+- **Status:** scraped
+
 ### Azure Architect
 
 - **URL:** [https://careers.epam.com/en/vacancy/azure-architect-bltvlmjb6n1kuxbhly4_en](https://careers.epam.com/en/vacancy/azure-architect-bltvlmjb6n1kuxbhly4_en)
@@ -720,6 +744,14 @@ _Generated: 2026-11-08T12:37:33.168Z_
 - **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
 - **Status:** scraped
 
+### Platform and Engineering Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/platform-and-engineering-architect-bltxd8dikhstuf1z1m8_en](https://careers.epam.com/en/vacancy/platform-and-engineering-architect-bltxd8dikhstuf1z1m8_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** data solution architecture, data governance, data products - consumption and access layers, databricks unity catalog, microsoft purview, data products sdlc, databricks, microsoft fabric, sap datasphere
+- **Status:** scraped
+
 ### Dynamics 365 CE Lead Functional Consultant with Copilot
 
 - **URL:** [https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en](https://careers.epam.com/en/vacancy/dynamics-365-ce-lead-functional-consultant-with-copilot-bltxuua5bwr41uarezf_en)
@@ -734,14 +766,6 @@ _Generated: 2026-11-08T12:37:33.168Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** automated testing in python, cisco nx-os, gitlab ci, network protocols, robot framework, routing protocols: rip, ospf, eigrp, bgp, is-is
-- **Status:** scraped
-
-### Senior API/Integration Engineer (IBM webMethods)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-api-integration-engineer-ibm-webmethods-bltyktb398e40dyhzkk_en](https://careers.epam.com/en/vacancy/senior-api-integration-engineer-ibm-webmethods-bltyktb398e40dyhzkk_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** apis and integration, cloud migration and infrastructure modernization, ibm webmethods api management, ibm webmethods integration, sap business technology platform, sap idoc
 - **Status:** scraped
 
 ### AI Native Delivery Manager
