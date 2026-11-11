@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-10 |
+| Last Scraped | 2026-11-11 |
 
-## Current Job Listings (98)
+## Current Job Listings (100)
 
-_Generated: 2026-11-10T14:08:51.347Z_
+_Generated: 2026-11-11T13:25:18.704Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -624,6 +624,14 @@ _Generated: 2026-11-10T14:08:51.347Z_
 - **Tags:** project management, erp implementation
 - **Status:** scraped
 
+### Lead Salesforce CRMA Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-salesforce-crma-consultant-bltp3i2u9c8kroyts3s_en](https://careers.epam.com/en/vacancy/lead-salesforce-crma-consultant-bltp3i2u9c8kroyts3s_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** salesforce, soql, salesforce analytics cloud, salesforce tableau
+- **Status:** scraped
+
 ### Regional AI Run Lead
 
 - **URL:** [https://careers.epam.com/en/vacancy/regional-ai-run-lead-bltpdjnjqfvbhtjuv6m_en](https://careers.epam.com/en/vacancy/regional-ai-run-lead-bltpdjnjqfvbhtjuv6m_en)
@@ -718,6 +726,14 @@ _Generated: 2026-11-10T14:08:51.347Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** microsoft 365 engineering, javascript, microsoft 365, microsoft azure, powershell
+- **Status:** scraped
+
+### Project Manager/Delivery Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/project-manager-delivery-manager-bltvdyw687awiumhh3q_en](https://careers.epam.com/en/vacancy/project-manager-delivery-manager-bltvdyw687awiumhh3q_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** delivery management, delivery excellence, staffing, stakeholder management
 - **Status:** scraped
 
 ### Azure Architect
