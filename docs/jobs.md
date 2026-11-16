@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-15 |
+| Last Scraped | 2026-11-16 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-15T13:18:24.450Z_
+_Generated: 2026-11-16T14:32:15.438Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -334,6 +334,14 @@ _Generated: 2026-11-15T13:18:24.450Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management, salesforce
+- **Status:** scraped
+
+### Senior Talent Acquisition Specialist
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltbr7y5eyk5gngd058_en](https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltbr7y5eyk5gngd058_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** talent acquisition
 - **Status:** scraped
 
 ### Business Solution Architect
@@ -806,12 +814,4 @@ _Generated: 2026-11-15T13:18:24.450Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap success factors
-- **Status:** scraped
-
-### Senior Calypso Support Analyst (Relocation to Sweden)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-calypso-support-analyst-relocation-to-sweden-blte9ixk7vy2yajawwh_en](https://careers.epam.com/en/vacancy/senior-calypso-support-analyst-relocation-to-sweden-blte9ixk7vy2yajawwh_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** calypso
 - **Status:** scraped
