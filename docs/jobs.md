@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
+| Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-17 |
+| Last Scraped | 2026-11-18 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-17T15:22:41.234Z_
+_Generated: 2026-11-18T14:57:41.367Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -158,14 +158,6 @@ _Generated: 2026-11-17T15:22:41.234Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** microsoft dynamics 365 crm
-- **Status:** scraped
-
-### SAP Data Migration Specialist (R2R)
-
-- **URL:** [https://careers.epam.com/en/vacancy/sap-data-migration-specialist-r2r-blt5h4505wnpa1nyt2i_en](https://careers.epam.com/en/vacancy/sap-data-migration-specialist-r2r-blt5h4505wnpa1nyt2i_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap fico, sap, sap s/4hana migration cockpit, sap: fi-aa master data
 - **Status:** scraped
 
 ### CTO / Principal Solution Architect
@@ -350,14 +342,6 @@ _Generated: 2026-11-17T15:22:41.234Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** delivery management, salesforce
-- **Status:** scraped
-
-### Senior Talent Acquisition Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltbr7y5eyk5gngd058_en](https://careers.epam.com/en/vacancy/senior-talent-acquisition-specialist-bltbr7y5eyk5gngd058_en)
-- **Work Mode:** hybrid
-- **Location:** Bucharest
-- **Tags:** talent acquisition
 - **Status:** scraped
 
 ### Lead SAP Consultant
@@ -616,14 +600,6 @@ _Generated: 2026-11-17T15:22:41.234Z_
 - **Tags:** salesforce
 - **Status:** scraped
 
-### Senior SAP Data Migration Specialist (R2R)
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-data-migration-specialist-r2r-bltmqb2vkivgejza76j_en](https://careers.epam.com/en/vacancy/senior-sap-data-migration-specialist-r2r-bltmqb2vkivgejza76j_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap fico, sap, sap s/4hana migration cockpit, sap: fi-aa master data
-- **Status:** scraped
-
 ### Senior SAP HANA Cloud Developer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-sap-hana-cloud-developer-bltmsbzqsxvaq62teyy_en](https://careers.epam.com/en/vacancy/senior-sap-hana-cloud-developer-bltmsbzqsxvaq62teyy_en)
@@ -814,4 +790,28 @@ _Generated: 2026-11-17T15:22:41.234Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico
+- **Status:** scraped
+
+### Senior SAP Specialist
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-specialist-bltuinyaogtelyfhj6y_en](https://careers.epam.com/en/vacancy/senior-sap-specialist-bltuinyaogtelyfhj6y_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap bw, sap hana administration, sap hana performance optimization, sap hana platform, sap crm, sap sales cloud & sap service cloud (hybris cloud for customer), sap sales and distribution
+- **Status:** scraped
+
+### Lead Microsoft M365 Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/lead-microsoft-m365-engineer-bltv4upo26prmxuk1sd_en](https://careers.epam.com/en/vacancy/lead-microsoft-m365-engineer-bltv4upo26prmxuk1sd_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** microsoft 365 engineering, javascript, microsoft 365, microsoft azure, powershell
+- **Status:** scraped
+
+### Project Manager/Delivery Manager
+
+- **URL:** [https://careers.epam.com/en/vacancy/project-manager-delivery-manager-bltvdyw687awiumhh3q_en](https://careers.epam.com/en/vacancy/project-manager-delivery-manager-bltvdyw687awiumhh3q_en)
+- **Work Mode:** hybrid
+- **Location:** Bucharest
+- **Tags:** delivery management, delivery excellence, staffing, stakeholder management
 - **Status:** scraped
