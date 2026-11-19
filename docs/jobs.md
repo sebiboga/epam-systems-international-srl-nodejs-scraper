@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-18 |
+| Last Scraped | 2026-11-19 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-18T14:57:41.367Z_
+_Generated: 2026-11-19T15:04:08.448Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -216,6 +216,14 @@ _Generated: 2026-11-18T14:57:41.367Z_
 - **Tags:** sap abap
 - **Status:** scraped
 
+### SAP SAC (Planning) Consultant
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-sac-planning-consultant-blt776oobomejgivd17_en](https://careers.epam.com/en/vacancy/sap-sac-planning-consultant-blt776oobomejgivd17_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap analytics cloud, data modeling, sac planning, sap s/4hana for central finance, sap datasphere
+- **Status:** scraped
+
 ### Presales Solution Consultant – Data and AI
 
 - **URL:** [https://careers.epam.com/en/vacancy/presales-solution-consultant-data-and-ai-blt792827nrlotetup2_en](https://careers.epam.com/en/vacancy/presales-solution-consultant-data-and-ai-blt792827nrlotetup2_en)
@@ -374,14 +382,6 @@ _Generated: 2026-11-18T14:57:41.367Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap fico
-- **Status:** scraped
-
-### Senior SAP Fieldglass Consultant
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-fieldglass-consultant-bltc520o8ubybqz9ieq_en](https://careers.epam.com/en/vacancy/senior-sap-fieldglass-consultant-bltc520o8ubybqz9ieq_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap functional consulting, requirements definition and management, sap fieldglass, agile, sap ariba, systems thinking
 - **Status:** scraped
 
 ### Dynamics 365 CE Solution Architect with Copilot
