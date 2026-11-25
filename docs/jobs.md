@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
+| Location | București |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-24 |
+| Last Scraped | 2026-11-25 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-24T16:51:53.853Z_
+_Generated: 2026-11-25T16:40:12.784Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -680,14 +680,6 @@ _Generated: 2026-11-24T16:51:53.853Z_
 - **Tags:** delivery management.ai
 - **Status:** scraped
 
-### Lead SAP Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/lead-sap-specialist-bltpqfryuo9vyrg04t5_en](https://careers.epam.com/en/vacancy/lead-sap-specialist-bltpqfryuo9vyrg04t5_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap bw, sap hana administration, sap hana performance optimization, sap hana platform, sap crm, sap sales cloud & sap service cloud (hybris cloud for customer), sap sales and distribution
-- **Status:** scraped
-
 ### Senior Automation Tester in JavaScript
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-automation-tester-in-javascript-bltq74nprj5upbdlxqj_en](https://careers.epam.com/en/vacancy/senior-automation-tester-in-javascript-bltq74nprj5upbdlxqj_en)
@@ -792,14 +784,6 @@ _Generated: 2026-11-24T16:51:53.853Z_
 - **Tags:** sap fico
 - **Status:** scraped
 
-### Senior SAP Specialist
-
-- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-specialist-bltuinyaogtelyfhj6y_en](https://careers.epam.com/en/vacancy/senior-sap-specialist-bltuinyaogtelyfhj6y_en)
-- **Work Mode:** remote
-- **Location:** România
-- **Tags:** sap bw, sap hana administration, sap hana performance optimization, sap hana platform, sap crm, sap sales cloud & sap service cloud (hybris cloud for customer), sap sales and distribution
-- **Status:** scraped
-
 ### Lead Microsoft M365 Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/lead-microsoft-m365-engineer-bltv4upo26prmxuk1sd_en](https://careers.epam.com/en/vacancy/lead-microsoft-m365-engineer-bltv4upo26prmxuk1sd_en)
@@ -814,4 +798,20 @@ _Generated: 2026-11-24T16:51:53.853Z_
 - **Work Mode:** hybrid
 - **Location:** Bucharest
 - **Tags:** delivery management, delivery excellence, staffing, stakeholder management
+- **Status:** scraped
+
+### Azure Architect
+
+- **URL:** [https://careers.epam.com/en/vacancy/azure-architect-bltvlmjb6n1kuxbhly4_en](https://careers.epam.com/en/vacancy/azure-architect-bltvlmjb6n1kuxbhly4_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** cloud engineering management, microsoft azure
+- **Status:** scraped
+
+### SAP Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/sap-engineer-bltvq2lgzwcc7ah7k3h_en](https://careers.epam.com/en/vacancy/sap-engineer-bltvq2lgzwcc7ah7k3h_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap (others), sap
 - **Status:** scraped
