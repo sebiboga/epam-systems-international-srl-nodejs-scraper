@@ -7,14 +7,14 @@
 | CIF | 33159615 |
 | Brand | EPAM |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9 |
 | Website | [https://www.epam.com](https://www.epam.com) |
 | Careers | [https://careers.epam.com](https://careers.epam.com) |
-| Last Scraped | 2026-11-25 |
+| Last Scraped | 2026-11-26 |
 
 ## Current Job Listings (100)
 
-_Generated: 2026-11-25T16:40:12.784Z_
+_Generated: 2026-11-26T16:13:23.344Z_
 
 ### Senior Full Stack ABAP/UI5 Developer
 
@@ -480,14 +480,6 @@ _Generated: 2026-11-25T16:40:12.784Z_
 - **Tags:** sap cap based java, java
 - **Status:** scraped
 
-### Business Solution Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/business-solution-architect-bltgn1a6yb8q4a1r6la_en](https://careers.epam.com/en/vacancy/business-solution-architect-bltgn1a6yb8q4a1r6la_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap functional consulting, sap, sap fico, sap treasury and risk management (trm)
-- **Status:** scraped
-
 ### Senior Data Engineer
 
 - **URL:** [https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en](https://careers.epam.com/en/vacancy/senior-data-engineer-bltgoacwxid7ps7q44n_en)
@@ -630,14 +622,6 @@ _Generated: 2026-11-25T16:40:12.784Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** solution architecture, amazon web services
-- **Status:** scraped
-
-### Business Solution Architect
-
-- **URL:** [https://careers.epam.com/en/vacancy/business-solution-architect-bltny0gb5p8el0snk15_en](https://careers.epam.com/en/vacancy/business-solution-architect-bltny0gb5p8el0snk15_en)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** sap functional consulting, sap, sap fico, sap treasury and risk management (trm)
 - **Status:** scraped
 
 ### Senior SAP IBP Consultant
@@ -814,4 +798,20 @@ _Generated: 2026-11-25T16:40:12.784Z_
 - **Work Mode:** remote
 - **Location:** România
 - **Tags:** sap (others), sap
+- **Status:** scraped
+
+### Senior SAP DRC Consultant (e-invoicing)
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-sap-drc-consultant-e-invoicing-bltx39zstb61ob0nvxe_en](https://careers.epam.com/en/vacancy/senior-sap-drc-consultant-e-invoicing-bltx39zstb61ob0nvxe_en)
+- **Work Mode:** remote
+- **Location:** România
+- **Tags:** sap fico, sap financial accounting, gaap accounting, sap business technology platform, sap controlling
+- **Status:** scraped
+
+### Senior DevOps Engineer
+
+- **URL:** [https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en](https://careers.epam.com/en/vacancy/senior-devops-engineer-bltxby8kks6x2rwz2wb_en)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** devops, microsoft azure, pyspark, python, ci/cd, databricks
 - **Status:** scraped
